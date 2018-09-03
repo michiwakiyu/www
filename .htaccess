@@ -1,0 +1,190 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+
+#Basic認証ここから
+
+#Basic認証ここまで
+
+
+ErrorDocument 404 http://www.direct-commu.com/
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^direct-commu\.com
+RewriteRule (.*) http://www.direct-commu.com/$1 [R=301,L]
+
+
+RewriteCond %{REQUEST_URI} !/sp/
+RewriteCond %{REQUEST_URI} !/colums/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteCond %{HTTP_COOKIE} !mode=sp
+RewriteRule ^(.*)$ sp/$1 [L]
+RewriteBase /
+
+
+
+#このルール不要　spないのにspの場合のルールを設定しているため
+RewriteCond %{REQUEST_URI} !/sp/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} mode=pc
+RewriteRule ^sp/(.*)$ $1 [L]
+RewriteBase /
+
+#代わりにこれが正しいRに
+RewriteCond %{REQUEST_URI} /sp/
+RewriteCond %{REQUEST_URI} !/colums/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} mode=pc
+RewriteRule ^sp/(.*)$ $1 [R]
+RewriteBase /
+
+
+RewriteCond %{REQUEST_URI} !/sp/
+RewriteCond %{REQUEST_URI} !/colums/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} mode=sp
+RewriteRule ^(.*)$ sp/$1 [L]
+RewriteBase /
+
+
+RewriteCond %{REQUEST_URI} /sp/
+RewriteCond %{REQUEST_URI} !/colums/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^sp/(.*)$ $1 [L]
+RewriteBase /
+
+
+#========================================
+#businessコラム
+#========================================
+
+#RewriteCond %{REQUEST_URI} !/sp/
+RewriteCond %{REQUEST_URI} /colums/business/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+
+#http://から書くと[L]にしてもリダイレクトでURLが書き変わる
+#RewriteRule ^colums/business/(.*)\.html$ http://test.direct-commu.com/sp/colums/business/article.php?c_id=$1 [L]
+
+#この書き方sp/からはじめると[L]で書き変わらない
+RewriteRule ^colums/business/(.*)\.html$ sp/colums/business/article.php?c_id=$1 [L]
+RewriteBase /
+
+
+RewriteCond %{REQUEST_URI} /colums/business/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+#RewriteRule ^colums/business/(.*)\.html$ http://test.direct-commu.com/colums/business/article.php?c_id=$1 [L]
+RewriteRule ^colums/business/(.*)\.html$ colums/business/article.php?c_id=$1 [L]
+RewriteBase /
+
+
+#========================================
+#top directory /colums /mental relation business feature intro
+#========================================
+
+RewriteCond %{REQUEST_URI} /colums/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteRule ^colums/$ sp/colums/ [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/mental/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteRule ^colums/mental/$ sp/colums/mental/ [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/relation/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteRule ^colums/relation/$ sp/colums/relation/ [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/business/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteRule ^colums/business/$ sp/colums/business/ [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/feature/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteRule ^colums/feature/$ sp/colums/feature/ [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/intro/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} !mode=pc
+RewriteRule ^colums/intro/(.*)$ sp/colums/intro/$1 [L]
+RewriteBase /
+
+
+#========================================
+#mentalコラム
+#========================================
+
+RewriteCond %{REQUEST_URI} /colums/mental/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/mental/(.*)\.html$ sp/colums/mental/article.php?c_id=$1 [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/mental/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/mental/(.*)\.html$ colums/mental/article.php?c_id=$1 [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/mental/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteCond %{HTTP_COOKIE} mode=pc
+RewriteRule ^colums/mental/(.*)\.html$ colums/mental/article.php?c_id=$1 [L]
+RewriteBase /
+
+
+#========================================
+#relationコラム
+#========================================
+
+RewriteCond %{REQUEST_URI} /colums/relation/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/relation/(.*)\.html$ sp/colums/relation/article.php?c_id=$1 [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/relation/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/relation/(.*)\.html$ colums/relation/article.php?c_id=$1 [L]
+RewriteBase /
+
+
+#========================================
+#featureコラム
+#========================================
+
+RewriteCond %{REQUEST_URI} /colums/feature/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/feature/(.*)\.html$ sp/colums/feature/article.php?c_id=$1 [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/feature/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/feature/(.*)\.html$ colums/feature/article.php?c_id=$1 [L]
+RewriteBase /
+
+
+#========================================
+#featureコラム
+#========================================
+
+RewriteCond %{REQUEST_URI} /colums/feature/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/feature/(.*)\.html$ sp/colums/feature/article.php?c_id=$1 [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/feature/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/feature/(.*)\.html$ colums/feature/article.php?c_id=$1 [L]
+RewriteBase /
+
+
+</IfModule>

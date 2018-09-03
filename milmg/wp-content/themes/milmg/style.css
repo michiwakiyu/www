@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+Theme Name: Sample Theme
+Theme URI: http://www.www.www/
+Description: This is my sample theme.
+*/
+
+
+@import "./css/base.css";
+@import "./css/header.css";
+@import "./css/gnav.css";
+@import "./css/lnav.css";
+@import "./css/localnavigation.css";
+@import "./css/columsstyle.css";
+
+
+

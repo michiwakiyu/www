@@ -1,0 +1,136 @@
+@charset "utf-8";
+/*=========================================================
+ *
+ *	css file for "www.direct-comm.com"
+ *	file name : home.css
+ *
+=========================================================*/
+
+
+
+/* -------------------------------------------------- */
+/* sidebar */
+/* -------------------------------------------------- */
+
+div#sidebar {
+	width: 290px;
+	float: left;
+	color: #5e5d51;
+}
+
+
+/* nav */
+/* -------------------------------------------------- */
+
+
+div#sidebar  div.navtop {
+	width: 290px;
+	height: 5px;
+	background: url(../sharedimg/bg_lnavtop.gif) no-repeat top left;
+}
+
+div#sidebar  div.nav {
+	width: 260px;
+	background: url(../sharedimg/bg_lnav.gif) repeat-y;
+	padding: 15px;
+}
+
+div#sidebar  div.nav span {
+	font-size: 12px;
+}
+
+
+div#sidebar div.nav p {
+	font-size: 13px;
+	text-align: left;
+	line-height: 1.8;
+}
+
+div#sidebar div.navbottom {
+	width: 290px;
+	height: 15px;
+	background: url(../sharedimg/bg_lnav_bottom.gif) no-repeat top left;
+	padding-bottom: 15px;
+}
+
+
+/* nav ul */
+/* -------------------------------------------------- */
+
+div#sidebar div.nav ul {
+	margin: 15px 0;
+}
+
+div#sidebar div.nav ul li {
+	margin-bottom: 5px;
+}
+
+div#sidebar div.nav ul li a {
+	display: block;
+	width: 240px;
+	padding: 8px 10px;
+	color: #5e5d51;
+}
+
+div#sidebar div.nav ul li a:hover,
+div#sidebar div.nav ul li.on a {
+	background: #ffe9d1;
+	text-decoration: none;
+}
+
+div#sidebar div.nav ul li a.selected {
+	background: #ffe9d1;
+	text-decoration: none;
+}
+
+
+/* nav dl.dl_02 */
+/* -------------------------------------------------- */
+
+dl.dl_02 {
+
+}
+
+
+dl.dl_02 dt {
+	width: 250px;
+	color: 807f6e;
+	padding: 4px 0px 3px 8px;
+	margin-bottom: 5px;
+	background: #ece6dd url(../sharedimg/training/bg_dl_dt.gif) no-repeat left bottom;
+}
+
+
+dl.dl_02 dd {
+	margin-bottom: 5px;
+}
+
+dl.dl_02 dd a {
+	display: block;
+	width: 240px;
+	padding: 8px 10px;
+	color: #5e5d51;
+}
+dl.dl_02 dd a:hover {
+	background: #ffe9d1;
+	text-decoration: none;
+}
+
+
+/* nav fixed */
+/* -------------------------------------------------- */
+
+div#sidebar.fixed {
+	position: fixed;
+	top: 10px;
+	left: auto;
+	float: none;
+	z-index: 10;
+}
+div#sidebar.fixed.fixedEnd {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	margin-bottom: 425px;
+}
+

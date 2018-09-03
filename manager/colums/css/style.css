@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+input {
+	border: none;
+	border: 1px solid #ccc;
+	width: 500px;
+	height: 40px;
+	background:#FFC;
+	padding: 2px 4px;
+	font-size: 18px;
+}
+
+
+textarea {
+	border: none;
+	background:#FFC;
+	padding: 2px 4px;	
+	border: 1px solid #ccc;
+}
+
+div#form {
+	width: 500px;
+	margin: auto;
+}

@@ -1,0 +1,490 @@
+<?php
+
+
+$db_host = "mysql501.phy.lolipop.jp";
+$db_user = "LA08419899";
+$db_pass = "6B87rrUc";
+$db_name = "LA08419899-directcomm";
+
+mysql_connect($db_host,$db_user,$db_pass);
+mysql_set_charset("utf8");
+mysql_select_db($db_name);
+
+
+
+//============================================================================
+//cache_lite
+//============================================================================
+
+//Cache_lite読み込み
+require_once '/home/users/2/lolipop.jp-dp58180317/web/lib/PEAR/Cache/Lite.php';
+$cache_id = "http://www.direct-commu.com/mental/";
+
+//tmpディレクトリは相対パスでないとダメ    automaticSerializationは配列格納用
+$options = array('cacheDir' => './tmp/','lifeTime' => 60 * 60 * 30,'automaticSerialization' => 'true');
+
+//キャッシュオブジェクト生成
+$Cache_Lite = new Cache_Lite($options);
+
+if ($data = $Cache_Lite -> get($cache_id)) {
+	
+	//echo "キャッシュがあります";
+	$list_new_mental= $data["list_new_mental"];
+
+	$list_1= $data["list_1"];
+	$list_2= $data["list_2"];
+	$list_3= $data["list_3"];
+	$list_4= $data["list_4"];
+	$list_5= $data["list_5"];
+	$list_6= $data["list_6"];
+	$list_7= $data["list_7"];
+	$list_8= $data["list_8"];
+	$list_9= $data["list_9"];
+	$list_10= $data["list_10"];
+	$list_11= $data["list_11"];
+	$list_12= $data["list_12"];
+	$list_13= $data["list_13"];
+	
+}else{
+	
+	//echo "キャッシュがないです";
+
+
+$sql_new_mental = "select * from colums_u where category='mental' and flag='1' order by date desc limit 10";
+$result_new_mental = mysql_query($sql_new_mental) or die("em");
+$list_new_mental = "";
+
+while($rows_new_mental = mysql_fetch_array($result_new_mental)){
+		
+	$list_new_mental .= "<li><span>".mb_substr($rows_new_mental["date"],0,10,'utf-8')."</span><a href=\"".$rows_new_mental["url"]."\">".$rows_new_mental["c_title"]."</a></li>";
+	
+	
+}
+
+
+//13
+$sql_13 = "select * from colums_u where theme='13　脳とコミュニケーション能力' and flag='1' order by date desc";
+$result_13 = mysql_query($sql_13) or die("e1");
+
+$list_13 = "";
+
+while($rows_13 = mysql_fetch_array($result_13)){
+	$list_13 .= "<li><span>".mb_substr($rows_13["date"],0,10,'utf-8')."</span><a href=\"".$rows_13["url"]."\">".$rows_13["c_title"]."</a></li>";
+}
+
+//12
+$sql_12 = "select * from colums_u where theme='12　対象喪失' and flag='1' order by date desc";
+$result_12 = mysql_query($sql_12) or die("e1");
+
+$list_12 = "";
+
+while($rows_12 = mysql_fetch_array($result_12)){
+	$list_12 .= "<li><span>".mb_substr($rows_12["date"],0,10,'utf-8')."</span><a href=\"".$rows_12["url"]."\">".$rows_12["c_title"]."</a></li>";
+}
+
+//11
+$sql_11 = "select * from colums_u where theme='11　承認欲求' and flag='1' order by date desc";
+$result_11 = mysql_query($sql_11) or die("e1");
+
+$list_11 = "";
+
+while($rows_11 = mysql_fetch_array($result_11)){
+	$list_11 .= "<li><span>".mb_substr($rows_11["date"],0,10,'utf-8')."</span><a href=\"".$rows_11["url"]."\">".$rows_11["c_title"]."</a></li>";
+}
+
+//10
+$sql_10 = "select * from colums_u where theme='10　フォーカシング' and flag='1' order by date desc";
+$result_10 = mysql_query($sql_10) or die("e1");
+
+$list_10 = "";
+
+while($rows_10 = mysql_fetch_array($result_10)){
+	$list_10 .= "<li><span>".mb_substr($rows_10["date"],0,10,'utf-8')."</span><a href=\"".$rows_10["url"]."\">".$rows_10["c_title"]."</a></li>";
+}
+
+//9
+$sql_9 = "select * from colums_u where theme='9　あがり' and flag='1' order by date desc";
+$result_9 = mysql_query($sql_9) or die("e1");
+
+$list_9 = "";
+
+while($rows_9 = mysql_fetch_array($result_9)){
+	$list_9 .= "<li><span>".mb_substr($rows_9["date"],0,10,'utf-8')."</span><a href=\"".$rows_9["url"]."\">".$rows_9["c_title"]."</a></li>";
+}
+
+//8
+$sql_8 = "select * from colums_u where theme='8　森田療法' and flag='1' order by date desc";
+$result_8 = mysql_query($sql_8) or die("e1");
+
+$list_8 = "";
+
+while($rows_8 = mysql_fetch_array($result_8)){
+	$list_8 .= "<li><span>".mb_substr($rows_8["date"],0,10,'utf-8')."</span><a href=\"".$rows_8["url"]."\">".$rows_8["c_title"]."</a></li>";
+}
+
+//7
+$sql_7 = "select * from colums_u where theme='7　感受性' and flag='1' order by date desc";
+$result_7 = mysql_query($sql_7) or die("e1");
+
+$list_7 = "";
+
+while($rows_7 = mysql_fetch_array($result_7)){
+	$list_7 .= "<li><span>".mb_substr($rows_7["date"],0,10,'utf-8')."</span><a href=\"".$rows_7["url"]."\">".$rows_7["c_title"]."</a></li>";
+}
+
+//6
+$sql_6 = "select * from colums_u where theme='6 自信' and flag='1' order by date desc";
+$result_6 = mysql_query($sql_6) or die("e1");
+
+$list_6 = "";
+
+while($rows_6 = mysql_fetch_array($result_6)){
+	$list_6 .= "<li><span>".mb_substr($rows_6["date"],0,10,'utf-8')."</span><a href=\"".$rows_6["url"]."\">".$rows_6["c_title"]."</a></li>";
+}
+
+//5
+$sql_5 = "select * from colums_u where theme='5 やる気' and flag='1' order by date desc";
+$result_5 = mysql_query($sql_5) or die("e1");
+
+$list_5 = "";
+
+while($rows_5 = mysql_fetch_array($result_5)){
+	$list_5 .= "<li><span>".mb_substr($rows_5["date"],0,10,'utf-8')."</span><a href=\"".$rows_5["url"]."\">".$rows_5["c_title"]."</a></li>";
+}
+
+//4
+$sql_4 = "select * from colums_u where theme='4 ストレス' and flag='1' order by date desc";
+$result_4 = mysql_query($sql_4) or die("e1");
+
+$list_4 = "";
+
+while($rows_4 = mysql_fetch_array($result_4)){
+	$list_4 .= "<li><span>".mb_substr($rows_4["date"],0,10,'utf-8')."</span><a href=\"".$rows_4["url"]."\">".$rows_4["c_title"]."</a></li>";
+}
+
+//3
+$sql_3 = "select * from colums_u where theme='3 感情と気分' and flag='1' order by date desc";
+$result_3 = mysql_query($sql_3) or die("e1");
+
+$list_3 = "";
+
+while($rows_3 = mysql_fetch_array($result_3)){
+	$list_3 .= "<li><span>".mb_substr($rows_3["date"],0,10,'utf-8')."</span><a href=\"".$rows_3["url"]."\">".$rows_3["c_title"]."</a></li>";
+}
+
+//2
+$sql_2 = "select * from colums_u where theme='2 コミュニケーションと心理学的理論' and flag='1' order by date desc";
+$result_2 = mysql_query($sql_2) or die("e1");
+
+$list_2 = "";
+
+while($rows_2 = mysql_fetch_array($result_2)){
+	$list_2 .= "<li><span>".mb_substr($rows_2["date"],0,10,'utf-8')."</span><a href=\"".$rows_2["url"]."\">".$rows_2["c_title"]."</a></li>";
+}
+
+//1
+$sql_1 = "select * from colums_u where theme='1　コミュニケーションと心のありかた' and flag='1' order by date desc";
+$result_1 = mysql_query($sql_1) or die("e1");
+
+$list_1 = "";
+
+while($rows_1 = mysql_fetch_array($result_1)){
+	$list_1 .= "<li><span>".mb_substr($rows_1["date"],0,10,'utf-8')."</span><a href=\"".$rows_1["url"]."\">".$rows_1["c_title"]."</a></li>";
+}
+
+
+$data["list_new_mental"] = $list_new_mental;
+
+$data["list_1"] = $list_1;
+$data["list_2"] = $list_2;
+$data["list_3"] = $list_3;
+$data["list_4"] = $list_4;
+$data["list_5"] = $list_5;
+$data["list_6"] = $list_6;
+$data["list_7"] = $list_7;
+$data["list_8"] = $list_8;
+$data["list_9"] = $list_9;
+$data["list_10"] = $list_10;
+$data["list_11"] = $list_11;
+$data["list_12"] = $list_12;
+$data["list_13"] = $list_13;
+
+$Cache_Lite->save($data,$cache_id);
+
+}// end cache
+
+
+
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="コミュニケーションは心から。心の重要性について解説します！">
+<meta name="keywords" content="コミュニケーション,心">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="株式会社ダイレクトコミュニケーション" /><title>メンタルスキルコラム一覧　</title>
+
+<link href="../../common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../common/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../common/css/sidebar.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../common/css/footer.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../common/css/content.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../common/css/colums.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<script type="text/javascript" src="../../common/js/smoothscroll.js"></script>
+<script type="text/javascript" src="../../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../../common/js/fadein.js"></script>
+<script type="text/javascript" src="../../common/js/onoff.js"></script>
+<script type="text/javascript" src="../../common/js/smart-crossfade.js"></script>
+
+
+</head>
+
+<body>
+<a name="page_top"></a>
+
+<div id="header" style="padding-top: 0px">
+
+<div id="onoffbtn"><a href="http://www.direct-commu.com/course/mailmag.html" id="open"></a></div>
+
+<div id="headercontainer">
+
+<div id="headerright"><!-- --></div>
+
+<div id="logowrap"><a href="http://www.direct-commu.com/"><img src="../../common/sharedimg/logo_directcomm.gif" alt="ダイレクトコミュニケーション能力,話し方教室" /></a></div>
+<!--<ul>
+<li><a href="http://www.direct-commu.com/reqruit/teacher.html">講師・心理士 募集</a></li>
+<li><a href="http://www.direct-commu.com/reqruit/assistant.html">アシスタント 募集</a></li>
+<li><a href="http://www.direct-commu.com/company/contact.html">お問い合わせ</a></li></ul>-->
+<ul>
+<li><a href="http://www.direct-commu.com/company/contact.html"><img src="../../common/sharedimg/header/btn_contact_cloud_off.png" class="hover" /></a></li>
+</ul>
+</div><!-- end headercontainer -->
+
+<ul id="gnav">
+<li id="home"><a href="http://www.direct-commu.com/">ホーム</a></li>
+<li id="course"><a href="http://www.direct-commu.com/course/">コミュニケーション講座</a></li>
+<li id="text"><a href="http://www.direct-commu.com/text/">ダイコミュ通信講座</a></li>
+<li id="training"><a href="http://www.direct-commu.com/training/">コミュニケーション能力トレーニング</a></li>
+<li id="ability"><a href="http://xn--zckzah9129bsdgbusdye.jp/">コミュニケーション能力診断</a></li>
+<li id="colums"><a href="http://www.direct-commu.com/colums/" class="selected">コミュニケーションコラム集</a></li>
+<li id="event"><a href="http://www.direct-commu.com/event/">ダイコミュイベント</a></li>
+<li id="teacher"><a href="http://www.direct-commu.com/profile/">講師紹介</a></li>
+</ul><!-- end gnav -->
+</div><!-- end header -->
+
+<div id="topicpath">
+
+<div id="topicleft"><a href="http://www.direct-commu.com/">ホーム</a> > <a href="http://www.direct-commu.com/colums/">コミュニケーション知恵袋</a> > 
+  <h1>メンタルスキルコラム一覧　</h1>
+</div><!-- end topicleft -->
+<div id="topicright">
+  <h2>コミュニケーションと心　人間関係が楽しくなる♪</h2>
+</div><!-- end topicright -->
+</div><!-- end topicpath -->
+
+
+<div id="container">
+
+<div id="sidebar">
+<a href="http://www.direct-commu.com/colums/mental/"><img src="../../common/sharedimg/colums/img_title_colums_mental.gif" width="290" height="44" alt="メンタルコラムタイトル" /></a>
+<div class="nav">
+<ul style="margin-top: 0">
+<?=$list_new_mental?>
+<!--<?=str_replace("www.direct-comm.com","www.direct-comm.com",$list_same)?>-->
+</ul>
+</div><!-- end nav -->
+<div class="navbottom"><!-- --></div><!-- end navbottom -->
+
+
+
+</div><!-- end sidebar -->
+
+<hr class="clear" />
+
+<div id="content">
+<div id="contenttop"><!-- --></div><!-- end contenttop -->
+
+<div class="main">
+  <p class="title_01">メンタルスキルコラム一覧　</p>
+<div class="wrap">
+
+
+<div class="text_wrapper">
+<p class="title"><span class="orange">感受性を向上させるコツとは？</span></p>
+
+<p>前回は感受性が豊かな方は、人情家でサービス業に向いていると解説させて頂きました。その意味で人間関係をしっかりと築くことができるようになるためには、感受性を向上させることが必須であると言えます。そこで今回は感受性を向上させる方法について解説していきます。</p>
+
+<p>&nbsp;</p>
+
+</div>
+<!-- end text_wrapper -->
+
+
+
+<div class="imgbox"><img alt="話をありのまま受け止める" src="../../colums/images/img_mental_007_03_kansei1.jpg" style="width:220px" /></div>
+
+<div class="text_wrapper">
+<p class="title"><strong>こだわりすぎない</strong></p>
+
+<p>感受性が豊かな方は、<span class="red">自分の価値観にこだわり過ぎない</span>という特徴があります。まずは相手の話をありのまま受け止め、「いい、悪いの価値判断」をすぐにはしないようにします。</p>
+
+<p>&nbsp;</p>
+
+<p>人はそれぞれ、別々の人生を歩んでいます。その人なりに一生懸命<br />
+生きてきた感覚があり、まずはその感覚がどんな感覚なのかを受け止めるところからはじめると良いでしょう。</p>
+
+<p>&nbsp;</p>
+
+<p>感受性が豊かな人は、自分の価値観にこだわり過ぎず、寛容な姿勢を持っています。「世の中には色々な価値観があるな」「この人はどんな過程を経てこんな気持ちになったのだろう」と寛容に想像する姿勢を持つと良いでしょう。</p>
+
+<p class="title">&nbsp;</p>
+
+<p class="title"><strong>人それぞれの感じ方を味わってみる</strong></p>
+
+<p>　こだわりを緩めたら、次の段階として、人の感じ方を味わってみるということを大事にしましょう。</p>
+
+<p>　例えば自分とは違う好みの映画を見た人の話を聞いてみたとしましょう。自分は洋画のアクション映画が好きなのだけど、相手は邦画のゆったりとした映画が好きだとします。</p>
+
+<p><br />
+もしこの時邦画の話題が出たとしたら、瞬間的には<span class="green">（僕は、私は7は洋画が好きだから興味ないなあ）</span>という感情が出てくるかもしれません。しかしそういった感情はひとまずそっと脇においておくのです。</p>
+
+<p>&nbsp;</p>
+<p class="title"><strong>感受性を高める質問のコツ</strong></p>
+
+<p>自分の感情を脇に置くことができたら、その方がどうして邦画が好きなのか？注意深く聞いてみましょう。</p>
+
+<p><span class="red">・どうしてその映画が好きなの？<br />
+・どんなところが面白かった？<br />
+・すきになったきっかけは？</span></p>
+
+<p>こういった感情に焦点をあてた質問をしてみましょう。すると相手はその映画に対する思いや、感動したストーリーなどをお話しれるかもしれません。</p>
+
+<p>&nbsp;</p>
+
+</div>
+<!-- end text_wrapper -->
+
+<div class="imgbox"><img alt="感情を味わう" src="../../colums/images/img_mental_007_03_kansei2.jpg" style="width:220px" /></div>
+
+<div class="text_wrapper">
+
+<p class="title"><strong>感情に焦点を当てると相手の感じ方がわかる</strong></p>
+
+<p>感情に焦点を充てた質問をすると、相手は楽しそうにお話してくれるかもしれません。このとき、まずはしっかり想像してみましょう。想像することが苦手な方は、<span class="red">「味わう」</span>という感覚でもいいかもしれません。</p>
+
+<p>人間はそれぞれ千差万別の人生と感情を持っています。そういった人生の成り立ちやプロセス、プロセスによって生じる感情を「味わう」のですね。異国の地に行ったときに、初めて食べる料理を味わうような感覚で、<span class="red">どんな感情なんだろう？どんな体験なんだろう？</span>と味わうのですね。</p>
+
+<p>相手の感情をしっかりと想像できて、味わいつくすことができると、感情の引き出しが一つ増えたことになります。人生には様々な楽しみ方があるんだなと分かると、単一の見方しかできなかったものが多様化し、様々な感情に関する感度が増して行くのです。</p>
+
+<p>最初に瞬間的にあがってくる、「いい、悪い」にこだわってすぐにフィルターをかけていると感受性は向上しません。特に感受性が薄いなあと感じる方は、<span class="red">いったん自分の価値観を脇においてみる</span>ということを試してみてくださいね♪</p>
+
+<p>&nbsp;</p>
+
+<p class="title"><span class="green">感受性が高すぎると問題も・・・</span></p>
+
+<p>ここまでは、「感受性が豊かな方の長所」「感受性を高める方法」について解説してきました。感受性は確かに人間関係を豊かにするうえで大事な能力です。</p>
+
+<p>しかし、何事も「過剰」はよくありません。感受性が豊かであるならOKなのですが、これが<span class="green"><span class="orange">過剰</span></span>になると<span class="green">意外な落とし穴</span>に落ちたりします。次回は感受性が過剰になっている方の問題点について述べていきたいと思います。</p>
+</div>
+<!-- end text_wrapper -->
+
+<div class="point_top"><!-- --></div>
+
+<div class="point">
+<ul>
+	<li>いったん自分の価値観を脇に置く</li>
+	<li>相手の感情を味わうという感覚を持ってみよう</li>
+</ul>
+</div>
+<!-- end point -->
+
+<div class="point_bottom"><!-- --></div>
+
+<p class="colums_next"><a href="http://www.direct-commu.com/colums/mental/mental_007_04_kansei4.html"><img alt="次のコラムへ" src="../../common/sharedimg/colums/btn_next_colums.gif" style="height:80px; width:276px" /></a></p>
+</div><!-- end wrap -->
+
+</div><!-- end main -->
+<div id="bg_contentbottom"><!-- --></div>
+
+
+</div><!-- end content -->
+
+
+</div><!-- end container -->
+
+<br class="brclear" />
+
+<br class="brclear" />
+
+<h3>悩み解消！職場・恋愛・結婚♪ コミュニケーション能力をつけて人間関係が楽しくなる♪</h3>
+<div id="footer">
+
+<div id="pagetop">
+<div id="btn_pagetop">
+<a href="#page_top"><!-- --></a>
+</div>
+</div><!-- end pagetop -->
+<div id="footercontainer">
+<div id="nav">
+<div class="section">
+<P>●ダイレクトコミュニケーション</p>
+<ul>
+<li><a href="http://www.direct-commu.com/company/">・会社概要</a></li>
+<li><a href="http://www.direct-commu.com/profile/">・講師紹介</a></li>
+<li><a href="http://www.direct-commu.com/company/contact.html">・お問い合わせ</a></li>
+<li><a href="http://www.direct-commu.com/company/privacy.html">・プライバシーポリシー</a></li>
+</ul>
+
+</div><!-- end section -->
+<div class="section">
+<P>●開催講座一覧</p>
+<ul>
+<li><a href="http://www.direct-commu.com/course/1_intro.html">・はじめての方へ</a></li>
+<li><a href="http://www.direct-commu.com/course/mental.html">・心理学コース</a></li>
+<li><a href="http://www.direct-commu.com/course/ningenkankei.html">・人間関係コース</a></li>
+<li><a href="http://www.direct-commu.com/course/business.html">・社会人基礎コース</a></li>
+</ul>
+
+</div><!-- end section -->
+<div class="section">
+<P>●ダイコミュ通信教材</p>
+<ul>
+<li><a href="http://www.direct-commu.com/text/">・通信講座について</a></li>
+<li><a href="http://www.direct-commu.com/text/mental.html">・心理学教材</a></li>
+<li><a href="http://www.direct-commu.com/text/ningenkankei.html">・人間関係教材</a></li>
+<li><a href="http://www.direct-commu.com/text/katsuzetsu.html">・滑舌・ボイストレーニング教材</a></li>
+</ul>
+</div><!-- end section -->
+
+<div class="section"> <a href="http://www.direct-commu.com/company/contact.html"><img src="../../common/sharedimg/footer/banner_footer2.gif" alt="お問い合わせ" /></a></div><!-- end section -->
+</div><!-- end nav -->
+<br class="brclear" />
+<div id="small"><div id="small"><span>Copyright(c) 2006-2013 Direct Communication co.,Ltd all right reserved<br />
+<a href="http://www.direct-commu.com/">コミュニケーション能力のことなら「ダイレクトコミュニケーション」</a></span></div><!-- end small --></div><!-- end small -->
+
+
+</div><!-- end footercontainer -->
+</div><!-- end footer -->
+
+
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39326739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

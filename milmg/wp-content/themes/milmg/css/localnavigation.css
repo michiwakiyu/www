@@ -1,0 +1,39 @@
+@charset "utf-8"; 
+
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : sidebar.css
+ *
+=========================================================*/
+
+
+
+/*-----------------------01-----------------------*/
+
+
+div#sidebar  ul.lnav {
+	padding: 10px;	
+	padding-top: 30px;
+	list-style-type: none;
+	text-align: left;
+
+}
+
+div#sidebar  ul.lnav li {
+	margin-bottom: 20px;
+}
+
+
+
+div#sidebar  ul.lnav li a {
+	text-decoration: underline;
+}
+
+div#sidebar  ul.lnav li a:hover {
+	text-decoration: none;
+}
+
+
+

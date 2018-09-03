@@ -1,0 +1,514 @@
+<?php
+$adcodes = '';
+$expire = 30 * 24 * 60 * 60; // 30日間
+
+// 広告コードを格納
+if ( isset($_GET['adcode']) ) {
+  // クッキーへ書き込み
+  setcookie('adcode', htmlspecialchars($_GET['adcode']), time() + $expire, '/');
+}
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="会話の力がつく！聞き上手、話し上手になる話し方教室で評判の講座です！大阪,東京で最大規模。横浜,新宿でも開催中！上手になるコツを解説します">
+<meta name="keywords" content="話し方教室,評判,大阪,東京,横浜,新宿">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="株式会社ダイレクトコミュニケーション" /><title>話し方教室で会話のコツを学ぶ！東京・大阪・新宿・横浜で開催</title>
+
+<link href="../common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/sidebar.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/footer.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/content.css?ver=2017082101" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="canonical" href="/course/" />
+
+
+<script type="text/javascript" src="../common/js/smoothscroll.js"></script>
+<script type="text/javascript" src="../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../common/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../common/js/fadein.js"></script>
+<script type="text/javascript" src="../common/js/onoff.js"></script>
+<script type="text/javascript" src="../common/js/onoff.js"></script>
+<script type="text/javascript" src="../common/js/ua.js"></script>
+
+
+</head>
+
+<body>
+<a name="page_top"></a>
+<div id="ua"></div>
+
+<?php require_once(dirname(__FILE__).'/../templates/header.html'); ?>
+
+<div id="topicpath">
+
+<div id="topicleft"><a href="/">ホーム</a> &gt;
+<h1>話し方教室で会話のコツを学ぶ！東京・大阪・新宿横浜で開催</h1>
+</div><!-- end topicleft -->
+<div id="topicright">
+  <h2>話し方教室,評判,大阪,東京,横浜,新宿</h2>
+</div><!-- end topicright -->
+</div><!-- end topicpath -->
+
+
+<div id="container">
+
+<?php require_once(dirname(__FILE__).'/../templates/course/sidebar.html'); ?>
+
+<div id="content">
+<div id="contenttop"><!-- --></div><!-- end contenttop -->
+
+<div class="main">
+<img src="../common/sharedimg/course/img_keyvisual_course.jpg" alt="コミュニケーション講座を説明するためのメインのビジュアル" width="680" height="216" />
+<p class="title"><img src="../common/sharedimg/course/img_01_intro.gif" alt="はじめての方へ" width="680" height="45" /></p>
+
+<div class="imgbox"><a href="1_intro.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></div>
+<p>コミュニケーション講座をご受講される方は必ずお読みください&gt;&gt;</p>
+
+  
+<p class="title"><img src="../common/sharedimg/course/img_title_02_course.gif" alt="コミュニケーション講座" width="680" height="45" /></p>
+
+<ul id="course">
+<li id="mental"><a href="/course/mental.html">心理学コース</a></li>
+<li id="ningenkankei"><a href="/course/ningenkankei.html">人間関係コース</a></li>
+<li id="business"><a href="/course/business.html" class="side">社会人基礎コース</a></li>
+</ul>
+
+<hr class="clear" />
+
+<ul id="course_sub">
+<li id="guide"><a href="/course/guide.html">ご受講ガイド</a></li>
+<li id="eriko"><a href="/course/student/">えりこの体験記</a></li>
+<li id="photo"><a href="/course/photo/" class="side">ダイコミュ写真館</a></li>
+</ul>
+
+<hr class="clear" />
+
+<p class="title"><img src="../common/sharedimg/course/img_title_03_schedule.gif" alt="" width="680" height="45" /></p>
+<!--<p style="width: 250px; font-size: 12px; line-height: 1.0; padding-left: 430px;"><img src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14" alt="ほぼ満" />　・・残り2～3席、満席間近です　<br />
+  <img src="../common/sharedimg/icon/icon_manseki.gif" width="43" height="14" alt="満席" />　　・・・満員となりました</p>-->
+<!--<table id="schedule">
+<tr>
+<td colspan="6" style="text-align: center; background: #fff;"><img src="../common/sharedimg/course/title_schedule_mental_ningenkankei.gif" alt="心理学コース/人間関係コース" /></td>
+<td colspan="2" style="text-align: center; background: #fff"><img src="../common/sharedimg/course/title_schedule_business.gif" alt="社会人基礎コース" /></td>
+</tr>
+
+<tr>
+<td class="title"><img src="../common/sharedimg/course/img_schedule_corner.gif" alt="内容と講座" /></td>
+<td class="class"><a href="class/class_shinjuku.php"><img src="../common/sharedimg/course/btn_class_shinjuku_01.gif" border="0" /></a></td>
+<td class="class"><a href="class/class_yokohama.php"><img src="../common/sharedimg/course/btn_class_yokohama.gif" /></a></td>
+<td class="class"><a href="class/class_ginza.php"><img src="../common/sharedimg/course/btn_class_ginza.gif"  /></a></td>
+<td class="class"><a href="class/class_saitama.php"><img src="../common/sharedimg/course/btn_class_saitama.gif" alt="埼玉" border="0" /></a></td>
+<td class="class"><a href="class/class_kansai.php"><img src="../common/sharedimg/course/btn_class_kansai.gif" alt="大阪" border="0" /></a></td>
+<td class="title"><img src="../common/sharedimg/course/img_schedule_corner.gif" alt="内容と講座" /></td>
+<td class="class"><a href="class/class_shinjuku_02.php"><img src="../common/sharedimg/course/btn_class_shinjuku_02.gif" alt="新宿第２" border="0" /></a></td>
+</tr>
+
+<tr>
+<td class="theme">心理　心の在り方</td>
+<td>&nbsp;8/10(土)<br />
+    8/31(土)<FONT size="-2"><BR>
+    </FONT></td>
+<td>6/1(土)<br />
+    6/23(日)<BR>
+   <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;10/6(日)<br />
+    10/19(土)</td>
+<td>8月予定</td>
+<td><span class="theme">あがり改善</span></td>
+<td>5/26(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_manseki.gif" width="43" height="14"><BR>
+    </td>
+</tr>
+<tr>
+<td class="theme">心理　心の在り方</td>
+<td>&nbsp;9月予定</td>
+<td>7/7(日)<br />
+    7/21(日)</td>
+<td>&nbsp;</td>
+<td>11/2(土)<br />
+    11/17(日)</td>
+<td>9月予定</td>
+<td><span class="theme">あがり改善</span></td>
+<td>6/1(土)<br />
+    6/9(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+</tr>
+<tr>
+<td class="theme">心理　長所の発見</td>
+<td>&nbsp;</td>
+<td>8/4(日)<br />
+    8/18(日)</td>
+<td><br />
+ </td>
+<td>&nbsp;</td>
+<td>10月予定</td>
+<td>あがり改善</td>
+<td>7/20(土)<br />
+    7/28(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+</tr>
+<tr>
+<td class="theme">人間　傾聴スキル</td>
+<td>&nbsp;</td>
+<td>9/1(日)<br />
+    9/22(日)</td>
+<td></td>
+<td>&nbsp;</td>
+<td>11月予定</td>
+<td>説得・説明UP</td>
+<td>8/11(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"><br />
+    8/24(土)</td>
+</tr>
+<tr>
+<td class="theme">人間　傾聴スキル</td>
+<td>&nbsp;</td>
+<td>10/13(日)<br />
+    10/26(土)</td>
+<td>5/18(土)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td><span class="blue"></span></td>
+<td>12月予定&nbsp;</td>
+<td>&nbsp;説得・説明UP</td>
+<td>9月予定</td>
+</tr>
+<tr>
+<td class="theme">人間　傾聴スキル</td>
+<td>&nbsp;</td>
+<td>&nbsp;11/3(日)<br />
+    11/16(土)</td>
+<td>6/15(土)<br />
+    6/29(土)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td></td>
+<td></td>
+<td>&nbsp;&nbsp;説得・説明UP</td>
+<td>10月予定</td>
+</tr>
+
+<tr>
+<td class="theme">人間　発話スキル</td>
+<td><span class="blue"></span></td>
+<td>&nbsp;</td>
+<td>7/13(土)<br />
+    7/27(土)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td><br />
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;&nbsp;説得・説明UP</td>
+<td>11月予定</td>
+</tr>
+<tr>
+<td class="theme">人間　発話スキル</td>
+<td></td>
+<td>&nbsp;</td>
+<td>8/3(土)<br />
+    8/25(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>5/26(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;&nbsp;ディスカッション</td>
+<td>12月予定</td>
+</tr>
+<tr>
+<td class="theme">人間　発話スキル</td>
+<td><br />
+</td>
+<td><span class="blue"></span></td>
+<td>&nbsp;9月予定<BR>
+    <IMG src="../common/sharedimg/icon/icon_manseki.gif" width="43" height="14"><BR>
+    <FONT size="-2">＊8月参加の方は参加できます</FONT></td>
+<td>6/9(日)<br />
+    6/30(日)
+<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;ファシリテーション</td>
+<td></td>
+</tr>
+<tr>
+<td class="theme">人間　<br />
+複数人の会話の仕方</td>
+<td>5/25(土)<br />
+<IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td><BR>
+    </td>
+<td>&nbsp;</td>
+<td>7/14(日)<br />
+    7/28(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;交渉力UP</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="theme">人間<br />
+カウンセリング<br />
+悩みの聴き方</td>
+<td>6/2(日)<br />
+    6/16(日)<br />
+<IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+    <td><IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"><br />
+    5/19(日)</td>
+<td>&nbsp;</td>
+<td>9/8(日)<br />
+    9/29(日))<FONT size="-2"><BR>
+    </FONT></td>
+<td>&nbsp;</td>
+<td>コーチング</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="theme">人間<br />
+  アサーティブ<br />
+  自己主張練習</td>
+<td>7/6(土)<br />
+    7/20(土)</td>
+<td></td>
+<td>&nbsp;</td>
+<td>8/11(日)<br />
+    8/25(日)</td>
+<td></td>
+<td><SPAN class="theme">キャリア</SPAN>講座コーチング&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>-->
+
+<!--
+<img src="../common/sharedimg/btn/btn_class.gif" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+    <area shape="rect" coords="30,50,136,101" href="class/class_shinjuku.php" />
+    <area shape="rect" coords="140,49,247,101" href="class/class_shinjuku2.php" />
+    <area shape="rect" coords="250,51,359,101" href="class/class_akihabara.php" />
+    <area shape="rect" coords="366,53,476,101" href="class/class_ginza.php" />
+    <area shape="rect" coords="26,114,138,161" href="class/class_yokohama.php" />
+    <area shape="rect" coords="31,179,138,233" href="class/class_kansai.php" />
+    <area shape="rect" coords="147,178,251,234" href="class/class_kansai2.php" />
+<area shape="rect" coords="145,114,250,163" href="class/class_saitama.php" />
+    <area shape="rect" coords="500,52,609,98" href="class/class_shinjuku_02.php" />
+    >--<!--<area shape="rect" coords="33,194,243,231" href="schedule.html" />--><!--
+    <area shape="rect" coords="308,184,563,233" href="/text/">
+    <area shape="rect" coords="31,303,241,340" href="schedule.html">
+</map>
+-->
+<img src="../common/sharedimg/btn/class_map.jpg" usemap="#ImageMap" alt="" />
+<map name="ImageMap">
+  <area shape="rect" coords="16,66,118,120" href="class/class_shinjuku.php" alt="新宿教室" />
+  <area shape="rect" coords="18,133,119,186" href="class/class_akihabara.php" alt="秋葉原教室" />
+  <area shape="rect" coords="16,227,119,281" href="class/class_shinjuku_02.php" alt="銀座第2教室" />
+  <area shape="rect" coords="123,66,225,118" href="class/class_shinjuku2.php" alt="新宿第2教室" />
+  <area shape="rect" coords="126,134,229,187" href="class/class_ginza.php" alt="銀座第1教室" />
+  <area shape="rect" coords="128,226,232,282" href="/young/" alt="未成年向け教室" />
+  <area shape="rect" coords="444,60,548,114" href="class/class_saitama.php" alt="埼玉教室" />
+  <area shape="rect" coords="558,60,660,113" href="class/class_chiba.php" alt="千葉教室" />
+  <area shape="rect" coords="563,241,667,296" href="class/class_yokohama.php" alt="横浜教室" />
+  <area shape="rect" coords="21,532,123,586" href="class/class_kansai2.php" alt="関西第2教室" />
+  <area shape="rect" coords="19,469,124,523" href="class/class_kansai.php" alt="関西第1教室" />
+  <area shape="rect" coords="347,431,676,604" href="/text/" alt="通信講座のご案内" />
+  <area shape="rect" coords="155,700,533,764" href="schedule.html" alt="全体スケジュールはこちら" />
+</map>
+<div align="center"><img src="../common/sharedimg/btn/class_ph.jpg" alt="おとなしい人も気軽にどうぞ＾＾" /></div>
+<div align="center" style="margin-top:10px;"><a href="schedule.html"><img src="../common/sharedimg/btn/class_schedule.gif" alt="全体スケジュールはコチラ" /></a></div>
+
+<p>&nbsp;</p>
+<p class="title"><img src="../common/sharedimg/course/img_title_04_price.gif" alt="受講料金" width="680" height="45" /></p>
+<div class="imgbox"><a href="#"></a><img src="../common/images/photo_course_001.jpg" width="208" height="165" /></div>
+<p>入会料、更新料などを一切排除し、極めてお手頃な料金を<br />
+達成致しました。初参加の方は1月7,800円から<br />
+受講できます。一括割引やキャンセル返金も可能です</p>
+<p>&nbsp;</p>
+<p><a href="4_price.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></p>
+<p>&nbsp;</p>
+
+<p class="title"><img src="../common/sharedimg/course/img_title_05_attention.gif" alt="注意事項" width="680" height="45" /></p>
+
+<div class="imgbox"><a href="5_confirmation.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></div>
+
+<p>ご受講の上での注意事項をご確認ください</p>
+<p>&nbsp;</p>
+
+<p class="title"><img src="../common/sharedimg/course/img_title_06_reservation.gif" alt="仮予約" width="680" height="45" /></p>
+
+<div class="imgbox"><br><br><br><br><a href="6_reservation.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></div>
+
+<p>参加される場所が決まったらこちらで仮予約！<br />
+東京、大阪、横浜、新宿で開催中です♪<br />
+話し方教室で会話力を改善したい方は<br />
+気軽にいらっしゃってください！</p>
+<p>&nbsp;</p>
+
+<p>
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊<BR>
+<FONT size="+2"><B><FONT color="#ff8040" size="+1"><BR>
+講座の受講を考えている方へ</FONT></B></FONT><BR>
+コミュニケーション能力は人生を通して必要です。家族、仕事、<BR>
+恋愛、友人関係・・・様々な場所で私たちは人と関わって<BR>
+生きて行かなくてはなりません。<BR>
+<BR>
+コミュニケーションはどこか不思議な面もあります。人と話すことは<BR>
+どこか面倒くさいと思う部分もありますが、でも人と話さないと<BR>
+寂しい気持ちが出てきてしまう。<BR>
+<BR>
+でも私たちはコミュニケーションから逃れることはできません。<BR>
+人は社会的動物と言われています。人はお互いと関わりあうことで<BR>
+生きてきました。それはこれからも変わらないでしょう。<BR>
+<BR>
+ダイレクトコミュニケーションはそんなコミュニケーションの<BR>
+問題について真摯に向き合い、生徒さんと一緒に考えていく場所です。<BR>
+<BR>
+<B><FONT color="#ff8040" size="+1"><BR>
+効果的について</FONT></B><BR>
+<BR>
+ダイコミュの講座には今まで2000人近くの方がいらっしゃいました。<BR>
+弊社での長年の研究や努力と、あとは生徒さんご自身の努力で、<BR>
+かなりの部分で安定した効果を得られるようになっていると考えています。<BR>
+<BR>
+講師川島の心理統計的な研究ですと、例えば傾聴のトレーニングを3ヶ月行うと、<BR>
+大体2割程度スキルが改善していました。6回の講座で2割程度の改善でしたので<BR>
+継続して努力をすればそれ以上に成果は出ると思います。<BR>
+<BR>
+<BR>
+もちろん、全ての生徒さんに効果があるとは残念ながら申し上げられません。<BR>
+講座に通っても、成果をあげられなかった生徒さんもいらっしゃいます。<BR>
+講師としてはせっかく講座代金を払って参加されるからには是非<BR>
+効果をあげて頂きたいと考えています。<BR>
+<BR>
+<BR>
+<BR>
+<B><FONT color="#ff8040" size="+1">成果を出すためのコツ<BR>
+</FONT></B><BR>
+コミュニケーション能力を向上させるには、なんと言っても<BR>
+「継続的な努力」が必要になります。話し方は1日2日で<BR>
+改善するものではありません。スポーツと同じで、毎日続けることが何より大事です。<BR>
+<BR>
+ダイコミュでは宿題を毎回出しますのでそのトレーニングについては<BR>
+是非毎日行ってみてください。またモチベーションを持続させるには、<BR>
+講座の中で仲間を作ることが大事です。<BR>
+<BR>
+<BR>
+一人ではできない練習もたくさんありますが、仲間と励ましあいながら是非<BR>
+取り組んでみてください。講師一同皆さんとお会いできることを楽しみにしています（＾＾）<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊<BR>
+<BR>
+<FONT color="#339900"><B>コミュニケーション講座の特徴や理論的背景</B></FONT><BR>
+<BR>
+<BR>
+・心理学講座の基本コンセプト<BR>
+<BR>
+心理的な面からのコミュニケーション能力の改善を目指す。<BR>
+まずは一般的なコミュニケーションに<BR>
+関わる心理学を学び、対人不安や認知の問題の改善を目指す。<BR>
+　<BR>
+<BR>
+学習内容<BR>
+・認知療法　行動療法<BR>
+・マインドフルネス認知療法<B><FONT color="#ff8040" size="+1"><BR>
+</FONT></B>・アイデンティティ<BR>
+・ジョハリの窓<BR>
+・フロー心理学<BR>
+・交流分析　性格分析<BR>
+<BR>
+<BR>
+<BR>
+・人間関係講座の基本コンセプト<BR>
+<BR>
+実践的なスキルの改善を目指す。<BR>
+会話がうまくなる具体的な話し方を学び、<BR>
+実際に会話をしながら練習をしていく。<BR>
+初対面の対話スキルや、質問の仕方、<BR>
+自分から話題を提供する練習などを繰り返し、<BR>
+会話の力をつける。<BR>
+<BR>
+<BR>
+学習内容<BR>
+・ソーシャルスキルトレーニング<BR>
+・傾聴練習　オウム返し　質問の仕方　話題の選び方<BR>
+　　　　　　　　自己開示法　肯定法　会話の継続法など<BR>
+・発話練習　話を膨らませる方法　感情表現　　<BR>
+　　　　　　　　笑顔の練習　質問すり変え法など<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+・社会人講座の基本コンセプト<BR>
+<BR>
+話し方教室でスキルUP　東京、大阪、新宿、横浜、埼玉、大宮<BR>
+あがりの改善、論理力、ディスカッション力、<BR>
+コーチンスキル、プレゼン力など社会人が必要なスキルを<BR>
+実践的に学ぶ。毎回人前に立つ練習も繰り返していく。<BR>
+<BR>
+<BR>
+学習内容<BR>
+・プレゼンテーション力の強化<BR>
+・話し方教室であがりの改善<BR>
+・説得の理論　社会心理学<BR>
+・ブレーンストーミングの仕方<BR>
+・ファシリテーション力で話し方の向上<BR>
+・論理的思考　問題解決型思考の学習<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>開催場所<BR>
+東京、大阪、新宿、横浜、埼玉、大宮<BR>
+～話し方教室でスキルUPを目指そう～<BR>
+～傾聴力、発話力を話し方教室で向上させる～<BR>
+東京、大阪、新宿、横浜では人間関係、心理学を学び<BR>
+話し方教室で改善していきます<BR>
+
+<BR>＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊<BR>
+<BR>
+<br />
+
+
+</p>
+<p>&nbsp;</p>
+
+
+</div><!-- end main -->
+<div id="bg_contentbottom"><!-- --></div>
+
+
+</div><!-- end content -->
+
+
+</div><!-- end container -->
+
+<br class="brclear" />
+
+<br class="brclear" />
+
+<h3>話し方で評判の講座です！大阪,東京で最大規模です。<br />
+横浜,新宿でも開催中！上手になるコツを解説します</h3>
+
+<?php require_once(dirname(__FILE__).'/../templates/footer.html'); ?>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39326739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body></div>

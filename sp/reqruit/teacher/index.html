@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<META name="description" content="aaaaaa">
+<META name="keywords" content="aaaaaaa">
+
+<title>講師応募フォーム</title>
+
+<link href="../../sp_common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../sp_common/css/layout.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="shortcut icon" href="http://www.direct-commu.com/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+<script type="text/javascript" src="../../sp_common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../sp_common/js/jquery.validate.js"></script>
+
+</head>
+
+<body>
+<a name="page_top"></a>
+
+<header class="after_clear">
+<div class="header_l"><div class="img_l"><img src="../../sp_common/images/illust_header_l.png" width="50" height="70"></div></div><!-- end header_l -->
+<div class="header_c"><a href="http://www.direct-commu.com"><h1><img src="../../sp_common/images/logo_sp_directcomm.png" width="233" height="41" alt="ダイレクトコミュニケーション" /></h1></a></div><!-- end header_c -->
+<div class="header_r"><div class="img_r"><img src="../../sp_common/images/illust_header_r.png" width="95" height="61"></div></div><!-- end header_r -->
+</header>
+
+
+
+<ul id="menu" class="after_clear">
+<li id="intro"><a href="http://www.direct-commu.com/course/1_intro.html" class="btn_topleft">はじめての方へ</a></li>
+<li id="training"><a href="http://www.direct-commu.com/training/" class="btn_right"><span>コミュニケーション</span>トレーニング</a></li>
+<li id="course"><a href="http://www.direct-commu.com/course/"><span>コミュニケーション</span>講座</a></li>
+<li id="colums"><a href="http://www.direct-commu.com/colums/" class="btn_right"><span>コミュニケーション</span>知恵袋</a></li>
+<li id="text"><a href="http://www.direct-commu.com/text/"><span>ダイコミュ</span>通信講座</a></li>
+<li id="teacher"><a href="http://www.direct-commu.com/profile/" class="btn_right"><span>ダイコミュ</span>講師紹介</a></li>
+<li id="event"><a href="http://www.direct-commu.com/event/" class="btn_bottom">イベント</a></li>
+<li id="contact"><a href="http://www.direct-commu.com/company/contact.html" class="btn_right btn_bottom">お問い合わせ</a></li>
+</ul>
+
+<br class="brclear" />
+<div id="topicpath"><a href="http://www.direct-commu.com/">トップ</a> > <a href="http://www.direct-commu.com/reqruit/">講師・アシスタントの募集</a> > <a href="http://www.direct-commu.com/reqruit/teacher.html">講師の募集について</a> > <span>応募フォーム</span></div>
+
+<section>
+<h2 class="arrow01">
+  <div>講師　応募フォーム</div></h2>
+<div class="text">
+<div id="form" style="margin: 0;">
+  <form action="./send.php" method="post" id="form01">
+<p>
+※お名前<br />
+<label id="namae_err"></label>
+<input type="text" name="namae" class="form_text" />
+</p>
+<p>※ふりがな<br />
+<label id="furigana_err"></label>
+<input type="text" name="furigana" class="form_text" /></p>
+
+<p>※電話番号<br />
+<label id="phone_err"></label>
+<input type="text" name="phone" class="form_text" /></p>
+
+
+<p>※住所<br />
+<label id="address_err"></label>
+<input type="text" name="address" class="form_text" /></p>
+
+<p>※年齢<br />
+<label id="age_err"></label>
+<input type="text" name="age" class="form_text" style="width: 70px" />　才</p>
+
+<p>※性別<br />
+<select name="sex">
+<option value="女">女</option>
+<option value="男">男</option>
+</select></p>
+
+
+<p>
+学歴/資格など<br />
+<label id="gakureki_err"></label>
+<textarea name="gakureki" /></textarea>
+</p>
+
+<p>
+職歴<br />
+<label id="shokureki_err"></label>
+<textarea name="shokureki" /></textarea>
+</p>
+
+<p>
+心理学で興味がある分野<br />
+<label id="interest_err"></label>
+<textarea name="interest" /></textarea>
+</p>
+
+<p>※ご希望する職種
+<br />
+<select name="work">
+<option value="講師">講師</option>
+<option value="カウンセリング">カウンセリング</option>
+<option value="教材制作アシスタント">教材制作アシスタント</option>
+<option value="事務所アルバイト">事務所アルバイト</option>
+</select></p>
+
+<p>
+講師応募の動機、ご質問など<br />
+<label id="question_err"></label>
+<textarea name="question" /></textarea>
+</p>
+
+<p style="text-align: center">
+<input type="hidden" name="cr" value="1" />
+<input type="image" src="../../sp_common/images/btn_send.gif" />
+</p>
+
+</form>
+<p>&nbsp;</p>
+
+</div><!-- end form --></div>
+</section>
+
+<section>
+<h2 class="arrow01">
+  <div>Yahooメール,hotmailをご利用の方へ</div></h2>
+<div class="text">
+<p>弊社のメールが迷惑フォルダーに送信されやすくなっております。<br />
+  確実に返信メールを受け取りたい方は、予め下記アドレスをアドレス帖にご登録頂くことを<br />
+  お勧めします。</p>
+<p><img src="../../sp_common/images/img_address.gif" alt="" width="230" height="28" /></p>
+</div>
+</section>
+
+<section>
+<h2 class="arrow01">
+  <div>迷惑フォルダに送信された場合</div></h2>
+<div class="text">
+<p>迷惑フォルダに送信された場合は、各メールボックスにある「迷惑メールではない」<br />
+  ボタンを押して頂くと次回以降はスムーズにメールを受信することができます。</p>
+</div>
+</section>
+
+<section>
+<h2 class="arrow01">
+  <div>送信後2日経っても返信メールが無い場合</div></h2>
+<div class="text">
+<p>弊社にメールが到達していない可能性があります。その際にはお手数ですがメールアドレスを変え、<br />
+  再度メールをお送り下さい。</p>
+<p>○お電話でのお問い合わせについて <br />
+  　平日11～15時　 045-633-1897</p>
+</div>
+</section>
+
+
+
+<div class="to_page_top"><a href="">このページのTOPへ</a></div>
+<footer id="footer">
+<p><a onclick='document.cookie="mode=pc;path=/;"; window.location.reload();' href="#">PC版</a>　/　スマートフォン版</p>
+<div id="copyright">&copy; Direct Communication, Inc.<br>
+	All Rights Reserved.</div>
+</footer>
+
+<script type="text/javascript" src="../../sp_common/js/image.js"></script>
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39326739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39326739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

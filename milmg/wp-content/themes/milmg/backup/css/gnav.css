@@ -1,0 +1,215 @@
+@charset "utf-8"; 
+
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : gnav.css
+ *
+=========================================================*/
+
+
+div#globalnav ul{
+}
+
+div#globalnav a{
+	text-indent: -9999px;
+}
+
+div#globalnav ul li{
+	display: inline;
+}
+
+
+/*---------グローバルナビゲーションボタン設定---------------------------*/
+
+/*-----------------------HOME---------------------*/
+
+
+div#globalnav ul li a#home{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_home.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#home:hover{
+	background: url(.http://www.direct-comm.com/sharedimg/btn_home_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#home.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_home_over.gif) no-repeat top left;
+}
+
+/*-----------------------seminar---------------------*/
+
+div#globalnav ul li a#seminar{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_seminar.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#seminar:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_seminar_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#seminar.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_seminar_over.gif) no-repeat top left;
+}
+
+
+
+/*-----------------------text---------------------*/
+
+div#globalnav ul li a#text{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_text.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#text:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_text_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#text.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_text_over.gif) no-repeat top left;
+}
+
+
+/*-----------------------test---------------------*/
+
+div#globalnav ul li a#test{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_test.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#test:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_test_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#test.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_test_over.gif) no-repeat top left;
+}
+
+
+/*-----------------------colum---------------------*/
+
+div#globalnav ul li a#colums{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_colum.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#colums:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_colum_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#colums.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_colum_over.gif) no-repeat top left;
+}
+
+
+/*-----------------------skillup---------------------*/
+
+div#globalnav ul li a#skillup{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_skillup.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#skillup:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_skillup_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#skillup.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_skillup_over.gif) no-repeat top left;
+}
+
+
+/*-----------------------event---------------------*/
+
+div#globalnav ul li a#event{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_event.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#event:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_event_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#event.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_event_over.gif) no-repeat top left;
+}
+
+/*-----------------------waigaya---------------------*/
+
+div#globalnav ul li a#waigaya{
+	display: block;
+	width: 115px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_waigaya.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#waigaya:hover{
+	background: url(http://www.direct-comm.com/sharedimg/btn_waigaya_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#waigaya.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_waigaya_over.gif) no-repeat top left;
+}
+
+
+/*-----------------------prof---------------------*/
+
+div#globalnav ul li a#prof{
+	display: block;
+	width: 116px;
+	height: 60px;
+	margin-left: 0px;
+	background: url(http://www.direct-comm.com/sharedimg/btn_prof.gif) no-repeat top left;
+	float: left;
+}
+
+div#globalnav ul li a#prof:hover{
+	background: url(http://www.direct-comm.com//sharedimg/btn_prof_over.gif) no-repeat top left;
+
+}
+
+div#globalnav ul li a#prof.selected{
+	background: url(http://www.direct-comm.com/sharedimg/btn_prof_over.gif) no-repeat top left;
+}
+
+	
+	

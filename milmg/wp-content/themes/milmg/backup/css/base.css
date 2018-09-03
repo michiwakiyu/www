@@ -1,0 +1,287 @@
+@charset "utf-8"; 
+
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : base.css
+ *
+=========================================================*/
+
+
+/* Initialization */
+/* -------------------------------------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+	line-height: 1.4;
+}
+
+body {
+	background: #ffffff url(http://www.direct-comm.com/sharedimg/bg.gif) repeat-x;
+	font-family: 'Lucida Grande', 'Verdana', 'ＭＳ Ｐゴシック', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3',  san-serif;
+	text-align: center;
+}
+
+body.home {
+	background: #ffffff url(http://www.direct-comm.com/sharedimg/bg_toppage.gif) repeat-x;
+}
+
+img {
+	border: none;
+	vertical-align: bottom;
+}
+
+li {
+	list-style-position: outside;
+}
+
+p {
+	line-height: 160%;
+	/*margin-bottom: 10px;*/
+}
+	
+
+a:link {
+	/*color: #039;*/
+	color: #005BDF;
+	text-decoration: none;
+}
+
+a:visited {
+	/*color: #006;*/
+	color: #005BDF;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	color: #F60;
+	text-decoration: underline;
+	color: #005BDF;
+}
+	
+
+hr.clear {
+	display: none;
+	clear: both;
+}
+
+br.brclear {
+	clear: both;
+}
+
+
+
+/* font color */
+/* -------------------------------------------------- */
+
+span.red {
+	color: #ff8040;
+	font-weight: bold;
+}
+span.blue {
+	color: #1E90FF;
+}
+span.green {
+	color: #009999;
+}
+span.greenbold {
+	color: #009999; FONT-WEIGHT: bold
+}
+SPAN.lightgreenbold {
+	COLOR: #4dc14d; FONT-WEIGHT: bold
+}
+
+span.darkred {
+	color: #ff0000;
+}
+span.orange {
+	color: #ff8040;
+}
+span.pink {
+	color: #ff80c0;
+}
+
+span.darkblue {
+	color: #0000ff;
+}
+SPAN.darkbluebold {
+	COLOR: #0000ff; FONT-WEIGHT: bold
+}
+span.lightgreen {
+	color: #009900;
+}
+SPAN.lightbluebold {
+	COLOR: #00cccc; FONT-WEIGHT: bold
+}
+
+span.normal {
+	font-weight: normal;
+}				
+
+
+div#contents strong {
+	color: #1E90FF;
+	font-weight: bold;
+}
+
+div#contents em {
+	color: #009999;
+	font-style: normal;
+	font-weight: bold;
+}		
+
+span.label {
+	display: block;
+	margin: 10px 0;
+	padding: 5px 10px;
+	font-size: 18px;
+	background: #eee;
+}
+
+div.kakomi {
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+
+
+/* Layout */
+/* -------------------------------------------------- */
+
+div#container {
+	width: 921px;
+	margin: 0px auto 0 auto;
+	background: url(http://www.direct-comm.com/sharedimg/base.gif) repeat-y;
+	text-align: left;
+}
+
+body.home div#container,
+body.normal div#container {
+	padding-bottom: 20px;
+}
+
+div#header {
+	width: 921px;
+	padding-top: 20px;
+	height: 75px;
+	text-align: left;
+}
+
+div#globalnav {
+	clear: both;
+	width: 921px;
+	height: 60px;
+	margin-left: 0px;
+}
+
+div#topicpath {
+	width: 921px;
+	margin-bottom: 2px;
+	padding: 0px 0;
+	color: #333;
+	/*font-size: 80%;*/
+	font-size: 10px;
+	line-height: 100%;
+}
+
+
+div#topicpath div#topicleft {
+	width: 450px;
+	float: left;
+}
+
+div#topicpath div#topicright {
+	width: 471px;
+	float: right;
+	text-align: right;
+}
+
+div#topicpath:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}	
+
+
+
+div#contentswrap {
+	clear: both;
+	width: 921px;
+	margin-top: 20px;
+}
+/*
+body.home div#contentswrap {
+	background: url(../images/top_base.gif) repeat-y;
+}
+*/
+body.leftmenu div#contentswrap {
+}
+
+body.normal div#contentswrap {
+	padding-top: 15px;
+	background: url(http://www.direct-comm.com/images/topicpath_shadow.gif) no-repeat 0 0;
+}
+
+div#contentswrap:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+div#footersec {
+	clear: both;
+	width: 660px;
+	padding-bottom: 50px;
+	text-align: right;
+	font-size: 12px;
+}
+
+div#footercontainer {
+	width: 100%;
+	padding-top: 100px;
+	/*margin: 0 auto;*/
+	background: url(http://www.direct-comm.com/sharedimg/bg_footer.gif) repeat-x;
+}
+
+
+div#footerlink {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+div#footerlink a{
+	font-size: 12px;
+}
+div#footerlink p {
+	font-size: 10px;
+	color: #666;
+	width: 921px;
+	margin: auto;
+}
+div#footerlink h3 {
+	font-size: 12px;
+	color: #666;
+	
+}
+	
+
+
+div#copyright {
+	padding: 5px 0;
+	height: 30px;
+	/*background-color: #0061DD;*/
+	background-color: #00AFF0;
+	color: #ffffff;
+	font-size: 12px;
+
+}
+	
+	

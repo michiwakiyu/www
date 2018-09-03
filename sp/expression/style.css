@@ -1,0 +1,53 @@
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+	
+body {
+	text-aligh: center;
+	background: #ffffff url(bg.gif) repeat-x;
+}
+
+div.contents {
+	height:700px;
+}
+	
+
+div.footer {
+}
+
+div.footer div.copyright {
+	font-size: 10px;
+	color: #666666;
+	text-align: center;
+	letter-spacing: 0em;
+}
+	
+		
+	
+
+
+
+
+
+
+
+
+div.article div.swfbox {
+	float: left;
+	width: 120px;
+	padding-bottom : 10px;
+	margin : 5px;
+}
+
+div.article div.swfbox:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}

@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*=========================================================
+ *
+ *	css file for "www.direct-commu.com"
+ *	file name : footer.css
+ *
+=========================================================*/
+
+
+/* footer */
+/* -------------------------------------------------- */
+
+div#footer {
+	width: 100%;
+}
+
+div#footer div#pagetop {
+	background: url(../sharedimg/footer/bg_footer_top.gif);
+	background-position: top center; 
+	/*height: 180px;*/
+	height: 345px;
+	text-align: right;
+	padding-top: 0px;
+}
+
+div#pagetop div#btn_pagetop {
+	display: block;
+	width: 84px;
+	height: 100px;
+	margin: auto;
+	padding-left: 924px;
+	padding-top: 201px;
+}
+
+div#pagetop div#btn_pagetop a {
+	display: block;
+	width: 85px;
+	height: 84px;
+	background: url(../sharedimg/footer/btn_pagetop.gif) no-repeat 0px 0px;
+}
+
+div#pagetop div#btn_pagetop a:hover {
+	background: url(../sharedimg/footer/btn_pagetop.gif) no-repeat -85px 0px;
+}
+
+div#footercontainer {
+	background: #d8ebda;
+	padding-top: 0px;
+}
+
+div#footercontainer div#nav {
+	width: 1024px;
+	margin: auto;
+	/*padding-bottom: 100px;*/
+	background: url(../sharedimg/footer/bg_footer_nav.gif) repeat-y;
+	margin-bottom: 20px;
+}
+
+div#footercontainer div.section {
+	width: 236px;
+	color: #807F6E;	
+	padding: 0 0 15px 20px;
+	float: left;
+}
+
+div#footercontainer div.section a {
+	color: #807F6E;	
+}
+
+
+div#footercontainer div#nav:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+div#footercontainer div.section p {
+	font-size: 12px;
+	/*border-left: 4px solid #807F6E;*/
+	padding-left: 10px;
+}
+
+div#footercontainer div.section ul {
+	font-size: 11px;
+	padding-left: 0px;
+	padding-top: 20px;
+}
+
+div#footercontainer div.section ul li {
+	margin-bottom: 8px;
+}
+
+div#footercontainer div#small {
+	width: 100%;
+	background:#82b06a;
+	padding: 5px 0;
+}
+
+div#footercontainer div#small span {
+	display: block;
+	width: 1024px;
+	margin: auto;
+	color: #fff;
+	text-align: left;
+	font-size: 9px;
+}
+
+
+

@@ -1,0 +1,158 @@
+@charset "utf-8"; 
+
+/*=========================================================
+ *
+ *	css file for "direct-commu.com"
+ *	file name : terms.css
+ *
+=========================================================*/
+
+/*----------------------------------------*/
+
+
+img { border: none; vertical-align: middle; }
+li,ol { list-style: none; }
+.colL { float: left; }
+.colR { float: right; }
+.mA0 { margin: 0 0 0 0 !important; }
+strong {
+	font-weight: bold;
+	color: #1E90FF;
+}
+
+/*-------------clearfix-------------------*/
+
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
+div#container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #ccc;
+	background: url(../sharedimg/bg_contentswrap2.gif) repeat-x top left;
+}	
+
+
+div#container div#maincontents {
+	/*width: 848px;*/
+	width: 950px;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	line-height: 1.4;
+	letter-spacing: 0.1em;
+	padding-top: 15px;
+}
+
+div#container div#maincontents .termsBox { text-align: left; }
+div#container div#maincontents .termsBox p { padding: 10px; }
+
+
+/*--------- plus ------------*/
+div#container div#maincontents .termsBox h2 {
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	/*background: #95bdf1;*/
+	/*background: #00B9E0;*/
+	background: #1298D1;
+	padding: 6px 15px;
+	margin-top: 15px;
+}
+
+
+	
+
+
+
+
+div#container div#maincontents .termsBox .colL {
+	width:456px;
+}
+div#container div#maincontents .termsBox .colR {
+	width:456px;
+}
+
+
+/* SEO対策上h1 h2 h3を追加しました
+------------------------------------------------*/
+
+/*h1,h2,h3 {
+	display: inline;
+	font-size: 100%;
+	font-weight: normal;
+	color: #666;
+	text-indent: 0;
+}*/
+
+
+h1 {
+	font-weight: bold;
+	color: #333;
+}
+/*h3 {
+	display: block;
+	padding: 10px 0;
+}*/
+
+p#terms {
+	width: 921px;
+	height: 111px;
+	text-indent: -9999px;
+	background: url(../images/title_terms.jpg) no-repeat top left;
+}
+
+p#training {
+	width: 921px;
+	height: 111px;
+	text-indent: -9999px;
+	background: url(../images/title_training.jpg) no-repeat top left;
+}
+
+p#job {
+	width: 921px;
+	height: 111px;
+	text-indent: -9999px;
+	background: url(../images/title_job.jpg) no-repeat top left;
+}
+
+div#container ul {
+	margin-left: 10px;
+	margin-top: 20px;
+	list-style-type: none;
+}
+
+div#container ul li {
+	padding-left: 15px;
+	background: url(../sharedimg/icon_list.gif) no-repeat 0 50%;
+}
+
+div#container div#maincontents p.info {
+	display: block;
+	font-size: 120%;
+	font-weight: bold;
+	margin: 5px 0;
+	margin-left: 10px;
+	padding-left: 25px;
+	background: url(../sharedimg/icon_directcomm.gif) no-repeat 0 50%;
+}		
+

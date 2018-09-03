@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*=========================================================
+ *
+ *	css file for "www.direct-commu.com"
+ *	file name : mailmag.css
+ *
+=========================================================*/
+
+
+
+/* -------------------------------------------------- */
+/* content */
+/* -------------------------------------------------- */
+
+div#content p.title {
+	width: 660px;
+	padding: 10px 20px;
+	margin: 20px 0;
+	font-size: 18px;
+	line-height: 1.4;
+	background: url(../sharedimg/content/bg_title.gif) no-repeat bottom left;
+	color: #0F7A3E;
+}
+
+div#content p.title span {
+	font-size: 10px;
+}
+
+
+
+div.article {
+	background: #fff;
+}

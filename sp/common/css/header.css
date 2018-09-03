@@ -1,0 +1,231 @@
+@charset "utf-8";
+/*=========================================================
+ *
+ *	css file for "www.direct-commu.com"
+ *	file name : header.css
+ *
+=========================================================*/
+
+
+/* header */
+/* -------------------------------------------------- */
+
+div#header {
+	width: 100%;
+	height: 170px;
+	/*background: url(../sharedimg/bg_header.gif) repeat-x;*/
+
+	background-image: url(../sharedimg/header/bg_header_illust.gif); 
+	background-position: center top; 
+	background-repeat: repeat-x;
+	/*background-attachment: fixed;*/	
+	padding-top: 15px;
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+	text-align: center;
+	
+}
+
+div#headercontainer {
+	width: 1024px;
+	margin: auto;
+}
+
+div#headerright {
+	font-size: 10px;
+	text-align: left;
+	padding-left: 100px;
+	padding-bottom: 2px;
+	height: 20px;
+	color: #807F6E;
+}
+
+
+div#logowrap {
+	float: left;
+	height: 40px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+}
+
+div#headercontainer ul {
+	float: right;
+	padding-top: 5px;
+}
+
+div#headercontainer ul li {
+	width: 90px;
+	float: left;
+	font-size: 12px;
+	padding-left: 22px;
+	background: url(../sharedimg/header/icon_headerlink.gif) no-repeat 0 50%;
+	text-align: left;
+}
+
+div#headercontainer ul li a {
+	color: #807F6E;
+}
+div#headercontainer ul li a:hover {
+	text-decoration: underline;
+}
+
+
+div#headercontainer:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+/* gnav */
+/* -------------------------------------------------- */
+
+
+ul#gnav {
+	width: 1024px;
+	margin: auto;
+}
+
+ul#gnav li {
+	width: 128px;
+	height: 106px;
+	float: left;
+}
+
+ul#gnav li a {
+	display: block;
+	width: 128px;
+	height: 106px;
+	text-indent: -9999px;
+	background: url(../sharedimg/gnav/btn_gnav.gif) no-repeat top left;
+}
+
+
+
+
+
+
+ul#gnav li#home a { background-position: 0 0; }
+ul#gnav li#home a:hover { background-position: 0 -106px; }
+ul#gnav li#home a.selected { background-position: 0 -106px; }
+
+
+ul#gnav li#course a { background-position: -128px 0; }
+ul#gnav li#course a:hover { background-position: -128px -106px; }
+ul#gnav li#course a.selected { background-position: -128px -106px; }
+
+ul#gnav li#text a { background-position: -256px 0; }
+ul#gnav li#text a:hover { background-position: -256px -106px; }
+ul#gnav li#text a.selected { background-position: -256px -106px; }
+
+ul#gnav li#ability a { background-position: -384px 0; }
+ul#gnav li#ability a:hover { background-position: -384px -106px; }
+ul#gnav li#ability a.selected { background-position: -384px -106px; }
+
+ul#gnav li#colums a { background-position: -512px 0; }
+ul#gnav li#colums a:hover { background-position: -512px -106px; }
+ul#gnav li#colums a.selected { background-position: -512px -106px; }
+
+ul#gnav li#skillup a { background-position: -640px 0; }
+ul#gnav li#skillup a:hover { background-position: -640px -106px; }
+ul#gnav li#skillup a.selected { background-position: -640px -106px; }
+
+ul#gnav li#event a { background-position: -768px 0; }
+ul#gnav li#event a:hover { background-position: -768px -106px; }
+ul#gnav li#event a.selected { background-position: -768px -106px; }
+
+ul#gnav li#teacher a { background-position: -896px 0; }
+ul#gnav li#teacher a:hover { background-position: -896px -106px; }
+ul#gnav li#teacher a.selected { background-position: -896px -106px; }
+
+
+/*
+ul#gnav li#home a { background: url(../sharedimg/gnav/btn_01_home_sprite.gif) no-repeat top left; }
+ul#gnav li#home a:hover { background: url(../sharedimg/gnav/btn_01_home_hover.gif) no-repeat top left; }
+ul#gnav li#home a.selected { background: url(../sharedimg/gnav/btn_01_home_hover.gif) no-repeat top left; }
+
+
+ul#gnav li#course a { background: url(../sharedimg/gnav/btn_02_course.gif) no-repeat top left; }
+ul#gnav li#course a:hover { background: url(../sharedimg/gnav/btn_02_course_hover.gif) no-repeat top left; }
+ul#gnav li#course a.selected { background: url(../sharedimg/gnav/btn_02_course_hover.gif) no-repeat top left; }
+
+ul#gnav li#text a { background: url(../sharedimg/gnav/btn_03_text.gif) no-repeat top left; }
+ul#gnav li#text a:hover { background: url(../sharedimg/gnav/btn_03_text_hover.gif) no-repeat top left; }
+ul#gnav li#text a.selected { background: url(../sharedimg/gnav/btn_03_text_hover.gif) no-repeat top left; }
+
+ul#gnav li#ability a { background: url(../sharedimg/gnav/btn_04_ability.gif) no-repeat top left; }
+ul#gnav li#ability a:hover { background: url(../sharedimg/gnav/btn_04_ability_hover.gif) no-repeat top left; }
+ul#gnav li#ability a.selected { background: url(../sharedimg/gnav/btn_04_ability_hover.gif) no-repeat top left; }
+
+ul#gnav li#colums a { background: url(../sharedimg/gnav/btn_05_colums.gif) no-repeat top left; }
+ul#gnav li#colums a:hover { background: url(../sharedimg/gnav/btn_05_colums_hover.gif) no-repeat top left; }
+ul#gnav li#colums a.selected { background: url(../sharedimg/gnav/btn_05_colums_hover.gif) no-repeat top left; }
+
+ul#gnav li#skillup a { background: url(../sharedimg/gnav/btn_06_skillup.gif) no-repeat top left; }
+ul#gnav li#skillup a:hover { background: url(../sharedimg/gnav/btn_06_skillup_hover.gif) no-repeat top left; }
+ul#gnav li#skillup a.selected { background: url(../sharedimg/gnav/btn_06_skillup_hover.gif) no-repeat top left; }
+
+ul#gnav li#event a { background: url(../sharedimg/gnav/btn_07_event.gif) no-repeat top left; }
+ul#gnav li#event a:hover { background: url(../sharedimg/gnav/btn_07_event_hover.gif) no-repeat top left; }
+ul#gnav li#event a.selected { background: url(../sharedimg/gnav/btn_07_event_hover.gif) no-repeat top left; }
+
+ul#gnav li#teacher a { background: url(../sharedimg/gnav/btn_08_teacher.gif) no-repeat top left; }
+ul#gnav li#teacher a:hover { background: url(../sharedimg/gnav/btn_08_teacher_hover.gif) no-repeat top left; }
+ul#gnav li#teacher a.selected { background: url(../sharedimg/gnav/btn_08_teacher_hover.gif) no-repeat top left; }
+
+*/
+
+ul#gnav:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+
+
+
+/* topicpath */
+/* -------------------------------------------------- */
+
+div#topicpath {
+	width: 1024px;
+	padding: 15px 0;
+	margin: auto;
+	/*color: #807F6E;*/
+	color: #C9C2BC;
+	font-size: 10px;
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+	padding-top: 30px;
+	
+}
+
+div#topicleft {
+	width: 512px;
+	float: left;
+	text-align: left;
+}
+
+div#topicright {
+	width: 512px;
+	float: right;
+	text-align: right;
+}
+div#topicpath:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+div#topicpath a {
+	font-size: 10px;
+}
+
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="コミュニケーション能力で悩んでいませんか？改善スキルやトレーニング向上なら当サイトにお任せ♪講座のご案内もあります。明日から使えるスキルをたくさんお伝えします">
+<meta name="keywords" content="コミュニケーション能力,スキル,トレーニング,向上,講座">
+
+<title>ゼロからコミュニケーション能力・スキルを高める！トレーニング向上講座</title>
+<link href="sp_common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="sp_common/css/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="sp_common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+
+
+<link rel="shortcut icon" href="http://www.direct-commu.com/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+<script type="text/javascript" src="sp_common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="sp_common/js/jquery.validate.js"></script>
+
+</head>
+
+<body>
+<a name="page_top"></a>
+
+<header class="after_clear">
+<div class="header_l"><div class="img_l"><img src="sp_common/images/illust_header_l.png" width="50" height="70"></div></div><!-- end header_l -->
+<div class="header_c"><a href="http://www.direct-commu.com"><h1><img src="sp_common/images/logo_sp_directcomm.png" width="233" height="41" alt="ダイレクトコミュニケーション" /></h1></a></div><!-- end header_c -->
+<div class="header_r"><div class="img_r"><img src="sp_common/images/illust_header_r.png" width="95" height="61"></div></div><!-- end header_r -->
+</header>
+
+<div id="keyvisual">
+<img src="sp_common/images/img_keyvisual_top.jpg" alt="ダイレクトコミュニケーションバナー" />
+</div><!-- end keyvisual -->
+
+
+<ul id="menu" class="after_clear">
+<li id="course"><a href="http://www.direct-commu.com/course/"><span>コミュニケーション</span>講座</a></li>
+<li id="colums"><a href="http://www.direct-commu.com/colums/" class="btn_right"><span>コミュニケーション</span>知恵袋</a></li>
+<li id="text"><a href="http://www.direct-commu.com/text/"><span>ダイコミュ</span>通信講座</a></li>
+<li id="teacher"><a href="http://www.direct-commu.com/profile/" class="btn_right"><span>ダイコミュ</span>講師紹介</a></li>
+<li id="event"><a href="http://www.direct-commu.com/event/" class="btn_bottom">イベント</a></li>
+<li id="contact"><a href="http://www.direct-commu.com/company/contact.html" class="btn_right btn_bottom">お問い合わせ</a></li>
+</ul>
+
+<br class="brclear" />
+
+<section>
+<h2 class="arrow01"><div>はじめに</div></h2>
+<div class="text">
+    <p>はじめまして！<br />
+    コミュニケーション講座・講師の川島です。    </p>
+    
+  <p>私は社会人向けのコミュニケーション能力や精神保健について大学院で研究し、現在は関東・関西でコミュニケーション講座を開いております。  </p>
+  <div class="imgcenter" style="padding: 0 30px"><img src="sp_common/images/illust/michi/img_illust_04.gif" alt="ダイレクトコミュニケーションについてのイラスト" class="width_100"  /></span></div>
+<p><span class="orange">・会話が不安でしょうがない・・・<br />
+      ・何を質問していいかわからない・・・<br />
+    ・すぐに沈黙になってしまう・・・</span>  </p>
+  <p>そんな悩みを抱えているのはあなた一人ではありません。仲間と一緒に切磋琢磨しながら１歩１歩、改善していきましょう。  </p>
+  <p>皆さんが、正しい知識と実践力を身につけ、ほんとうの意味での「コミュニケーション能力」を獲得し、<br />
+  自信を持って暖かい人間関係を築かれることを願っています。</p>
+  <p style="text-align: right">ー講師川島より　心をこめて</p>
+
+</div><!-- end text -->
+</section>
+
+<section>
+<h2 class="arrow01"><div>はじめてのコミュニケーション講座</div></h2>
+
+<div class="text"><p>毎月１００人の生徒さんが受講中です！<br />
+  はじめての方にも参加しやすく、<br />
+  暖かい雰囲気で開催中です。</p>
+<a href="http://www.direct-commu.com/course/1_intro.html" class="btnlink01 frame01">
+<div class="imgcenter"><img src="sp_common/images/img_title_intro.gif" alt="はじめての方へ" width="251" /></div>
+    <div class="col_2">
+    
+        <div class="col_l"><P>コミュニケーション講座って何？と思ったら是非読んでみてくださいね！</P>
+        <p><img src="sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106"/></p>
+        </div><!-- end col_l -->
+        
+        <div class="col_r"><img src="sp_common/images/illust/michi/img_illust_01.gif" alt="はじめての方へのイラスト" class="width_100" />
+        </div><!-- end col_r -->
+    </div>
+</a>
+
+<a href="http://www.direct-commu.com/course/" class="btnlink01 frame01">
+<div class="imgcenter"><img src="sp_common/images/img_title_coursetop.gif" alt="講座全体ページへ" width="251" /></div>
+    <div class="col_2">
+    
+        <div class="col_l"><P>受講料、写真館、仮予約の仕方など<br />
+          詳しい内容がわかります</P>
+        <p><img src="sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106"/></p>
+        </div><!-- end col_l -->
+        
+        <div class="col_r"><img src="sp_common/images/illust/michi/img_illust_02.gif" alt="はじめての方へのイラスト" class="width_100" />
+        </div><!-- end col_r -->
+    </div>
+</a>
+</div><!-- end text -->
+</section>
+
+
+<section>
+<h2 class="arrow01"><div>コミュニケーションの知恵袋</div></h2>
+<div class="text">
+<div class="imgcenter"><img src="sp_common/images/illust/michi/img_illust_03.gif" alt="コミュニケーションの知恵袋のイラスト" class="width_100" /></div>
+
+<ul class="list01">
+<li class="top"><a href="http://www.direct-commu.com/colums/intro/intro_01.html">入門知恵袋１<br />
+コミュニケーション能力って？</a></li>
+<li><a href="http://www.direct-commu.com/colums/intro/intro_02.html">入門知恵袋２<br />
+３つのポイントを抑えれば充分</a></li>
+<li><a href="http://www.direct-commu.com/colums/intro/intro_03.html">入門知恵袋３<br />
+コミュ力に高い・低いはない！</a></li>
+<li class="bottom"><a href="http://www.direct-commu.com/colums/intro/intro_04.html">入門知恵袋４<br />
+効果的なトレーニング方法</a></li>
+</ul>
+</div><!-- end text -->
+</section>
+
+<section>
+<h2 class="arrow01"><div>ダイコミュイベント</div></h2>
+<div class="text">
+<div class="imgcenter"><img src="sp_common/images/img_title_event.jpg" alt="ダイコミュイベント" class="width_100" /></div>
+<p>ダイコミュでは生徒さん同士の交流を深めるために イベントを2ヶ月に1度程度開催しています。　次回は６月２２日、ハイキングを開催しちゃいます!</p>
+<p><a href="http://www.direct-commu.com/event/"><img src="sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
+</div><!-- end text -->
+</section>
+
+
+<div class="to_page_top"><a href="">このページのTOPへ</a></div>
+<footer id="footer">
+<p><a onclick='document.cookie="mode=pc;path=/;"; window.location.reload();' href="#">PC版</a>　/　スマートフォン版</p>
+<div id="copyright">&copy; Direct Communication, Inc.<br>
+	All Rights Reserved.</div>
+</footer>
+
+<script type="text/javascript" src="sp_common/js/image.js"></script>
+<!-- google analytics -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10783873-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

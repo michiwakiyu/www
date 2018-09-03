@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*=========================================================
+ *
+ *	css file for "www.direct-commu.com"
+ *	file name : base.css
+ *
+=========================================================*/
+
+
+/* Initialization */
+/* -------------------------------------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+	line-height: 1.4;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+
+html{ -webkit-text-size-adjust:none; color:#333333; font-size:14px; background-color:#fff; }
+
+body {
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;	
+	text-align: center;
+	/*background: url(../images/bg_body.gif) repeat;*/
+	background: #fef8ed;
+}
+
+img { vertical-align: bottom; }
+ul,li { list-style-position: outside; list-style-type: none }
+p { line-height: 160%; }
+
+
+/* display: none設定 */
+.non_active { display:none !important; }
+	
+	
+/* clear 設定　*/
+hr.clear {
+	display: none;
+	clear: both;
+}
+
+br.brclear {
+	clear: both;
+}
+
+/* h1 h2 h3 設定　*/
+/*h1,h2,h3 {
+	display: inline;
+	font-weight: normal;
+	font-size: 100%;
+}*/
+
+/* float */
+.float_left { float:left; }
+.float_right { float:right; }
+.float_clear { clear:both; }
+.after_clear:after { display:block; clear:both; height:0; visibility:hidden; content:"."; }
+
+/* align */
+.align_left { text-align:left; }
+.align_center { text-align:center; }
+.align_right { text-align:right; }
+
+/* font */
+.font8 { font-size:8px !important;}
+.font10 { font-size:10px !important;}
+.font11 { font-size:11px !important;}
+.font12 { font-size:12px !important;}
+
+
+/* for imagewidth */
+.width_100 { width: 100%; }
+.width_80 { width: 80%; }
+
+
+strong {
+	color: #1E90FF;
+	font-weight: bold;
+}
+
+em {
+	color: #009999;
+	font-style: normal;
+	font-weight: bold;
+}
+
+/* font color */
+/* -------------------------------------------------- */
+
+span.red {
+	color: #ff8040;
+	font-weight: bold;
+}
+span.blue {
+	color: #1E90FF;
+}
+span.green {
+	color: #009999;
+}
+span.greenbold {
+	color: #009999; FONT-WEIGHT: bold
+}
+SPAN.lightgreenbold {
+	COLOR: #4dc14d; FONT-WEIGHT: bold
+}
+
+span.darkred {
+	color: #ff0000;
+}
+span.orange {
+	color: #ff8040;
+}
+span.pink {
+	color: #ff80c0;
+}
+
+span.darkblue {
+	color: #0000ff;
+}
+SPAN.darkbluebold {
+	COLOR: #0000ff; FONT-WEIGHT: bold
+}
+span.lightgreen {
+	color: #009900;
+}
+SPAN.lightbluebold {
+	COLOR: #00cccc; FONT-WEIGHT: bold
+}
+span.normal {
+	font-weight: normal;
+}				
+span.marker {
+	background: #FDFF96;
+	font-weight: bold;
+}
+span.bold {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
+
+/* 共通部分 */
+
+/* リンク基本設定 */
+/*a:link {
+	color: #005BDF;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #005BDF;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	color: #F60;
+	text-decoration: underline;
+	color: #005BDF;
+}*/

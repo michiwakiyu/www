@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="コミュニケーション能力がぐんぐんUPする！お手軽な料金で受けられる講座,セミナーです。すぐに役立つレッスン！教室や研修情報もここにアリ！大阪,東京">
+<meta name="keywords" content="コミュニケーション能力,講座,セミナー,教室,研修">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>コミュニケーション能力がぐんぐんUPする講座,楽しいセミナー型教室</title>
+
+<link href="../common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/header.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/sidebar.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/footer.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../common/css/content.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript" src="../common/js/smoothscroll.js"></script>
+<script type="text/javascript" src="../common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../common/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../common/js/fadein.js"></script>
+<script type="text/javascript" src="../common/js/ua.js"></script>
+
+
+</head>
+<body>
+<a name="page_top"></a>
+<div id="ua"></div>    <div id="header">
+<div id="headercontainer">
+
+<div id="headerright"><!-- --></div>
+<div id="logowrap"><a href="http://www.direct-comm.com/"><img src="../common/sharedimg/logo_directcomm.gif" alt="ダイレクトコミュニケーション能力,話し方教室" /></a></div>
+<!--<ul>
+<li><a href="http://www.direct-comm.com/reqruit/teacher.html">講師・心理士 募集</a></li>
+<li><a href="http://www.direct-comm.com/reqruit/assistant.html">アシスタント 募集</a></li>
+<li><a href="http://www.direct-comm.com/company/contact.html">お問い合わせ</a></li></ul>-->
+<ul>
+<li><a href="http://www.direct-comm.com/reqruit/">求人情報</a></li>
+<li><a href="http://www.direct-comm.com/company/contact.html">お問い合わせ</a></li>
+</ul>
+</div><!-- end headercontainer -->
+
+<ul id="gnav">
+<li id="home"><a href="http://www.direct-comm.com">ホーム</a></li>
+<li id="course"><a href="http://www.direct-comm.com/course/" class="selected">コミュニケーション講座</a></li>
+<li id="text"><a href="http://www.direct-comm.com/text/">ダイコミュ通信講座</a></li>
+<li id="ability"><a href="http://xn--zckzah9129bsdgbusdye.jp/">コミュニケーション能力診断</a></li>
+<li id="colums"><a href="http://www.direct-comm.com/colums/">コミュニケーションコラム集</a></li>
+<li id="skillup"><a href="http://www.direct-comm.com/skillup/">スキルアップ道場</a></li>
+<li id="event"><a href="http://www.direct-comm.com/event/">ダイコミュイベント</a></li>
+<li id="teacher"><a href="http://www.direct-comm.com/profile/">講師紹介</a></li>
+</ul><!-- end gnav -->
+</div><!-- end header -->
+
+<div id="topicpath">
+
+<div id="topicleft"><a href="http://www.direct-comm.com/">ホーム</a> &gt;
+<h1>コミュニケーション能力がぐんぐんUPする講座,楽しいセミナー型教室</h1>
+</div><!-- end topicleft -->
+<div id="topicright">
+  <h2>ゼロからコミュニケーション能力・スキルを高める！トレーニング向上法</h2>
+</div><!-- end topicright -->
+</div><!-- end topicpath -->
+
+
+<div id="container">
+
+<div id="sidebar">
+<a href="http://www.direct-comm.com/course/"><img src="../common/sharedimg/course/img_title_course.gif" width="290" height="44" /></a>
+<div class="nav">
+<ul style="margin-top: 0">
+<li><a href="http://www.direct-comm.com/course/1_intro.html">はじめての方へ</a></li>
+</ul>
+<p><img src="../common/sharedimg/course/title_sidebar_01_course.gif" alt="基本コース" /></p>
+<ul>
+<li><a href="http://www.direct-comm.com/course/mental.html">心理学コース</a></li>
+<li><a href="http://www.direct-comm.com/course/ningenkankei.html">人間関係コース</a></li>
+<li><a href="http://www.direct-comm.com/course/business.html">社会人基礎コース</a></li>
+</ul>
+<p><img src="../common/sharedimg/course/title_sidebar_02_tanki.gif" alt="短期集中コース" /></p>
+<ul>
+<li><a href="http://www.direct-comm.com/course/01_kanto/index.html">関東短期集中講座　<img src="http://www.direct-comm.com/common/images/course/icon_date_tanki.gif" width="70" /></a></li>
+</ul>
+
+<p><img src="../common/sharedimg/course/title_sidebar_03_counseling.gif" alt="カウンセリング" /></p>
+
+<ul>
+<li><a href="http://www.direct-comm.com/course/counseling/group.html">グループカウンセリング
+</a>
+<li><a href="http://www.direct-comm.com/course/counseling/psychology.html">心理カウンセリング</a></li>
+<li><a href="http://www.direct-comm.com/course/counseling/shinri.html">心理検査</a></li>
+</ul>
+
+<p><img src="../common/sharedimg/course/title_sidebar_04_price.gif" alt="受講料金" /></p>
+
+<ul>
+<li><a href="http://www.direct-comm.com/course/4_price.html">基本コース 受講料金
+</a>
+<li><a href="http://www.direct-comm.com/course/4_2_price.html">カウンセリング 受講料金</a></li>
+</ul>
+
+</div><!-- end nav -->
+
+
+<div class="navbottom"><!-- --></div><!-- end navbottom -->
+<img src="../common/sharedimg/course/img_title_course_about.gif" width="290" height="44" />
+<div class="nav">
+<p><img src="../common/sharedimg/course/title_sidebar_04_schedule.gif" alt="スケジュール・会場" /></p>
+<ul>
+<li><a href="http://www.direct-comm.com/course/class/class_shinjuku.php">新宿第１教室
+</a></li>
+<li><a href="http://www.direct-comm.com/course/class/class_shinjuku_02.php">新宿第２教室
+</a></li>
+<li><a href="http://www.direct-comm.com/course/class/class_ginza.php">銀座教室</a></li>
+<li><a href="http://www.direct-comm.com/course/class/class_yokohama.php">横浜教室</a></li>
+<li><a href="http://www.direct-comm.com/course/class/class_saitama.php">埼玉教室</a></li>
+<li><a href="http://www.direct-comm.com/course/class/class_kansai.php">関西教室</a></li>
+</ul>
+<p><img src="../common/sharedimg/course/title_sidebar_05_reservation.gif" alt="仮予約" /></p>
+<ul>
+<li><a href="http://www.direct-comm.com/course/6_reservation.html">仮予約する</a></li>
+</ul>
+
+<p><img src="../common/sharedimg/course/title_sidebar_06_other.gif" alt="その他・注意事項" /></p>
+<ul>
+<!--<li><a href="http://www.direct-comm.com/course/5_confirmation.html">注意事項</a></li>-->
+<li><a href="http://www.direct-comm.com/course/keizoku.html">継続について</a></li>
+<li><a href="http://www.direct-comm.com/course/furikae.html">振替について</a></li>
+<li><a href="http://www.direct-comm.com/course/seitosannokoe.html">生徒さんの声</a></li>
+<li><a href="http://www.direct-comm.com/course/yokuarushitumon.html">よくある質問</a></li>
+<li><a href="http://www.direct-comm.com/course/mailmag.html">メールマガジン</a></li>
+</ul>
+
+
+</div><!-- end nav -->
+<div class="navbottom"><!-- --></div><!-- end navbottom -->
+</div><!-- end sidebar -->
+
+<hr class="clear" />
+
+<div id="content">
+<div id="contenttop"><!-- --></div><!-- end contenttop -->
+
+<div class="main">
+<img src="../common/sharedimg/course/img_keyvisual_course.jpg" alt="コミュニケーション講座を説明するためのメインのビジュアル" width="680" height="216" />
+<p class="title"><img src="../common/sharedimg/course/img_01_intro.gif" alt="はじめての方へ" width="680" height="45" /></p>
+
+<div class="imgbox"><a href="1_intro.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></div>
+<p>コミュニケーション講座をご受講される方は必ずお読みください&gt;&gt;</p>
+
+  
+<p class="title"><img src="../common/sharedimg/course/img_title_02_course.gif" alt="コミュニケーション講座" width="680" height="45" /></p>
+
+<ul id="course">
+<li id="mental"><a href="http://www.direct-comm.com/course/mental.html">心理学コース</a></li>
+<li id="ningenkankei"><a href="http://www.direct-comm.com/course/ningenkankei.html">人間関係コース</a></li>
+<li id="business"><a href="http://www.direct-comm.com/course/business.html" class="side">社会人基礎コース</a></li>
+</ul>
+
+<hr class="clear" />
+
+<ul id="course_sub">
+<li id="guide"><a href="http://www.direct-comm.com/course/guide.html">ご受講ガイド</a></li>
+<li id="eriko"><a href="http://www.direct-comm.com/course/student/">えりこの体験記</a></li>
+<li id="photo"><a href="http://www.direct-comm.com/course/photo/" class="side">ダイコミュ写真館</a></li>
+</ul>
+
+<hr class="clear" />
+
+<p class="title"><img src="../common/sharedimg/course/img_title_03_schedule.gif" alt="" width="680" height="45" /></p>
+<p style="width: 250px; font-size: 12px; line-height: 1.0; padding-left: 430px;"><img src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14" alt="ほぼ満" />　・・残り2～3席、満席間近です　<br />
+  <img src="../common/sharedimg/icon/icon_manseki.gif" width="43" height="14" alt="満席" />　　・・・満員となりました</p>
+<table id="schedule">
+<tr>
+<td colspan="6" style="text-align: center; background: #fff;"><img src="../common/sharedimg/course/title_schedule_mental_ningenkankei.gif" alt="心理学コース/人間関係コース" /></td>
+<td colspan="2" style="text-align: center; background: #fff"><img src="../common/sharedimg/course/title_schedule_business.gif" alt="社会人基礎コース" /></td>
+</tr>
+
+<tr>
+<td class="title"><img src="../common/sharedimg/course/img_schedule_corner.gif" alt="内容と講座" /></td>
+<td class="class"><a href="class/class_shinjuku.php"><img src="../common/sharedimg/course/btn_class_shinjuku_01.gif" border="0" /></a></td>
+<td class="class"><a href="class/class_yokohama.php"><img src="../common/sharedimg/course/btn_class_yokohama.gif" /></a></td>
+<td class="class"><a href="class/class_ginza.php"><img src="../common/sharedimg/course/btn_class_ginza.gif"  /></a></td>
+<td class="class"><a href="class/class_saitama.php"><img src="../common/sharedimg/course/btn_class_saitama.gif" alt="埼玉" border="0" /></a></td>
+<td class="class"><a href="class/class_kansai.php"><img src="../common/sharedimg/course/btn_class_kansai.gif" alt="大阪" border="0" /></a></td>
+<td class="title"><img src="../common/sharedimg/course/img_schedule_corner.gif" alt="内容と講座" /></td>
+<td class="class"><a href="class/class_shinjuku_02.php"><img src="../common/sharedimg/course/btn_class_shinjuku_02.gif" alt="新宿第２" border="0" /></a></td>
+</tr>
+
+<tr>
+<td class="theme">心理　心の在り方</td>
+<td>8/10(土)<br />
+    8/31(土)<FONT size="-2"><BR>
+    </FONT></td>
+<td>6/1(土)<br />
+    6/23(日)<BR>
+   <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;10/6(日)<br />
+    10/19(土)</td>
+<td>8月予定</td>
+<td><span class="theme">あがり改善</span></td>
+<td>5/26(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_manseki.gif" width="43" height="14"><BR>
+    </td>
+</tr>
+<tr>
+<td class="theme">心理　心の在り方</td>
+<td>&nbsp;9月予定</td>
+<td>7/7(日)<br />
+    7/21(日)<BR>
+   <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+    <td>&nbsp;</td>
+<td>11/2(土)<br />
+    11/17(日)</td>
+<td>9月予定</td>
+<td><span class="theme">あがり改善</span></td>
+<td>6/1(土)<br />
+    6/9(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+</tr>
+<tr>
+<td class="theme">心理　長所の発見</td>
+<td>&nbsp;</td>
+<td>8/4(日)<br />
+    8/18(日)</td>
+<td><br />
+ </td>
+<td>&nbsp;</td>
+<td>10月予定</td>
+<td>あがり改善</td>
+<td>7/20(土)<br />
+    7/28(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+</tr>
+<tr>
+<td class="theme">人間　傾聴スキル</td>
+<td>&nbsp;</td>
+<td>9/1(日)<br />
+    9/22(日)</td>
+<td></td>
+<td>&nbsp;</td>
+<td>11月予定</td>
+<td>説得・説明UP</td>
+<td>8/11(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"><br />
+    8/24(土)</td>
+</tr>
+<tr>
+<td class="theme">人間　傾聴スキル</td>
+<td>&nbsp;</td>
+<td>10/13(日)<br />
+    10/26(土)</td>
+<td></td>
+<td><span class="blue"></span></td>
+<td>12月予定&nbsp;</td>
+<td>&nbsp;説得・説明UP</td>
+<td>9月予定</td>
+</tr>
+<tr>
+<td class="theme">人間　傾聴スキル</td>
+<td>&nbsp;</td>
+<td>&nbsp;11/3(日)<br />
+    11/16(土)</td>
+<td>6/15(土)<br />
+    6/29(土)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td></td>
+<td></td>
+<td>&nbsp;&nbsp;説得・説明UP</td>
+<td>10月予定</td>
+</tr>
+
+<tr>
+<td class="theme">人間　発話スキル</td>
+<td><span class="blue"></span></td>
+<td>&nbsp;</td>
+<td>7/13(土)<br />
+    7/27(土)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td><br />
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;&nbsp;説得・説明UP</td>
+<td>11月予定</td>
+</tr>
+<tr>
+<td class="theme">人間　発話スキル</td>
+<td></td>
+<td>&nbsp;</td>
+<td>8/3(土)<br />
+    8/25(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td></td>
+<td>&nbsp;</td>
+<td>&nbsp;&nbsp;ディスカッション</td>
+<td>12月予定</td>
+</tr>
+<tr>
+<td class="theme">人間　発話スキル</td>
+<td><br />
+</td>
+<td><span class="blue"></span></td>
+<td>&nbsp;9月予定</td>
+<td>6/9(日)<br />
+    6/30(日)
+<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;ファシリテーション</td>
+<td></td>
+</tr>
+<tr>
+<td class="theme">人間　<br />
+複数人の会話の仕方</td>
+<td><br />
+    <BR>
+</td>
+<td><BR>
+    </td>
+<td>&nbsp;</td>
+<td>7/14(日)<br />
+    7/28(日)<BR>
+    <IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+<td>&nbsp;</td>
+<td>&nbsp;交渉力UP</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="theme">人間<br />
+    好意を持たれる<br />
+    相談方法</td>
+<td>6/2(日)<br />
+    6/16(日)<br />
+<IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"></td>
+    <td></td>
+<td>&nbsp;</td>
+<td>9/8(日)<br />
+    9/29(日))<FONT size="-2"><BR>
+    </FONT></td>
+<td>&nbsp;</td>
+<td>コーチング</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td class="theme">人間<br />
+  アサーティブ<br />
+  自己主張練習</td>
+<td>7/6(土)<br />
+    7/20(土)<BR>
+<IMG src="../common/sharedimg/icon/icon_hoboman.gif" width="43" height="14"><BR>
+    </td>
+<td></td>
+<td>&nbsp;</td>
+<td>8/11(日)<br />
+    8/25(日)</td>
+<td></td>
+<td><SPAN class="theme">キャリア</SPAN>講座コーチング&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+<p class="title"><img src="../common/sharedimg/course/img_title_04_price.gif" alt="受講料金" width="680" height="45" /></p>
+<div class="imgbox"><a href="#"></a><img src="../common/images/photo_course_001.jpg" width="208" height="165" /></div>
+<p>入会料、更新料などを一切排除し、極めてお手頃な
+  料金を<br />
+  達成致しました。</p>
+<p>&nbsp;</p>
+<p><a href="4_price.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></p>
+
+<p class="title"><img src="../common/sharedimg/course/img_title_05_attention.gif" alt="注意事項" width="680" height="45" /></p>
+
+<div class="imgbox"><a href="5_confirmation.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></div>
+
+<p>ご受講の上での注意事項をご確認ください&gt;&gt;</p>
+
+<p class="title"><img src="../common/sharedimg/course/img_title_06_reservation.gif" alt="仮予約" width="680" height="45" /></p>
+<div class="imgbox"><a href="6_reservation.html"><img src="../common/sharedimg/course/btn_detail.gif" alt="詳しくはこちら" border="0" /></a></div>
+
+
+<p>仮予約フォームから送信、返信メールをお受け取り→<br />
+  受講料をお振込み頂き、準備完了！</p>
+<p>&nbsp;</p>
+
+
+</div><!-- end main -->
+<div id="bg_contentbottom"><!-- --></div>
+
+
+</div><!-- end content -->
+
+
+</div><!-- end container -->
+
+<br class="brclear" />
+
+<br class="brclear" />
+
+<h3>コミュニケーション能力,講座,セミナー,教室,研修 <br />
+様々なトレーニング研修で、 コミュニケーション能力低下を阻止しましょ♪</h3>
+<div id="footer">
+
+<div id="pagetop">
+<div id="btn_pagetop">
+<a href="#page_top"><!-- --></a>
+</div>
+</div><!-- end pagetop -->
+<div id="footercontainer">
+<div id="nav">
+<div class="section">
+<P>●ダイレクトコミュニケーション</p>
+<ul>
+<li><a href="http://www.direct-comm.com/company/">・会社概要</a></li>
+<li><a href="http://www.direct-comm.com/profile/">・講師紹介</a></li>
+<li><a href="http://www.direct-comm.com/company/contact.html">・お問い合わせ</a></li>
+<li><a href="http://www.direct-comm.com/company/privacy.html">・プライバシーポリシー</a></li>
+</ul>
+
+</div><!-- end section -->
+<div class="section">
+<P>●開催講座一覧</p>
+<ul>
+<li><a href="http://www.direct-comm.com/course/1_intro.html">・はじめての方へ</a></li>
+<li><a href="http://www.direct-comm.com/course/mental.html">・心理学コース</a></li>
+<li><a href="http://www.direct-comm.com/course/ningenkankei.html">・人間関係コース</a></li>
+<li><a href="http://www.direct-comm.com/course/business.html">・社会人基礎コース</a></li>
+</ul>
+
+</div><!-- end section -->
+<div class="section">
+<P>●ダイコミュ通信教材</p>
+<ul>
+<li><a href="http://www.direct-comm.com/text/">・通信講座について</a></li>
+<li><a href="http://www.direct-comm.com/text/mental.html">・心理学教材</a></li>
+<li><a href="http://www.direct-comm.com/text/ningenkankei.html">・人間関係教材</a></li>
+<li><a href="http://www.direct-comm.com/text/katsuzetsu.html">・滑舌・ボイストレーニング教材</a></li>
+</ul>
+</div><!-- end section -->
+
+<div class="section">
+<!--<img src="http://www.direct-comm.com/common/sharedimg/footer/banner_footer.gif" />-->
+<a href="http://www.direct-comm.com/course/mailmag.html"><img src="http://www.direct-comm.com/common/sharedimg/footer/banner_footer.gif" width="236" /></a>
+
+</div><!-- end section -->
+</div><!-- end nav -->
+<br class="brclear" />
+<div id="small"><div id="small"><span>Copyright(c) 2006-2013 Direct Communication co.,Ltd all right reserved</span></div><!-- end small --></div><!-- end small -->
+
+
+</div><!-- end footercontainer -->
+</div><!-- end footer -->
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10783873-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>

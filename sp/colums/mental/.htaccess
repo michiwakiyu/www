@@ -1,0 +1,11 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteBase /colums/mental/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^([0-9]+)\.html$ article.php?id=$1 [L]
+#RewriteRule ^([0-9]+)$ article.php?c_id=$1 [L]
+#RewriteRule ^([^<>"]+)\.html$ article.php?c_id=$1 [L]
+RewriteRule ^([^<>"]+)\.html$ article.php?c_id=$1 [L]
+
+

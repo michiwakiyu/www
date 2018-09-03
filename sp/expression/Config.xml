@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<Config>
+	<QuestionNum>20</QuestionNum> <!-- 問題数 -->
+	<PlayerNameLength>20</PlayerNameLength> <!-- プレイヤー名文字数 -->
+	<ChoiceNum>
+		<CorrectChoiceNum>1</CorrectChoiceNum> <!-- 正解選択肢数 -->
+		<IncorrectChoiceNum>2</IncorrectChoiceNum> <!-- 間違い選択肢数 -->
+		<SameGroupChoiceNum>3</SameGroupChoiceNum> <!-- 引っ掛け選択肢数 -->
+	</ChoiceNum>
+	<RankingNum>100</RankingNum> <!-- 表示ランキング数 -->
+	<TimeLimit>20</TimeLimit> <!-- 制限時間（秒数） -->
+	<AnswerDataName>AnswerData</AnswerDataName> <!-- 解答データのPOSTデータ項目名 -->
+</Config>

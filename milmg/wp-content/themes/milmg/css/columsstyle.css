@@ -1,0 +1,93 @@
+@charset "utf-8"; 
+
+
+div.article {
+	margin-bottom: 30px;
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+div.article p {
+	text-align: left;
+	font-size: 13px;
+	color: #666;
+	line-height: 1.8;
+	margin-bottom: 30px;
+}
+
+div.article p.maintitle {
+	width: 600px;
+	height: 35px;
+	background: url(../sharedimg/content/bg_maintitle.gif) no-repeat top left;
+	padding-top: 10px;
+	padding-left: 60px;
+	color: #0169E7;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+div.article p.maintitle span {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+
+div.article p.maintitle_date {
+	width: 638px;
+	border: 1px solid #ccc;
+	background: url(../sharedimg/content/bg_maintitle_date.gif) no-repeat bottom left;
+	padding: 10px;
+	font-size: 18px;
+}
+div.article p.maintitle_date span {
+	display: block;
+	font-size: 10px;
+}
+
+
+
+div.article p.title {
+	width: 660px;
+	padding: 10px 20px;
+	margin: 20px 0;
+	font-size: 18px;
+	line-height: 1.4;
+	background: url(../sharedimg/content/bg_title.gif) no-repeat bottom left;
+	color: #0F7A3E;
+}
+
+div.article p.title span {
+	font-size: 10px;
+}
+
+
+div.article p.title_02,
+{
+	font-weight: bold;
+	margin: 20px 0;	
+	color:#2e88ff;
+	font-size: 18px;
+}
+
+span.label {
+	display: block;
+	padding: 5px 10px 2px 20px;
+	font-size: 18px;
+	font-weight: bold;
+	background: url(http://www.direct-comm.com/common/sharedimg/icon/icon_yajirushi.gif) no-repeat 0 50%;
+	/*border-left: 5px solid #F96;
+	padding-left: 10px;*/
+	
+}
+
+
+
+	
+
+
+	
+
+
+
+

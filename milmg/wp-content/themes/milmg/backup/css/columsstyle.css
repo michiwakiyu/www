@@ -1,0 +1,431 @@
+@charset "utf-8"; 
+
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : waigaya.css
+ *
+=========================================================*/
+
+img { border: none; vertical-align: middle; }
+
+strong { color:#1E90FF; }	
+em { color: #009999; font-weight: bold; font-style: normal}
+
+li { list-style: none; }
+
+h1,h2,h3 {
+	display: inline;
+	font-size: 100%;
+	font-weight: normal;
+	color: #666;
+	text-indent: 0;
+}
+
+h1 {
+	font-weight: bold;
+	color: #333;
+}
+h3 {
+	display: block;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+h3.title {
+	/*color:#00A651;*/
+	color: #333;
+	width: 600px;
+	font-size: 110%;
+	background: url(http://www.direct-comm.com/sharedimg/title_h3.gif) no-repeat top left;
+	padding: 5px 9px 5px 20px;
+}
+
+p.topicpath a,
+p.topicpath {
+	font-size: 80%;
+	color: #666;
+}
+	
+
+
+
+object {
+	margin: 10px 0;
+}
+		
+
+/* MaincontentsArea */
+/* -------------------------------------------------- */
+
+
+div#contentswrap {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border: 1px solid #ccc;
+	background: url(http://www.direct-comm.com/sharedimg/bg_contentswrap2.gif) repeat-x top left;
+}
+
+
+/* contentsArea */
+/* -------------------------------------------------- */
+
+div#contents {
+	width: 587px;
+	padding: 10px 20px 20px 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+}
+
+span.topicpath {
+	font-size: 70%;
+	color: #999;
+}
+
+span.topicpath a {
+	color: #999;
+}	
+
+
+/* contentsArea p */
+/* -------------------------------------------------- */
+
+
+
+div#contents p {
+	font-size: 80%;
+	color: #333;
+	margin-bottom: 40px;
+	line-height: 2.6;
+}
+
+div#contents p.title {
+	color:#00A651;
+	font-weight: normal;
+	font-size: 100%;
+	/*background: url(../sharedimg/icon_skillup_002.gif) no-repeat 0 50%;*/
+	background: url(http://www.direct-comm.com/sharedimg/icon_star.gif) no-repeat 0 50%;
+	padding: 5px 0 5px 20px;
+	margin-bottom: 10px;
+	/*border-bottom: 1px dashed #B0CCEC;*/
+}
+
+
+
+/* contentsArea ul */
+/* -------------------------------------------------- */
+
+
+
+div#contents ul {
+	font-size: 80%;
+	color: #666;
+}
+
+
+div#contents ul.square li {
+	background: url(http://www.direct-comm.com/sharedimg/icon_skillup_003.gif) no-repeat 0 0px;
+	padding-left: 20px;
+	margin-bottom: 3px;
+}
+
+div#contents ul.inline li {
+	float: left;
+	margin-right: 5px;
+	padding-left: 20px;
+	background: url(http://www.direct-comm.com/sharedimg/icon_skillup_003.gif) no-repeat 0 0px;
+
+}
+
+
+div#contents ul.num {
+	margin: 20px 0;
+	padding: 10px 10px 10px 20px;
+}
+div#contents ul.num li {
+	list-style-type: decimal;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+div#contents ul.normal {
+	margin: 10px;
+}
+
+div#contents ul.normal li {
+	margin-bottom: 5px;
+	padding-left: 15px;
+	background: url(http://www.direct-comm.com/sharedimg/icon_list.gif) no-repeat 0 50%;
+}	
+
+.frame {
+	border: 1px dashed #ccc;
+	/*background: #FFFFCC;*/
+	padding: 5px;
+}	
+
+
+
+/* contentsArea img */
+/* -------------------------------------------------- */
+
+
+
+div#contents div.imgbox {
+	float: right;
+}
+
+
+div#contents div.imgbox img {
+	margin: 5px 5px 20px 10px;
+	/*margin: 5px 20px 10px 5px;*/
+
+}		
+
+
+
+div#contents:after,
+div#contents ul.inline:after,
+div#contents div.imgbox:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+	
+
+
+
+
+/* leftmenuArea */
+/* -------------------------------------------------- */
+
+div#leftmenu {
+	font-size: 80%;
+	width: 270px;
+	float: left;
+}
+
+
+
+div#leftmenu ul {
+	width: 240px;
+	margin-left: 20px;
+	padding-bottom: 30px;
+	background: url(http://www.direct-comm.com/sharedimg/bg_leftmenu.gif) repeat-y;
+}
+
+div#leftmenu ul li {
+	color: #00A654;
+	color:#666;
+	font-weight: bold;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+div#leftmenu ul li span {
+	display: block;
+	color: #666;
+	font-size: 80%;
+}
+	
+
+
+
+div#leftmenu ul p {
+	margin-left: 10px;
+	padding-left: 25px;
+}
+
+.flash {
+	background: url(http://www.direct-comm.com/sharedimg/icon_flash.gif) no-repeat 0 50%;
+}
+.self {
+	background: url(http://www.direct-comm.com//sharedimg/icon_self.gif) no-repeat 0 50%;
+}
+
+.group {
+	background: url(http://www.direct-comm.com/sharedimg/icon_group.gif) no-repeat 0 50%;
+}
+
+
+div#leftmenu ul li ul {
+	width: 230px;
+	margin-left: 0px;
+	padding: 15px 0px 15px 0px;
+	background: none;
+}
+
+div#leftmenu ul li ul li {
+	width: 200px;
+	font-weight: normal;
+	color: #666;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+
+	/*background: url(../sharedimg/icon_star.gif) no-repeat 0 0px;*/
+	background: url(http://www.direct-comm.com/sharedimg/icon_list.gif) no-repeat 0 5px;
+}
+
+div#leftmenu div.bottom {
+	margin-bottom: 10px;
+	width: 260px;
+	height: 10px;
+	background: url(http://www.direct-comm.com/sharedimg/bg_leftmenu_bottom.gif) no-repeat top right;
+}	
+
+
+	
+/* MaincontentsArea */
+/* -------------------------------------------------- */
+	
+
+div#maincontents {
+	width: 649px;
+	float: right;
+}
+
+
+		
+
+
+div#maincontents:after,
+div#contentswrap:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+
+/* thumblistArea */
+/* -------------------------------------------------- */
+
+
+div#maincontents div.thumblist {
+	width: 630px;
+	margin: 13px 0 20px 0;
+}
+
+div#maincontents div.thumblist div.imgbox {
+	width: 137px;
+	float: left;
+}
+
+div#maincontents div.thumblist div.expbox {
+	width: 493px;
+	float: right;
+}
+
+div#maincontents div.thumblist div.expbox div.exp {
+	margin-left: 10px;
+}
+
+div#maincontents div.thumblist div.expbox div.exp p.title {
+	color: #07A84A;
+}
+
+div#maincontents div.thumblist div.expbox div.exp img {
+	margin-top: 20px;
+}		
+
+div#maincontents div.thumblist:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+
+
+
+div#contents ul.reg {
+	width: 580px;
+	padding: 10px 0;
+}
+
+
+div#contents ul.reg li {
+	width: 200px;
+	text-align: left;
+	float: left;
+}
+
+div#contents ul.reg li.bookmark {
+	width: 300px;
+	float: right;
+	text-align: right;
+}
+
+
+div#contents ul.reg:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+	
+/*table*/
+/*---------------------------------------------------*/
+
+
+table.table010 {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  width: 320px;
+  border-collapse: collapse;
+  border: solid 1px #999;
+  font-size: 80%;
+  color: #666;
+}
+
+table.table010 caption {
+  margin-top: 1em;
+  text-align: left;
+}
+
+table.table010 th,
+table.table010 td {
+  border: solid 1px #999;
+  padding: 4px 6px;
+}
+
+table.table010 th {
+  background: #E6E6E6;
+  text-align: center;
+  white-space: nowrap;
+  color: #666;
+}
+
+table.table010 td.course {
+  text-align: center;
+  font-size: 100%;
+  font-weight: bolder;
+}
+
+table.table010 td.time,
+table.table010 td.fee {
+  text-align: right;
+  white-space: nowrap;
+}
+	
+
+
+	
+
+
+	
+
+
+
+

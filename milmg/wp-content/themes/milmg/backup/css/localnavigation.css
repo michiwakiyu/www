@@ -1,0 +1,106 @@
+@charset "utf-8"; 
+
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : localnavigation.css
+ *
+=========================================================*/
+
+
+/* Localnav */
+/* -------------------------------------------------- */
+
+div#contentswrap div#localnav {
+	width: 260px;
+	background: url(../sharedimg/bg_lnav2_bg.gif) repeat-y;
+	float: ;
+}
+
+div#contentswrap div#localnav:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+
+div#contentswrap div#localnav div.bottomnav {
+	height: 30px;
+	background: url(../sharedimg/bg_lnav2_bottom.gif) no-repeat top left;
+}	
+
+
+
+/*-----------------------01-----------------------*/
+
+
+div#contentswrap div#localnav  ul.lnav {
+	padding-top: 30px;
+	list-style-type: none;
+	background: url(../sharedimg/bg_lnav2_top.gif) no-repeat top left;
+}
+
+div#contentswrap div#localnav  ul.lnav li {
+	margin-bottom: 20px;
+	
+}
+
+/*-----------------------02-----------------------*/
+
+	
+div#contentswrap div#localnav  ul.lnav li ul {
+	list-style-type: none;
+}
+
+div#contentswrap div#localnav  ul.lnav li ul li {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+	font-size: 80%;
+	background: url(../sharedimg/icon_list2.gif) no-repeat top left;
+}
+
+
+
+/*-----------------------03-----------------------*/
+
+div#contentswrap div#localnav  ul.lnav li ul li ul {
+	margin-bottom: 10px;
+	color:
+}	
+
+
+div#contentswrap div#localnav  ul.lnav li ul li ul li {
+	margin-left: 0px;
+	font-size: 100%
+}
+
+
+div#localnav ul.lnav li ul li span {
+	display: block;
+	color: #666;
+	font-size: 80%;
+}
+	
+
+
+h2.widgettitle {
+	border: 1px dashed #ccc;
+	display: block;
+	padding: 4px 10px;
+	margin: 0 auto;
+	width: 180px;
+	background: #F9F7BE;
+	color: #333333;
+	
+}
+
+div#leftmenu a {
+	text-decoration: underline;
+}
+

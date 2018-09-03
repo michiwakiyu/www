@@ -1,0 +1,9 @@
+DirectoryIndex index.html
+RewriteEngine on
+
+RewriteBase /course/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+#RewriteRule ^mailmag.html$ mailmag.php [L]

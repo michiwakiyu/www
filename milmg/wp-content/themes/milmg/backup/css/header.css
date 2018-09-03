@@ -1,0 +1,61 @@
+@charset "utf-8"; 
+
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : header.css
+ *
+=========================================================*/
+
+
+div#header div#headerright{
+	margin-left: 120px;
+	font-size: 10px;
+}	
+
+div#header ul{
+	font-size: 10px;
+	float: right;
+}
+
+
+div#header ul li{
+	display: inline;
+}
+
+div#header ul li a{
+	display: block;
+	width: 60px;
+	padding: 5px 10px 0px 20px;
+	float: left;
+	background: url(../sharedimg/icon_headerlink.gif) no-repeat 0 50%;
+
+}
+
+div#logowrap{
+	float: left;
+}
+
+
+
+
+/*----- clearfix --------------*/
+
+div#logowrap:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+
+
+div#header ul:after{
+	display: block;
+	clear: both;
+	height: 0;
+	content: ".";
+	visibility: hidden;
+}
+	

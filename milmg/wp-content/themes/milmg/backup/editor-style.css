@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*
+Theme Name: Sample Theme
+Theme URI: http://www.www.www/
+Description: This is my sample theme.
+*/
+
+
+span.red {
+	color: #ff8040;
+	font-weight: bold;
+}
+span.blue {
+	color: #1E90FF;
+}
+span.green {
+	color: #009999;
+}
+span.greenbold {
+	color: #009999; FONT-WEIGHT: bold
+}
+SPAN.lightgreenbold {
+	COLOR: #4dc14d; FONT-WEIGHT: bold
+}
+
+span.darkred {
+	color: #ff0000;
+}
+span.orange {
+	color: #ff8040;
+}
+span.pink {
+	color: #ff80c0;
+}
+
+span.darkblue {
+	color: #0000ff;
+}
+SPAN.darkbluebold {
+	COLOR: #0000ff; FONT-WEIGHT: bold
+}
+span.lightgreen {
+	color: #009900;
+}
+SPAN.lightbluebold {
+	COLOR: #00cccc; FONT-WEIGHT: bold
+}
+
+span.normal {
+	font-weight: normal;
+}				
+
+
+div#contents strong {
+	color: #1E90FF;
+	font-weight: bold;
+}
+
+div#contents em {
+	color: #009999;
+	font-style: normal;
+	font-weight: bold;
+}		
+
+span.label {
+	display: block;
+	margin: 10px 0;
+	padding: 5px 10px;
+	font-size: 18px;
+	background: #eee;
+}
+
+div.kakomi {
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+

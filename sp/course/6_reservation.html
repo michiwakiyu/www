@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<META name="description" content="コミュニケーション研修で効果的にビジネスでのプレゼンテーション能力をＵＰ♪">
+<META name="keyword" content="コミュニケーション,ビジネス,効果的,プレゼンテーション,研修">
+
+<title>コミュニケーション講座・教室を体験受講,予約,セミナーページ</title>
+<link href="../sp_common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../sp_common/css/layout.css" rel="stylesheet" type="text/css" media="all" />
+
+<link rel="shortcut icon" href="http://www.direct-commu.com/favicon.ico" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+<script type="text/javascript" src="../sp_common/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../sp_common/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../sp_common/js/validate/myvalidate_01_course_reservation.js"></script>
+
+</head>
+
+<body>
+<a name="page_top"></a>
+
+<header class="after_clear">
+<div class="header_l"><div class="img_l"><img src="../sp_common/images/illust_header_l.png" width="50" height="70"></div></div><!-- end header_l -->
+<div class="header_c"><a href="http://www.direct-commu.com"><h1><img src="../sp_common/images/logo_sp_directcomm.png" width="233" height="41" alt="ダイレクトコミュニケーション" /></h1></a></div><!-- end header_c -->
+<div class="header_r"><div class="img_r"><img src="../sp_common/images/illust_header_r.png" width="95" height="61"></div></div><!-- end header_r -->
+</header>
+
+
+
+<ul id="menu" class="after_clear">
+<li id="intro"><a href="http://www.direct-commu.com/course/1_intro.html" class="btn_topleft">はじめての方へ</a></li>
+<li id="training"><a href="http://www.direct-commu.com/training/" class="btn_right"><span>コミュニケーション</span>トレーニング</a></li>
+<li id="course"><a href="http://www.direct-commu.com/course/" class="selected"><span>コミュニケーション</span>講座</a></li>
+<li id="colums"><a href="http://www.direct-commu.com/colums/" class="btn_right"><span>コミュニケーション</span>知恵袋</a></li>
+<li id="text"><a href="http://www.direct-commu.com/text/"><span>ダイコミュ</span>通信講座</a></li>
+<li id="teacher"><a href="http://www.direct-commu.com/profile/" class="btn_right"><span>ダイコミュ</span>講師紹介</a></li>
+<li id="event"><a href="http://www.direct-commu.com/event/" class="btn_bottom">イベント</a></li>
+<li id="contact"><a href="http://www.direct-commu.com/company/contact.html" class="btn_right btn_bottom">お問い合わせ</a></li>
+</ul>
+
+<br class="brclear" />
+<div id="topicpath"><a href="http://www.direct-commu.com/">トップ</a> > <a href="http://www.direct-commu.com/course/">コミュニケーション講座</a> > <span>仮予約</span></div>
+
+
+<section>
+<h2 class="arrow01"><div>仮予約</div>
+</h2>
+<div class="text"><p>当ページではコミュニケーション講座への仮予約を行うことができます<br>
+*マークは入力必須項目です</p>
+<div id="form">
+  <form action="sended/send_01_course_reservation.php" method="post" id="form01">
+<p>
+※お名前<br />
+<label id="namae_err"></label>
+<input type="text" name="namae" class="form_text" />
+</p>
+<p>※ふりがな<br />
+<label id="furigana_err"></label>
+<input type="text" name="furigana" class="form_text" /></p>
+<p>※電話番号<br />
+<label id="phone_err"></label>
+<input type="text" name="phone" class="form_text" /></p>
+<p>※ご住所<br />
+<label id="address_err"></label>
+<input type="text" name="address" class="form_text" /></p>
+<p>※年齢<br />
+<label id="age_err"></label>
+<input type="text" name="age" class="form_text" style="width: 70px" />　才</p>
+<p>※性別<br />
+<input type="radio" name="sex" value="男性" />
+男性　
+<input type="radio" name="sex" value="女性" />
+女性</p>
+<p>※メールアドレス<br />
+<label id="email_err"></label>
+<input type="text" name="email" class="form_text" /></p>
+
+・<span class="darkred">Yahooメール,hotmailをご利用の方で24時間以内に返信が無い場合は<br />
+　　迷惑フォルダの確認もお願いします<br /></span><br />
+
+<!--<p>※ダイコミュ便りを受け取りますか？<br /><span style="font-size: 12px">（月に1度コミュ力upのトレーニングを生徒さん向けにお伝えします！）</span><br />
+<input type="radio" name="mailmag" value="はい" checked="checked" />
+はい　
+<input type="radio" name="mailmag" value="いいえ" />
+いいえ</p>-->
+
+
+<p>※初参加予定日<br />
+<label id="date_join_err"></label>
+<input type="text" name="date_join" class="form_text" /></p>
+<p>※教室の場所<br />
+<select name="class">
+<option value="新宿第１教室
+">新宿第１教室
+</option>
+<option value="新宿第２教室
+">新宿第２教室
+</option>
+<option value="銀座教室">銀座教室</option>
+<option value="横浜教室">横浜教室</option>
+<option value="埼玉教室">埼玉教室</option>
+<option value="京都教室">関西教室</option>
+
+<option value="短期集中セミナー">短期集中セミナー</option>
+</select></p>
+
+<p>※初回お振込み予定<br />
+<select name="payment">
+<option value="1か月分">1ヶ月分</option>
+<option value="2か月分">2ヶ月分</option>
+<option value="3か月分">3ヶ月分</option>
+<option value="4か月分">4ヶ月分</option>
+<option value="5か月分">5ヶ月分</option>
+<option value="6か月分">6ヶ月分</option>
+</select></p>
+
+<p>※<a href="5_confirmation.html">講座を受講されるにあたっての注意事項</a>を読まれましたか<br />
+<input type="radio" name="agreement" value="はい" /> 
+ はい　
+<input type="radio" name="agreement" value="いいえ" />
+いいえ
+</p>
+
+<p>
+受講の動機 / お悩み / ご質問等<br />
+<textarea name="question" /></textarea>
+</p>
+
+<p style="text-align: center">
+<input type="hidden" name="cr" value="1" /><input type="image" src="../sp_common/images/btn_send.gif" />
+</p>
+
+</form>
+</div><!-- end form --></div>
+</section>
+
+
+
+
+
+<div class="to_page_top"><a href="">このページのTOPへ</a></div>
+<footer id="footer">
+<p><a onclick='document.cookie="mode=pc;path=/;"; window.location.reload();' href="#">PC版</a>　/　スマートフォン版</p>
+<div id="copyright">&copy; Direct Communication, Inc.<br>
+	All Rights Reserved.</div>
+</footer>
+
+<script type="text/javascript" src="../sp_common/js/image.js"></script>
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39326739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- google analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39326739-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

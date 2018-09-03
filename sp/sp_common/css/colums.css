@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+
+p.title {
+	font-weight: bold;
+	color: #0080ff;
+	font-size: 18px;
+}
+
+div.imgbox {
+	text-align: center;
+}
+
+
+
+ul.rank {
+	background: #fefedf;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 14px;
+}
+
+ul.rank li.rank1 {
+	padding-left: 55px;
+	background: url(../images/icon_rank1.png) no-repeat 10px 50%;
+	border-bottom: 1px solid #d6d4b8;
+	border-top: 1px solid #fff;
+}
+
+ul.rank li.rank2 {
+	padding-left: 55px;
+	background: url(../images/icon_rank2.png) no-repeat 10px 50%;
+	border-bottom: 1px solid #d6d4b8;
+	border-top: 1px solid #fff;
+}
+
+ul.rank li.rank3 {
+	padding-left: 55px;
+	background: url(../images/icon_rank3.png) no-repeat 10px 50%;
+	border-bottom: 1px solid #d6d4b8;
+	border-top: 1px solid #fff;
+}
+
+
+
+ul.rank li.bottom { border-bottom: none; }
+ul.rank li.top { border-top: none; }
+
+ul.rank li a {
+	display: block;
+	padding: 15px 0;	
+	width: 100%;
+	text-decoration: none;
+	color: #4a463c;
+	background: url(../images/arrow03.png) no-repeat 95% 50%;
+}
+
+
+div.point_top {
+	width: 300px;
+	margin: auto;
+	height: 45px;
+	background: url(../images/colum/frame_point_top.png) no-repeat top left;
+}
+
+div.point {
+	width: 272px;
+	padding: 10px;
+	margin: auto;
+	border-right: 4px solid #FFD1AB;
+	border-left: 4px solid #FFD1AB;
+	background: #fff;
+}
+
+div.point ul {
+}
+
+div.point ul li {
+	padding-left: 45px;
+	background: url(../images/icon_futaba.gif) no-repeat 10px 50%;
+	margin-bottom: 10px;
+}
+
+
+div.point_bottom {
+	margin: auto;
+	width: 300px;
+	height: 25px;
+	background: url(../images/colum/frame_point_bottom.png) no-repeat top left
+
+
+}
+
+p.colums_next {
+	text-align: center;
+	padding: 20px 0;
+}
+

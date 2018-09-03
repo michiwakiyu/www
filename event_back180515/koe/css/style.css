@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*=========================================================
+ *
+ *	css file for "www.direct-comm.com"
+ *	file name : style.css
+ *
+=========================================================*/
+#koe_area_t.men img {
+	float:left;
+	margin-right: 10px;
+}
+#koe_area_t.women img {
+	float:right;
+	margin-left: 10px;
+}
+
+#koe_area_t {
+	width: 605px;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+
+#koe_area_t.women {
+	background:url(../img/koe_bg_w_t.gif) no-repeat left top;
+}
+
+#koe_area_t.men {
+	background:url(../img/koe_bg_m_t.gif) no-repeat left top;
+}
+
+#koe_area_in {
+	background:url(../img/koe_bg_in.gif) repeat-y left bottom;
+	padding: 0px 0px 10px 0px;
+}
+
+#koe_area_b {
+	background:url(../img/koe_bg_b.gif) no-repeat left bottom;
+	padding-bottom: 20px;
+}
+
+#koe_area_b .koe_name {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 0px auto 10px auto;
+	width: 530px;
+}
+
+#koe_area_b .koe_text {
+	background:url(../img/koe_bg_line.gif) repeat-y left top;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	font-size: 14px;
+	margin: 0px auto;
+	width: 530px;
+}
+
+@media screen and (max-width: 569px) {
+
+.wid40 {
+	width:40%;
+}
+
+#koe_area_t img {
+	width:35%;
+	margin:1%;
+}
+
+#koe_area_t img.wid50 {
+	width:50%;
+	margin:1%;
+}
+
+#koe_area_t {
+	width: auto;
+	padding-top: 8%;
+}
+
+#koe_area_t.women {
+	background-size: 100% auto;
+}
+
+#koe_area_t.men {
+	background-size: 100% auto;
+}
+
+#koe_area_in {
+	background-size: 100% auto;
+	padding: 0px 0px 5% 0px;
+}
+
+#koe_area_b {
+	background:url(../img/koe_bg_b.gif) no-repeat left bottom;
+	background-size: 100% auto;
+	padding-bottom: 2%;
+}
+
+#koe_area_b .koe_name {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	margin: 0px 8%;
+	font-weight: bold;
+	width: auto;
+}
+
+#koe_area_b .koe_text {
+	background:url(../img/koe_bg_line.gif) repeat-y left top;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	font-size: 14px;
+	width: auto;
+	margin: 0px 8%;
+}
+}
