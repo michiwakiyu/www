@@ -1,23 +1,41 @@
+AddHandler fcgid-script .html
+AddType application/x-httpd-php .php .html
+
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
 
-#Basic”FØ‚±‚±‚©‚ç
+#Basicï¿½Fï¿½Ø‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-#Basic”FØ‚±‚±‚Ü‚Å
+#Basicï¿½Fï¿½Ø‚ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½
 
 
-ErrorDocument 404 http://www.direct-commu.com/
+ErrorDocument 404 https://www.direct-commu.com/
 <IfModule mod_rewrite.c>
 
 RewriteEngine on
 
 RewriteCond %{HTTP_HOST} ^direct-commu\.com
-RewriteRule (.*) http://www.direct-commu.com/$1 [R=301,L]
+RewriteRule (.*) https://www.direct-commu.com/$1 [R=301,L]
+
+# Force SSL
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 
+RewriteCond %{REQUEST_URI} !/assets/
 RewriteCond %{REQUEST_URI} !/sp/
+RewriteCond %{REQUEST_URI} !/colums/intro/
 RewriteCond %{REQUEST_URI} !/colums/
+RewriteCond %{REQUEST_URI} !/event/
+RewriteCond %{REQUEST_URI} !/course/01_kanto/
+RewriteCond %{REQUEST_URI} !/templates/
+RewriteCond %{REQUEST_URI} !/text/
+RewriteCond %{REQUEST_URI} !/reqruit/teacher/
+RewriteCond %{REQUEST_URI} !/skillup/
+RewriteCond %{REQUEST_URI} !/training/
+RewriteCond %{REQUEST_URI} !/profile/
+RewriteCond %{REQUEST_URI} !/activity/
 RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
 RewriteCond %{HTTP_COOKIE} !mode=pc
 RewriteCond %{HTTP_COOKIE} !mode=sp
@@ -26,14 +44,14 @@ RewriteBase /
 
 
 
-#‚±‚Ìƒ‹[ƒ‹•s—v@sp‚È‚¢‚Ì‚Ésp‚Ìê‡‚Ìƒ‹[ƒ‹‚ğİ’è‚µ‚Ä‚¢‚é‚½‚ß
+#ï¿½ï¿½ï¿½Ìƒï¿½ï¿½[ï¿½ï¿½ï¿½sï¿½vï¿½@spï¿½È‚ï¿½ï¿½Ì‚ï¿½spï¿½Ìê‡ï¿½Ìƒï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½İ’è‚µï¿½Ä‚ï¿½ï¿½é‚½ï¿½ï¿½
 RewriteCond %{REQUEST_URI} !/sp/
 RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
 RewriteCond %{HTTP_COOKIE} mode=pc
 RewriteRule ^sp/(.*)$ $1 [L]
 RewriteBase /
 
-#‘ã‚í‚è‚É‚±‚ê‚ª³‚µ‚¢R‚É
+#ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ê‚ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Rï¿½ï¿½
 RewriteCond %{REQUEST_URI} /sp/
 RewriteCond %{REQUEST_URI} !/colums/
 RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
@@ -58,17 +76,17 @@ RewriteBase /
 
 
 #========================================
-#businessƒRƒ‰ƒ€
+#businessï¿½Rï¿½ï¿½ï¿½ï¿½
 #========================================
 
 #RewriteCond %{REQUEST_URI} !/sp/
 RewriteCond %{REQUEST_URI} /colums/business/
 RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
 
-#http://‚©‚ç‘‚­‚Æ[L]‚É‚µ‚Ä‚àƒŠƒ_ƒCƒŒƒNƒg‚ÅURL‚ª‘‚«•Ï‚í‚é
+#http://ï¿½ï¿½ï¿½ç‘ï¿½ï¿½ï¿½ï¿½[L]ï¿½É‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½_ï¿½Cï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½URLï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï‚ï¿½ï¿½
 #RewriteRule ^colums/business/(.*)\.html$ http://test.direct-commu.com/sp/colums/business/article.php?c_id=$1 [L]
 
-#‚±‚Ì‘‚«•ûsp/‚©‚ç‚Í‚¶‚ß‚é‚Æ[L]‚Å‘‚«•Ï‚í‚ç‚È‚¢
+#ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½sp/ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ß‚ï¿½ï¿½[L]ï¿½Åï¿½ï¿½ï¿½ï¿½Ï‚ï¿½ï¿½È‚ï¿½
 RewriteRule ^colums/business/(.*)\.html$ sp/colums/business/article.php?c_id=$1 [L]
 RewriteBase /
 
@@ -114,15 +132,15 @@ RewriteCond %{HTTP_COOKIE} !mode=pc
 RewriteRule ^colums/feature/$ sp/colums/feature/ [L]
 RewriteBase /
 
-RewriteCond %{REQUEST_URI} /colums/intro/
-RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
-RewriteCond %{HTTP_COOKIE} !mode=pc
-RewriteRule ^colums/intro/(.*)$ sp/colums/intro/$1 [L]
-RewriteBase /
+#RewriteCond %{REQUEST_URI} /colums/intro/
+#RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+#RewriteCond %{HTTP_COOKIE} !mode=pc
+#RewriteRule ^colums/intro/(.*)$ sp/colums/intro/$1 [L]
+#RewriteBase /
 
 
 #========================================
-#mentalƒRƒ‰ƒ€
+#mentalï¿½Rï¿½ï¿½ï¿½ï¿½
 #========================================
 
 RewriteCond %{REQUEST_URI} /colums/mental/
@@ -143,7 +161,7 @@ RewriteBase /
 
 
 #========================================
-#relationƒRƒ‰ƒ€
+#relationï¿½Rï¿½ï¿½ï¿½ï¿½
 #========================================
 
 RewriteCond %{REQUEST_URI} /colums/relation/
@@ -158,7 +176,7 @@ RewriteBase /
 
 
 #========================================
-#featureƒRƒ‰ƒ€
+#featureï¿½Rï¿½ï¿½ï¿½ï¿½
 #========================================
 
 RewriteCond %{REQUEST_URI} /colums/feature/
@@ -173,7 +191,7 @@ RewriteBase /
 
 
 #========================================
-#featureƒRƒ‰ƒ€
+#featureï¿½Rï¿½ï¿½ï¿½ï¿½
 #========================================
 
 RewriteCond %{REQUEST_URI} /colums/feature/
@@ -184,7 +202,22 @@ RewriteBase /
 RewriteCond %{REQUEST_URI} /colums/feature/
 RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
 RewriteRule ^colums/feature/(.*)\.html$ colums/feature/article.php?c_id=$1 [L]
+RewriteBase /
+
+#========================================
+#businessï¿½Rï¿½ï¿½ï¿½ï¿½
+#========================================
+
+RewriteCond %{REQUEST_URI} /colums/business/
+RewriteCond %{HTTP_USER_AGENT} (iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/business/(.*)\.html$ sp/colums/business/article.php?c_id=$1 [L]
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} /colums/business/
+RewriteCond %{HTTP_USER_AGENT} !(iPod|iPhone|Android|Windows\ Phone)
+RewriteRule ^colums/business/(.*)\.html$ colums/business/article.php?c_id=$1 [L]
 RewriteBase /
 
 
 </IfModule>
+
