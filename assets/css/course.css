@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*=========================================================
+ *
+ *	css file for "www.direct-comm.com"
+ *	file name : course.css
+ *
+=========================================================*/
+
+.pcnone {
+display:none;
+}
+
+.green_pen {
+background: linear-gradient(transparent 65%, #9ff5c6 10%);
+padding-bottom: .2em;
+font-weight:bold;
+}
+
+.cream_pen {
+background: linear-gradient(transparent 65%, #fffb44 10%);
+padding-bottom: .2em;
+font-weight:bold;
+}
+
+.blue_pen {
+background: linear-gradient(transparent 65%, #9fe4f5 10%);
+padding-bottom: .2em;
+font-weight:bold;
+}
+
+.large {
+font-size:22px;
+}
+
+.orange {
+    color:#ff8040;
+}
+
+.midashi {
+	background: url(/assets/images/course/intro/midashi_bg_t.gif) no-repeat left top/100% auto, url(/assets/images/course/intro/midashi_bg_b.gif) no-repeat left bottom #DAECD3/100% auto;
+	font-size:22px;
+	color:#5e5d51;
+	line-height:1.5;
+	letter-spacing:1px;
+	display:block;
+	margin:32px auto 16px auto;
+	padding: 16px;
+}
+
+.midashi b {
+	padding-left: 35px;
+}
+
+#course #container p{
+font-size:16px;
+}
+
+#course #container h1{
+display:block;
+}
+
+#course #container img{
+max-width:100%;
+}
+
+#course #container .bnr {
+padding: 16px 0px;
+text-align:center;
+}
+
+#course #container .box-blue {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	background: #dcf2ff;
+	padding: 16px;
+	margin: 16px auto;
+}
+
+#course #container .box-blue p{
+	margin: 0px;
+}
+
+#course #container .box-blue b {
+    color: #0080ff;
+	font-size:18px;
+}
+
+
+#course #container .midashi2 {
+	background:url(/assets/images/course/intro/midashi2_bg.gif) repeat-x left bottom;
+	font-size:20px;
+	letter-spacing:1px;
+	line-height:1.5;
+	display:block;
+	margin:32px auto 16px auto;
+	padding: 16px;
+	text-align:left;
+	width:auto;
+}
+
+#course #container .midashi2 b {
+	background: url(/assets/images/course/intro/midashi2_icon.gif) no-repeat left top/30px auto;
+	padding-left: 38px;
+}
+
+#course #container section .bnr img{
+max-width:400px;
+}
+
+#course #container .greet .midashi b { background: url(/assets/images/course/intro/midashi_icon01.gif) no-repeat left top/30px auto;}
+#course #container .character .midashi b { background: url(/assets/images/course/intro/midashi_icon02.gif) no-repeat left top/30px auto;}
+#course #container .psychology .midashi b { background: url(/assets/images/course/intro/midashi_icon03.gif) no-repeat left top/30px auto;}
+#course #container .talk .midashi b { background: url(/assets/images/course/intro/midashi_icon04.gif) no-repeat left top/30px auto;}
+#course #container .community .midashi b { background: url(/assets/images/course/intro/midashi_icon05.gif) no-repeat left top/30px auto;}
+#course #container .finally .midashi b { background: url(/assets/images/course/intro/midashi_icon06.gif) no-repeat left top/30px auto;}
+
+#course #container .finally .name {
+text-align:right;
+margin:36px 0px;
+}
+
+#course #container .finally .name img {
+max-width:200px;
+}
+
+@media only screen and (max-width: 640px) { 
+#course #container section .bnr img{
+max-width:100%;
+}
+.pcnone {
+display:block;
+}
+.spnone {
+display:none;
+}
+}
+
+

@@ -1,0 +1,4 @@
+<Files schedule.html>
+ForceType  application/x-httpd-php
+</Files>
+AddType application/x-httpd-php .php .html

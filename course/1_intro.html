@@ -8,28 +8,16 @@
 <meta name="keywords" content="コミュニケーション講座">
 <meta name="author" content="株式会社ダイレクトコミュニケーション">
 
-<link href="../assets/css/base.css" rel="stylesheet">
-<link href="../assets/css/header.css" rel="stylesheet">
-<link href="../assets/css/sidebar.css" rel="stylesheet">
-<link href="../assets/css/footer.css" rel="stylesheet">
-<link href="../assets/css/content.css" rel="stylesheet">
-<link href="../assets/css/rwd/sp.css" rel="stylesheet">
-<link href="../assets/css/style.css" rel="stylesheet">
-<link href="../common/css/course.css" rel="stylesheet">
-
-<script src="../assets/js/smoothscroll.js"></script>
-<script src="../assets/js/jquery-1.3.2.min.js"></script>
-<script src="../assets/js/jquery.validate.js"></script>
-<script src="../assets/js/fadein.js"></script>
-<script src="../assets/js/onoff.js"></script>
-<script src="../assets/js/smart-crossfade.js"></script>
-<script src="../assets/js/sp.js"></script>
-<script src="../assets/js/init.js"></script>
-
+<?php require_once(dirname(__FILE__).'/../templates/head.html'); ?>
+<link href="/assets/css/course.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="course">
 <a name="page_top"></a>
+<div id="ua"></div>
+<?php
+require_once(dirname(__FILE__).'/../templates/header_rwd.html');
+?>
 
 <main>
 	<div id="topicpath">
@@ -43,7 +31,7 @@
 	</div><!-- end topicpath -->
 
 
-	<div id="container" class="course">
+	<div id="container">
 		<nav>
     		<?php require_once(dirname(__FILE__).'/../templates/course/sidebar.html'); ?><!-- end sidebar -->
 		</nav>
@@ -56,12 +44,12 @@
 			<article>
 				<div class="main">
 
-				<h1 class="bnr"><img src="../common/images/course/intro/title.gif" alt="見出し：はじめて講座をご受講される方へ" class="spnone"><img src="../common/images/course/intro/sp_title.gif" alt="見出し：はじめて講座をご受講される方へ" class="pcnone"></h1>
+				<h1 class="bnr"><img src="/assets/images/course/intro/title.gif" alt="見出し：はじめて講座をご受講される方へ" class="spnone"><img src="/assets/images/course/intro/sp_title.gif" alt="見出し：はじめて講座をご受講される方へ" class="pcnone"></h1>
 
 					<section class="greet">
 					<h2 class="midashi"><b>はじめのご挨拶</b></h2>
 						<div class="wrap">
-							<div class="bnr"><img alt="イラスト：はじめのご挨拶をする、ダイレクトコミュニケーション代表の川島達史（精神保健福祉士）" src="../common/images/course/intro/illust01.gif"></div>
+							<div class="bnr"><img alt="イラスト：はじめのご挨拶をする、ダイレクトコミュニケーション代表の川島達史（精神保健福祉士）" src="/assets/images/course/intro/illust01.gif"></div>
 							<p>
                             	はじめまして！代表の川島達史（精神保健福祉士）と申します。 私は大学院で成人の<span class="green_pen">コミュニケーショントレーニング</span>の研究を行い、講座を通して活動しています。
                             </p>
@@ -76,7 +64,7 @@
                                		・説明が苦手で困っている・・・</b>
                                 </p>
                             </div>
-							<div class="bnr"><img alt="イラスト：・心が不安定だ・・・・会話が盛り上がらない・・・・友達が少なくて寂しい・・・・説明が苦手で困っている・・・" src="../common/images/course/intro/illust02.gif"></div>
+							<div class="bnr"><img alt="イラスト：・心が不安定だ・・・・会話が盛り上がらない・・・・友達が少なくて寂しい・・・・説明が苦手で困っている・・・" src="/assets/images/course/intro/illust02.gif"></div>
 							<p>
                             	心の状態が悪かったり、人間関係に悩むなどコミュニケーションに問題を抱えるととてもつらいですよね。弊社はそんな、悩みを改善するため、<span class="green_pen">コミュニケーション講座</span>を開催しています。講師は精神保健福祉士、臨床心理士で、社会心理学や臨床心理学を大学院で研究してきました。
                             </p>
@@ -86,7 +74,7 @@
 					<section class="character">
 					<h2 class="midashi"><b>コミュニケーション講座の特徴</b></h2>
 						<div class="wrap">
-							<div class="bnr"><img alt="イラスト：コミュニケーション講座って？考える男女" src="../common/images/course/intro/illust03.gif"></div>
+							<div class="bnr"><img alt="イラスト：コミュニケーション講座って？考える男女" src="/assets/images/course/intro/illust03.gif"></div>
 							<p>
                             	さてさて！そうは言ってもコミュニケーション講座ってなんだろう？といコミュニケーション講座の特徴う気持ちになっている方も多いと思います。英会話教室や料理教室と違って何をやるのかよくわからないですよね。伝えたいことはたくさんあるのですが、まとめないといけません！
                             </p>
@@ -96,7 +84,7 @@
                             <p><b class="large">「心理学の学習」<br>「会話技術の学習」<br>「コミュニティ」</b></p>
                             <p><br>の<span class="cream_pen">３つの視点</span>から講座を開いています。</p>
                             </p>
-							<div class="bnr"><img alt="写真：コミュニケーション講座の様子" src="../common/images/course/intro/illust04.gif"></div>
+							<div class="bnr"><img alt="写真：コミュニケーション講座の様子" src="/assets/images/course/intro/illust04.gif"></div>
 						</div><!-- end wrap -->
 					</section>
                     
@@ -111,7 +99,7 @@
                             </p>
                             <p>が挙げられます。白黒思考というのは真っ白か、真っ黒かでしか判断できなくて、グレーゾーンを認められない状態です。<br></p>
                             </p>
-							<div class="bnr"><img alt="イラスト：白黒思考に陥っている女性" src="../common/images/course/intro/illust05.gif"></div>
+							<div class="bnr"><img alt="イラスト：白黒思考に陥っている女性" src="/assets/images/course/intro/illust05.gif"></div>
 							<p>
                             	<b class="large">「あのひとは○○だ！」<br>「もう○○は絶対にしない！」<br>「あがり症は恥ずかしい！」</b>
                             </p>
@@ -121,7 +109,7 @@
 							<p>
                                 これは１つの例ですが講座の中では自分自身の問題に気がつき、改善できるようになることを目指し心理学講座で学習していきます。具体的には<span class="cream_pen">「心理療法」</span>という分野の学習をたくさん行っていきます。
                             </p>
-							<div class="bnr"><img alt="写真：自分自身の問題に気がつき、改善できるようになることを目指し心理学講座で学習している生徒さんたち" src="../common/images/course/intro/illust06.gif"></div>
+							<div class="bnr"><img alt="写真：自分自身の問題に気がつき、改善できるようになることを目指し心理学講座で学習している生徒さんたち" src="/assets/images/course/intro/illust06.gif"></div>
                             <h3 class="midashi2"><b>心理学講座で学ぶこと一例</b></h3>
 							<p>
                             	エゴグラム性格分析，ストレスマネジメント，認知療法，行動療法，マインドフルネス認知療法，アサーション，フロー心理学
@@ -141,7 +129,7 @@
 							<p>
                                 <b class="large">「何人で旅行に行ったのですか？」<br>「いつまで旅行したのですか？」</b>
                             </p>
-							<div class="bnr"><img alt="イラスト：話し上手になることを目標に実践的に練習を重ねるNGの例" src="../common/images/course/intro/illust07.gif"></div>
+							<div class="bnr"><img alt="イラスト：話し上手になることを目標に実践的に練習を重ねるNGの例" src="/assets/images/course/intro/illust07.gif"></div>
 							<p>
                             	実はこれらの質問を連発することは<span class="blue_pen">NGなのです</span>。傾聴する上ではあまり重要ではなくて頑張って質問してもたいして盛り上がらないでしょう。。。ダメというわけではないのですが、もっと大事な質問の仕方があるのです。答えは講座でお話します笑。このように講座は話し手が話しやすい質問を作るコツを学び何度も練習していきます。
                             </p>
@@ -164,14 +152,14 @@
  							<p>
                                と言って頂けるのが講師として何よりも嬉しいですね！そして成果を出す生徒さんは最初は引っ込み思案でもだんだんと信頼できる友人を作っています。講座に通われる方は是非仲間を作って交流を深めてくださいね♪
                             </p>
-							<div class="bnr"><img alt="写真：講座に通われている生徒さんたちが仲間を作って交流を深めている様子" src="../common/images/course/intro/illust08.gif"></div>
+							<div class="bnr"><img alt="写真：講座に通われている生徒さんたちが仲間を作って交流を深めている様子" src="/assets/images/course/intro/illust08.gif"></div>
 						</div><!-- end wrap -->
 					</section>
                     
 					<section class="finally">
 					<h2 class="midashi"><b>最後に…</b></h2>
 						<div class="wrap">
-							<div class="bnr"><img alt="イラスト：人間同士の相互作用のなかにある「幸せだなあ」と感じるもの" src="../common/images/course/intro/illust09.gif"></div>
+							<div class="bnr"><img alt="イラスト：人間同士の相互作用のなかにある「幸せだなあ」と感じるもの" src="/assets/images/course/intro/illust09.gif"></div>
 							<p>
                             	現代社会は顔と顔を合わせて会話をする機会がとても減ってきていると感じます。確かに人間関係はいいことばかりではありません。気を使わなくてはならないこともありますし、うまく表現できないときはつらい思いもすると思います。
                             </p>
@@ -188,12 +176,12 @@
                                 講師川島より<br>心をこめて（＾＾）
                             </p>
 							<div class="name">
-                            	<img alt="ダイレクトコミュニケーション代表　川島 達史" src="../common/images/course/intro/name_kawa.gif">
+                            	<img alt="ダイレクトコミュニケーション代表　川島 達史" src="/assets/images/course/intro/name_kawa.gif">
                             </div>
 						</div><!-- end wrap -->
 					</section>
 					<div class="bnr">
-                    	<a href="/course/"><img alt="ボタン：講座ページへ戻る！" src="../common/images/course/intro/btn_back.gif"></a>
+                    	<a href="/course/"><img alt="ボタン：講座ページへ戻る！" src="/assets/images/course/intro/btn_back.gif"></a>
                     </div>
 
 				</div><!-- end main -->
@@ -212,24 +200,12 @@
 	<h3>コミュニケーション講座をお探しの方へ！300の知恵袋や講座情報がたっぷりあります！能力をアップさせたい方は是非みてみてくださいね！</h3>
 </aside>
 
-<?php require_once(dirname(__FILE__).'/../templates/footer.html'); ?>
 <nav>
 	<?php require_once(dirname(__FILE__).'/../templates/course/spnavi.html'); ?><!-- end spnavi -->
 </nav>
 
-<!-- google analytics -->
-<script type="text/javascript">
+<?php require_once(dirname(__FILE__).'/../templates/footer.html'); ?>
+<?php require_once(dirname(__FILE__).'/../templates/analytics.html'); ?>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39326739-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 </body>
 </html>
