@@ -50,7 +50,6 @@ font-size:22px;
 
 .midashi b {
 	padding-left: 35px;
-	display:block;
 }
 
 #course #container p{
@@ -104,7 +103,6 @@ text-align:center;
 #course #container .midashi2 b {
 	background: url(/assets/images/course/intro/midashi2_icon.gif) no-repeat left top/30px auto;
 	padding-left: 38px;
-	display:block;
 }
 
 #course #container section .bnr img{
