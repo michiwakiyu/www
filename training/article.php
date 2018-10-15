@@ -1,13 +1,13 @@
 <?php
 
-$db_host = "mysql501.phy.lolipop.jp";
-$db_user = "LA08419899";
-$db_pass = "6B87rrUc";
-$db_name = "LA08419899-directcomm";
+$db_host = "mysql5014.xserver.jp";
+$db_user = "directcommu_main";
+$db_pass = "JASMF3uBdNpjFJWe";
+$db_name = "directcommu_main";
 
-mysql_connect($db_host,$db_user,$db_pass);
-mysql_set_charset("utf8");
-mysql_select_db($db_name);
+$db = mysqli_connect($db_host,$db_user,$db_pass);
+mysqli_set_charset($db, "utf8");
+mysqli_select_db($db, $db_name);
 
 
 /*
@@ -27,7 +27,7 @@ $now_article_id = $_GET["article_id"];
 //============================================================================
 
 //Cache_lite読み込み
-require_once '/home/users/2/lolipop.jp-dp58180317/web/lib/PEAR/Cache/Lite.php';
+require_once '/home/directcommu/direct-commu.com/public_html/lib/PEAR/Cache/Lite.php';
 
 $cache_id = $now_article_id;
 
@@ -82,8 +82,8 @@ if ($data = $Cache_Lite -> get($cache_id)) {
 //二度sql分を行っており処理は綺麗ではない。集合としてとらえる方法でより綺麗に取得可能のよう
 
 $sql0 = "select * from article_titles where article_id='".$now_article_id."' and flag='1'";
-$result0 = mysql_query($sql0) or die("e0");
-$rows0 = mysql_fetch_array($result0);
+$result0 = mysqli_query($db, $sql0) or die("e0");
+$rows0 = mysqli_fetch_array($result0);
 $date_now = $rows0["date"];
 
 
@@ -91,14 +91,14 @@ $date_now = $rows0["date"];
 
 //
 $sql_n = "select * from article_titles where flag='1' and date <='".$date_now."'";
-$result_n = mysql_query($sql_n) or die("en"); 
-$number = mysql_num_rows($result_n);
+$result_n = mysqli_query($db, $sql_n) or die("en");
+$number = mysqli_num_rows($result_n);
 
 
 //すべての記事の総数 $number_maxを求める　
 $sql_max = "select * from article_titles where flag='1'";
-$result_max = mysql_query($sql_max) or die("en"); 
-$number_max = mysql_num_rows($result_max);
+$result_max = mysqli_query($db, $sql_max) or die("en");
+$number_max = mysqli_num_rows($result_max);
 
 
 
@@ -108,7 +108,7 @@ $number_max = mysql_num_rows($result_max);
 
 
 $sql = "select * from article_themes where flag='1' order by date asc";
-$result = mysql_query($sql) or die("e");
+$result = mysqli_query($db, $sql) or die("e");
 
 $list = "";
 $list_num = 1;
@@ -116,7 +116,7 @@ $list_num = 1;
 $list_article = array();
 
 
-while($rows = mysql_fetch_array($result)){
+while($rows = mysqli_fetch_array($result)){
 
 	$list .= "<dt>".$rows["theme"]."</dt>";	
 	
@@ -125,8 +125,8 @@ while($rows = mysql_fetch_array($result)){
 	//article_titles
 
 	$sql2 = "select * from article_titles where flag='1' and theme_id='".$rows["theme_id"]."' order by date asc";
-	$result2 = mysql_query($sql2) or die("e");
-	while($rows2 = mysql_fetch_array($result2)){
+	$result2 = mysqli_query($db, $sql2) or die("e");
+	while($rows2 = mysqli_fetch_array($result2)){
 	
 		$list_article[$list_num]["title"] = $rows2["title"];
 		$list_article[$list_num]["title_page"] = $rows2["title_page"];	
@@ -145,7 +145,7 @@ while($rows = mysql_fetch_array($result)){
 		$list_article[$list_num]["date"] = $rows2["date"];
 
 
-		$list .= "<dd>"."<a href=\"http://www.direct-commu.com/training/".$list_article[$list_num]["article_id"].".html\">".$list_num.": ".$rows2["title"]."</a></dd>";
+		$list .= "<dd>"."<a href=\"/training/".$list_article[$list_num]["article_id"].".html\">".$list_num.": ".$rows2["title"]."</a></dd>";
 		
 
 		$list_num ++;
@@ -173,11 +173,11 @@ $list = "<dl class=\"dl_02\">".$list."</dl>";
 
 	
 if($number != $number_max){
-	$link_next = "<a href=\"http://www.direct-commu.com/training/".$list_article[$number_next]["article_id"].".html\"><img src=\"http://www.direct-commu.com/common/sharedimg/training/btn_next.png\"></a>";
+	$link_next = "<a href=\"/training/".$list_article[$number_next]["article_id"].".html\"><img src=\"/common/sharedimg/training/btn_next.png\"></a>";
 }
 
 if($number != 1){
-	$link_prev = "<a href=\"http://www.direct-commu.com/training/".$list_article[$number_prev]["article_id"].".html\"><img src=\"http://www.direct-commu.com/common/sharedimg/training/btn_prev.png\"></a>";
+	$link_prev = "<a href=\"/training/".$list_article[$number_prev]["article_id"].".html\"><img src=\"/common/sharedimg/training/btn_prev.png\"></a>";
 }
 
 
@@ -248,36 +248,36 @@ if($number != 1){
 
 <div id="header" style="padding-top: 0px">
 
-<div id="onoffbtn"><a href="http://www.direct-commu.com/course/mailmag.html" id="open"></a></div>
+<div id="onoffbtn"><a href="/course/mailmag.php" id="open"></a></div>
 
 <div id="headercontainer">
 
 <div id="headerright"><!-- --></div>
-<div id="logowrap"><a href="http://www.direct-commu.com/"><img src="../common/sharedimg/logo_directcomm.gif" alt="ダイレクトコミュニケーション能力,話し方教室" /></a></div>
+<div id="logowrap"><a href="/"><img src="../common/sharedimg/logo_directcomm.gif" alt="ダイレクトコミュニケーション能力,話し方教室" /></a></div>
 <!--<ul>
-<li><a href="http://www.direct-commu.com/reqruit/teacher.html">講師・心理士 募集</a></li>
-<li><a href="http://www.direct-commu.com/reqruit/assistant.html">アシスタント 募集</a></li>
-<li><a href="http://www.direct-commu.com/company/contact.html">お問い合わせ</a></li></ul>-->
+<li><a href="/reqruit/teacher.html">講師・心理士 募集</a></li>
+<li><a href="/reqruit/assistant.html">アシスタント 募集</a></li>
+<li><a href="/company/contact.html">お問い合わせ</a></li></ul>-->
 <ul>
-<li><a href="http://www.direct-commu.com/company/contact.html">お問い合わせ</a></li>
+<li><a href="/company/contact.html">お問い合わせ</a></li>
 </ul>
 </div><!-- end headercontainer -->
 
 <ul id="gnav">
-<li id="home"><a href="http://www.direct-commu.com/">ホーム</a></li>
-<li id="course"><a href="http://www.direct-commu.com/course/">コミュニケーション講座</a></li>
-<li id="text"><a href="http://www.direct-commu.com/text/">ダイコミュ通信講座</a></li>
-<li id="training"><a href="http://www.direct-commu.com/training/" class="selected">コミュニケーション能力トレーニング</a></li>
-<li id="ability"><a href="http://xn--zckzah9129bsdgbusdye.jp/">コミュニケーション能力診断</a></li>
-<li id="colums"><a href="http://www.direct-commu.com/colums/">コミュニケーションコラム集</a></li>
-<li id="event"><a href="http://www.direct-commu.com/event/">ダイコミュイベント</a></li>
-<li id="teacher"><a href="http://www.direct-commu.com/profile/">講師紹介</a></li>
+<li id="home"><a href="/">ホーム</a></li>
+<li id="course"><a href="/course/">コミュニケーション講座</a></li>
+<li id="text"><a href="/text/">ダイコミュ通信講座</a></li>
+<li id="training"><a href="/training/" class="selected">コミュニケーション能力トレーニング</a></li>
+<li id="ability"><a href="https://commutest.com">コミュニケーション能力診断</a></li>
+<li id="colums"><a href="/colums/">コミュニケーションコラム集</a></li>
+<li id="event"><a href="/event/">ダイコミュイベント</a></li>
+<li id="teacher"><a href="/profile/">講師紹介</a></li>
 </ul><!-- end gnav -->
 </div><!-- end header -->
 
 <div id="topicpath">
 
-<div id="topicleft"><a href="http://www.direct-commu.com/">ホーム</a> > <a href="http://www.direct-commu.com/training/">コミュニケーショントレーニング</a> > <h1><?=$list_article[$number]["h1"]?></h1>
+<div id="topicleft"><a href="/">ホーム</a> > <a href="/training/">コミュニケーショントレーニング</a> > <h1><?=$list_article[$number]["h1"]?></h1>
 </div>
 <!-- end topicleft -->
 <div id="topicright">
@@ -290,7 +290,7 @@ if($number != 1){
 <div id="container">
 
 <div id="sidebar">
-<a href="http://www.direct-commu.com/training/"><img src="../common/sharedimg/training/img_title_training.gif" alt="コミュニケーショントレーニング" width="290" height="44"/></a>
+<a href="/training/"><img src="../common/sharedimg/training/img_title_training.gif" alt="コミュニケーショントレーニング" width="290" height="44"/></a>
 <div class="nav">
 
 <?=$list?>
@@ -341,54 +341,7 @@ if($number != 1){
 <br class="brclear" />
 
 <h3><?=$list_article[$number]["h3"]?></h3>
-<div id="footer">
-
-<div id="pagetop">
-<div id="btn_pagetop">
-<a href="#page_top"><!-- --></a>
-</div>
-</div><!-- end pagetop -->
-<div id="footercontainer">
-<div id="nav">
-<div class="section">
-<P>●ダイレクトコミュニケーション</p>
-<ul>
-<li><a href="http://www.direct-commu.com/company/">・会社概要</a></li>
-<li><a href="http://www.direct-commu.com/profile/">・講師紹介</a></li>
-<li><a href="http://www.direct-commu.com/company/contact.html">・お問い合わせ</a></li>
-<li><a href="http://www.direct-commu.com/company/privacy.html">・プライバシーポリシー</a></li>
-</ul>
-
-</div><!-- end section -->
-<div class="section">
-<P>●開催講座一覧</p>
-<ul>
-<li><a href="http://www.direct-commu.com/course/1_intro.html">・はじめての方へ</a></li>
-<li><a href="http://www.direct-commu.com/course/mental.html">・心理学コース</a></li>
-<li><a href="http://www.direct-commu.com/course/ningenkankei.html">・人間関係コース</a></li>
-<li><a href="http://www.direct-commu.com/course/business.html">・社会人基礎コース</a></li>
-</ul>
-
-</div><!-- end section -->
-<div class="section">
-<P>●ダイコミュ通信教材</p>
-<ul>
-<li><a href="http://www.direct-commu.com/text/">・通信講座について</a></li>
-<li><a href="http://www.direct-commu.com/text/mental.html">・心理学教材</a></li>
-<li><a href="http://www.direct-commu.com/text/ningenkankei.html">・人間関係教材</a></li>
-<li><a href="http://www.direct-commu.com/text/katsuzetsu.html">・滑舌・ボイストレーニング教材</a></li>
-</ul>
-</div><!-- end section -->
-
-<div class="section"> <a href="http://www.direct-commu.com/company/contact.html"><img src="../common/sharedimg/footer/banner_footer2.gif" alt="お問い合わせ" /></a></div><!-- end section -->
-</div><!-- end nav -->
-<br class="brclear" />
-<div id="small"><span>Copyright(c) 2006-2013 Direct Communication co.,Ltd all right reserved<br />
-<a href="http://www.direct-commu.com/">コミュニケーション能力のことなら「ダイレクトコミュニケーション」</a></span></div><!-- end small -->
-
-
-</div><!-- end footercontainer -->
-</div><!-- end footer -->
+<?php require_once(dirname(__FILE__).'/../templates/footer.html'); ?>
 
 
 
