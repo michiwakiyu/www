@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+#tinymce.mceContentBody {
+font-family: "メイリオ", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, sans-serif;
+}
+h1.headline-01 {
+margin-bottom: 20px;
+padding: 15px 0 10px 50px;
+width: 100%;
+height: 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/title_main_01.gif) no-repeat top left;
+font-size: 18px;
+display: block;
+box-sizing: border-box;
+}
+h2.headline-02 {
+margin-bottom: 20px;
+padding: 15px 20px 10px;
+color: #ff8040;
+font-size: 18px;
+font-weight: bold;
+display: block;
+box-sizing: border-box;
+}
+h3.headline-03 {
+margin-bottom: 20px;
+padding: 15px 20px 10px;
+color: #1e90ff;
+font-weight: bold;
+display: block;
+box-sizing: border-box;
+}
+h3.entry-title {
+font-size: 120% !important;
+font-family: honokamarugo;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/img/line2.png) repeat-x bottom !important;
+max-width: 95%;
+height: auto !important;
+margin: 0 auto 20px !important;
+padding-left: 0px !important;
+color: #09C;
+}
+p {
+padding: 0 20px;
+}
+p img.alignleft {
+margin: 0 24px 24px 24px;
+float: left;
+}
+p img.aligncenter {
+margin: 0 auto 24px;
+display: block;
+}
+p img.alignright {
+margin: 0 24px 24px 24px;
+float: right;
+}
+p img.alignnone {
+margin: 0 24px 24px 24px;
+display: block;
+}
+div.point {
+margin: 85px auto 45px;
+padding: 10px 20px;
+width: 602px;
+border-right: 4px solid #FFD1AB;
+border-left: 4px solid #FFD1AB;
+display: block;
+position: relative;
+}
+div.point:before {
+content: '';
+width: 650px;
+height: 65px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/post/frame_point_top.gif) no-repeat top left;
+display: block;
+position: absolute;
+top: -65px;
+left: -4px;
+}
+div.point:after {
+content: '';
+width: 650px;
+height: 12px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/post/frame_point_bottom.gif) no-repeat top left;
+display: block;
+position: absolute;
+bottom: -10px;
+left: -4px;
+}
+div.point ul li {
+padding-left: 40px;
+margin-bottom: 10px;
+font-size: 16px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_directcomm_list.gif) no-repeat 0 50%;
+}
+.green {
+color: #009999;
+}
+.blue {
+color: #1e90ff;
+}
+.orange {
+color: #ff8040;
+}
+b.green {
+color: #009999;
+font-weight: bold;
+}
+b.blue {
+color: #1e90ff;
+font-weight: bold;
+}
+b.orange {
+color: #ff8040;
+font-weight: bold;
+}

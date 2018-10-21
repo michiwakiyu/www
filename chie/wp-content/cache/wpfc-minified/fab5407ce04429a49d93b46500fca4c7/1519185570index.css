@@ -1,0 +1,167 @@
+@charset "utf-8";
+   div#header {
+width: 100%;
+height: 170px; background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/img/bg_header_illust.gif);
+background-position: center top;
+background-repeat: repeat-x; padding-top: 15px;
+font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+text-align: center;
+}
+div#header.pt00 {
+padding-top: 0;
+}
+div#onoffbox {
+background: #F1FFED;
+width: 100%;
+}
+div#onoffbox_contents {
+width: 1024px;
+margin: auto;
+height: 270px;
+padding: 0px 0;
+}
+div#onoffbtn {
+width: 1054px;
+margin: auto;
+text-align: right;
+position: relative;
+display:none;
+}
+div#onoffbtn a {
+display: block;
+width: 200px;
+height: 65px; position: absolute;
+top: 0;
+right: 0;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/header/btn_mailmag.png) no-repeat left bottom;
+}
+div#headercontainer {
+width: 1024px;
+padding: 0 20px;
+margin: auto;
+}
+div#headerright {
+font-size: 10px;
+text-align: left;
+padding-left: 100px;
+padding-bottom: 2px;
+height: 20px;
+color: #807F6E;
+}
+div#logowrap {
+float: left;
+height: 40px;
+padding-bottom: 12px;
+padding-left: 20px;
+}
+div#headercontainer ul {
+float: right;
+padding-top: 0px;
+}
+div#headercontainer ul li {
+width: 150px;
+float: left;
+font-size: 12px;
+padding-left: 22px; text-align: left;
+}
+div#headercontainer ul li a {
+color: #807F6E;
+}
+div#headercontainer ul li a:hover {
+text-decoration: underline;
+}
+div#headercontainer:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}  ul#gnav {
+width: 1024px;
+padding: 0 20px;
+margin: auto;
+}
+ul#gnav li {
+width: 128px;
+height: 106px;
+float: left;
+}
+ul#gnav li a {
+display: block;
+width: 128px;
+height: 106px;
+text-indent: -9999px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/gnav/btn_gnav.gif) no-repeat top left;
+}
+ul#gnav li#home a { background-position: 0 0; }
+ul#gnav li#home a:hover { background-position: 0 -106px; }
+ul#gnav li#home a.selected { background-position: 0 -106px; }
+ul#gnav li#course a { background-position: -128px 0; }
+ul#gnav li#course a:hover { background-position: -128px -106px; }
+ul#gnav li#course a.selected { background-position: -128px -106px; }
+ul#gnav li#text a { background-position: -256px 0; }
+ul#gnav li#text a:hover { background-position: -256px -106px; }
+ul#gnav li#text a.selected { background-position: -256px -106px; }
+ul#gnav li#training a { background-position: -384px 0; }
+ul#gnav li#training a:hover { background-position: -384px -106px; }
+ul#gnav li#training a.selected { background-position: -384px -106px; }
+ul#gnav li#ability a { background-position: -512px 0; }
+ul#gnav li#ability a:hover { background-position: -512px -106px; }
+ul#gnav li#ability a.selected { background-position: -512px -106px; }
+ul#gnav li#colums a { background-position: -640px 0; }
+ul#gnav li#colums a:hover { background-position: -640px -106px; }
+ul#gnav li#colums a.selected { background-position: -640px -106px; }
+ul#gnav li#event a { background-position: -768px 0; }
+ul#gnav li#event a:hover { background-position: -768px -106px; }
+ul#gnav li#event a.selected { background-position: -768px -106px; }
+ul#gnav li#teacher a { background-position: -896px 0; }
+ul#gnav li#teacher a:hover { background-position: -896px -106px; }
+ul#gnav li#teacher a.selected { background-position: -896px -106px; } ul#gnav:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}  div#topicpath {
+width: 1024px;
+padding: 15px 20px;
+margin: auto; color: #C9C2BC;
+font-size: 10px;
+font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+padding-top: 30px;
+}
+div#topicleft {
+width: 768px;
+float: left;
+text-align: left;
+}
+div#topicright {
+width: 256px;
+float: right;
+text-align: right;
+}
+div#topicpath:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}
+div#topicpath a {
+font-size: 10px;
+}  div#headercontainer ul#cloud_nav{
+padding-bottom: 10px;
+padding-right:5px;
+}
+div#headercontainer ul#cloud_nav li{
+float:right;
+margin-left:10px;
+text-align: right;
+}
+div#headercontainer ul#cloud_nav li:nth-child(2) {
+margin-top:-10px;
+width:140px;
+}
+div#headercontainer ul#cloud_nav li:nth-child(3) {
+margin-top:-3px;
+}

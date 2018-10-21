@@ -1,0 +1,176 @@
+@charset "utf-8";
+   * {
+margin: 0px;
+padding: 0px;
+line-height: 1.4;
+}
+body {
+position: relative;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_body.gif); background-color: #ffffff; background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_texture_grad.gif);
+background-position: center top;
+background-repeat: repeat-y; min-width:1024px;
+_display: inline;
+_zoom:1; font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+display: none;
+}
+#wrapper { }
+img {
+border: none;
+vertical-align: bottom;
+}
+li {
+list-style-position: outside;
+list-style-type: none;
+}
+p {
+line-height: 160%; }
+a {
+outline: none;
+}
+a:link { color: #005BDF;
+text-decoration: none;
+}
+a:visited {
+color: #006; text-decoration: none;
+}
+a:active,
+a:hover {
+color: #F60;
+text-decoration: underline;
+color: #005BDF;
+}
+hr.clear {
+display: none;
+clear: both;
+}
+hr.line {
+border: none;
+height: 30px;
+margin: 5px 0;
+background : url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/line_001.gif) no-repeat 0 50%;
+}
+hr.line02 {
+border: none;
+height: 30px;
+margin: 5px 0;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/img_line02.gif) no-repeat 0 50%;
+}
+br.brclear {
+clear: both;
+}
+h1,h2,h3 {
+font-weight: normal;
+font-size: 10px;
+color: #958E7F;
+display: inline;
+}
+h3 {
+display: block;
+font-size: 12px;
+color: #666;
+width: 100%;
+text-align: center;
+}
+strong {
+color: #1E90FF;
+font-weight: bold;
+}
+em {
+color: #009999;
+font-style: normal;
+font-weight: bold;
+}
+.fixed{
+position:fixed; top: 0px;
+z-index: -1;
+}  div#container {
+width: 1024px;
+margin: auto;
+}  span.red {
+color: #ff8040;
+font-weight: bold;
+}
+span.blue {
+color: #1E90FF;
+}
+span.green {
+color: #009999;
+}
+span.greenbold {
+color: #009999; FONT-WEIGHT: bold
+}
+SPAN.lightgreenbold {
+COLOR: #4dc14d; FONT-WEIGHT: bold
+}
+span.darkred {
+color: #ff0000;
+}
+span.orange {
+color: #ff8040;
+}
+span.pink {
+color: #ff80c0;
+}
+span.darkblue {
+color: #0000ff;
+}
+SPAN.darkbluebold {
+COLOR: #0000ff; FONT-WEIGHT: bold
+}
+span.lightgreen {
+color: #009900;
+}
+SPAN.lightbluebold {
+COLOR: #00cccc; FONT-WEIGHT: bold
+}
+span.normal {
+font-weight: normal;
+}
+span.marker {
+background: #FDFF96;
+font-weight: bold;
+}
+span.bold {
+font-weight: bold;
+font-size: 120%;
+}
+span.l_red {
+font-weight: bold;
+color: #ff8040;
+font-size: 24px;
+}
+ul.list01 {
+padding: 20px 10px;
+}
+ul.list01 li {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_list.gif) no-repeat 0 50%;
+padding-left: 20px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+ul.normal_list {
+margin-bottom: 20px;
+}
+ul.normal_list li {
+padding-left: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_list.gif) no-repeat 0 4px;
+}
+div#contents strong {
+color: #1E90FF;
+font-weight: bold;
+}
+div#contents em {
+color: #009999;
+font-style: normal;
+font-weight: bold;
+}  div#sp {
+width: 100%;
+border: 1px solid #ccc;
+font-size: 150%;
+}
+div#sp a {
+display: block;
+padding: 30px 0;
+background: #a2ca99;
+text-align: center;
+}

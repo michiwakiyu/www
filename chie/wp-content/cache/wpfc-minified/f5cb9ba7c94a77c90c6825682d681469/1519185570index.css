@@ -1,0 +1,590 @@
+@charset "utf-8";
+
+
+.dcd-wrap {
+width: 100%;
+padding: 0 20px 30px;
+border: 1px solid #d7d7d6;
+border-radius: 6px;
+background-color: #fff;
+box-sizing: border-box;
+}
+.dcd-main {
+padding: 10px;
+}
+.dcd-main p {
+padding: 0 !important;
+}
+.dcd-title {
+margin-bottom: 20px;
+padding-top: 15px;
+color: #ff8040;
+font-size: 18px;
+font-weight: bold;
+display: block;
+box-sizing: border-box;
+}
+.dcd-question {
+margin-bottom: 20px;
+}
+.dcd-question dl {
+margin-bottom: 5px;
+}
+.dcd-question dl dt {
+position: relative;
+}
+.dcd-question dl dt span {
+position: absolute;
+}
+.dcd-question dl dd {
+padding-left: 1.5em;
+}
+.dcd-question ul {
+margin-left: 1.5em;
+padding-bottom: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question.png) 11px bottom no-repeat;
+}
+.dcd-question ul li {
+display: inline-block;
+}
+.dcd-question input {
+display: none;
+}
+.dcd-question label {
+display: block;
+cursor: pointer;
+width: 80px;
+margin: 0 10px;
+padding: 12px 5px;
+background: #bdc3c7;
+color: #555e64;
+font-size: 18px;
+text-align: center;
+line-height: 1;
+transition: .2s;
+border-radius: 5px;
+}
+.dcd-question input[type="radio"]:checked + label {
+background-color: #83af6d;
+color: #fff;
+}
+.dcd-btn-description {
+margin-bottom: 20px;
+}
+.dcd-btn-description span {
+display: inline-block;
+width: 30%;
+margin-bottom: 20px;
+box-sizing: border-box;
+}
+.dcd-btn-description span:before {
+display: inline-block;
+margin: 0 5px 0 0;
+padding: 5px 10px;
+background-color: #83af6d;
+color: #fff;
+font-size: 14px;
+text-align: center;
+line-height: 1;
+transition: .2s;
+border-radius: 5px;
+}
+.dcd-btn-description span.one:before {
+content: "①";
+}
+.dcd-btn-description span.two:before {
+content: "②";
+}
+.dcd-btn-description span.three:before {
+content: "③";
+}
+.dcd-btn-description span.four:before {
+content: "④";
+}
+.dcd-btn-description span.five:before {
+content: "⑤";
+}
+.dcd-options-table {
+margin: 20px 0;
+}
+.dcd-options-table th,
+.dcd-options-table td {
+padding: 10px 20px 10px 0;
+font-weight: normal;
+text-align: left;
+}
+.dcd-options-table select,
+.dcd-options-table input {
+margin-right: 5px;
+}
+.dcd-caution {
+margin: 20px 0;
+}
+.dcd-caution .dcd-caution-text {
+width: 100%;
+height: 200px;
+margin-top: 10px;
+padding: 20px;
+overflow-y: scroll;
+background-color: #FFFDEB;
+border-radius: 5px;
+box-sizing: border-box;
+}
+.dcd-caution .dcd-caution-detail-flg {
+margin-top: 20px;
+}
+.dcd-caution .dcd-caution-detail-flg label {
+text-decoration: underline;
+cursor: pointer;
+}
+.dcd-clear,
+.dcd-submit {
+width: 100%;
+margin-bottom: 30px;
+text-align: center;
+}
+.dcd-clear button,
+.dcd-submit button {
+background: none;
+border: none;
+cursor: pointer;
+}
+.dcd-submit button:focus {
+outline: 0;
+border: none;
+}
+.dcd-result {
+display: none;
+}
+.dcd-result .social {
+margin: 0 0 20px;
+text-align: left;
+}
+.dcd-type {
+margin-bottom: 20px;
+}
+.dcd-type input[type="checkbox"] {
+display: none;
+}
+.dcd-type label {
+width: 100%;
+display: block;
+margin-bottom: 5px;
+padding: 10px;
+background-color: #d8ebda;
+box-sizing: border-box;
+border-radius: 5px;
+}
+.dcd-type .type_detail {
+overflow: hidden;
+max-height: 0;
+transition: max-height 0.2s ease-out 0s;
+}
+.dcd-type .type_detail_inner {
+margin-bottom: 20px;
+padding: 20px;
+line-height: 1.5em;
+background-color: #FFFDEB;
+border-radius: 5px;
+}
+.dcd-type .accordion:checked + label + .type_detail {
+max-height: 9999px;
+transition: max-height 0.5s ease-in;
+}
+.dcd-type label:after {
+content: "▼";
+padding-left: 10px;
+}
+.dcd-type .accordion:checked + label:after {
+content: "▲";
+padding-left: 10px;
+}
+.dcd-result-url {
+margin-bottom: 30px;
+}
+.dcd-result-url p {
+margin-bottom: 0 !important;
+padding: 0;
+}
+.dcd-result-url p.url {
+padding: 10px;
+border: 2px solid #d7d7d6;
+word-break: break-all;
+}
+.dcd-result-url p.url .copy_btn {
+display: inline-block;
+margin: 0 1em;
+padding: 0 5px;
+cursor: pointer;
+color: #555;
+background-color: #ddd;
+background-image: linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255,0)), url(data:image/png;base64,iVBORw0KGg[...]QmCC);
+transition: background-color .2s ease-out;
+background-clip: padding-box; border-radius: 3px;
+box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+text-shadow: 0 1px 0 rgba(255,255,255, .9);
+}
+.dcd-result-url p.url .copy_btn:hover {
+background-color: #eee;
+color: #555;
+}
+.dcd-summary table {
+width: 100%;
+margin-bottom: 30px;
+padding: 10px;
+border-radius: 5px;
+background-color: #ffe9d1;
+}
+.dcd-summary table th {
+text-align: left;
+width: 150px;
+}
+.dcd-summary table th,
+.dcd-summary table td {
+padding: 10px 0;
+}
+.dcd-summary table .summary_total {
+display: none;
+}
+.dcd-bunpu { }
+.dcd-bunpu .tabs {
+margin-top: 50px;
+padding-bottom: 40px;
+background-color: #fff;
+width: 100%;
+margin: 0 auto;
+}
+.dcd-bunpu .tab_item {
+width: calc(100%/3);
+height: 50px;
+border-bottom: 3px solid #a7c7a8;
+background-color: #d9d9d9;
+line-height: 50px;
+font-size: 16px;
+text-align: center;
+color: #565656;
+display: block;
+float: left;
+text-align: center;
+font-weight: bold;
+transition: all 0.2s ease;
+cursor: pointer;
+box-sizing: border-box;
+}
+.dcd-bunpu .tab_item:hover {
+opacity: 0.75;
+}
+.dcd-bunpu input[name="tab_item"] {
+display: none;
+}
+.dcd-bunpu .tab_content {
+padding: 40px 20px 0;
+clear: both;
+overflow: hidden;
+display: none;
+}
+.dcd-bunpu #comp_gender:checked ~ #comp_gender_content,
+.dcd-bunpu #comp_age:checked ~ #comp_age_content,
+.dcd-bunpu #comp_number:checked ~ #comp_number_content {
+display: block;
+}
+.dcd-bunpu .tabs input:checked + .tab_item {
+background-color: #a7c7a8;
+color: #fff;
+}
+.summary_graph_wrap {
+position: relative;
+width: 100%;
+height: 350px;
+}
+.summary_graph_wrap * {
+box-sizing: border-box;
+}
+.summary_graph_wrap p {
+margin: 0 !important;
+padding: 0 !important;
+}
+.summary_graph_wrap .y-coordinate {
+position: absolute;
+left: 0;
+}
+.summary_graph_wrap .y-coordinate.high {
+top: 0;
+}
+.summary_graph_wrap .y-coordinate.row {
+bottom: 50px;
+}
+.summary_graph_wrap .y-coordinate.you {
+top: 0;
+width: 100%;
+height: 20px;
+line-height: 20px;
+border-bottom: 1px dotted #000;
+}
+.summary_graph {
+width: 100%;
+padding-left: 130px;
+height: 350px;
+}
+.summary_graph .item {
+float: left;
+width: 50%;
+height: 350px;
+}
+.summary_graph .bar {
+width: 100%;
+height: 300px;
+padding-top: 100%;
+}
+.summary_graph .bar .text {
+width: 90%;
+height: 20px;
+line-height: 20px;
+margin: 0 auto;
+text-align: center;
+overflow: hidden;
+}
+.summary_graph .bar .color {
+width: 50%;
+height: calc( 100% - 20px );
+margin: 0 auto;
+}
+.summary_graph .x-coordinate {
+width: 90%;
+height: 50px;
+margin: 0 auto;
+text-align: center;
+overflow: hidden;
+}
+.male .color {
+background-color: #99c825;
+}
+.female .color {
+background-color: #ff4cfc;
+}
+#comp_number_content .summary_graph {
+padding-left: 0;
+}
+#comp_age_content .color,
+#comp_number_content .color {
+background-color: #99c825;
+}
+#comp_age_content .color.belong,
+#comp_number_content .color.belong {
+background-color: #ff6b1f;
+}
+#comp_number_content .y-coordinate.belong {
+line-height: 1.2;
+text-align: center;
+}
+#comp_age_content .summary_graph .text,
+#comp_age_content .summary_graph .x-coordinate {
+font-size: 10px;
+}
+@media screen and (max-width: 569px) {
+.dcd-wrap {
+width: 95%;
+margin: 0 auto;
+padding: 0 10px 30px;
+}
+.dcd-btn-description {
+margin-bottom: 30px;
+}
+.dcd-btn-description span {
+display: block;
+width: 100%;
+}
+.dcd-question ul {
+margin: 0 auto;
+padding: 0 0 20px 0;
+width: 100%;
+background: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question_sp.png) 10px bottom no-repeat;
+background-size: 98.5% auto;
+}
+.dcd-question ul::after {
+content: "";
+display: block;
+clear: both;
+}
+.dcd-question ul li {
+display: block;
+float: left;
+width: 20%;
+box-sizing: border-box;
+}
+.dcd-question label {
+width: 90%;
+padding: 12px 0;
+font-size: 18px;
+line-height: 1;
+}
+.dcd-options-table th,
+.dcd-options-table td {
+display: block;
+padding: 10px 20px 10px 0;
+}
+.dcd-summary table th,
+.dcd-summary table td {
+display: block;
+}
+.dcd-summary table th {
+padding: 0;
+}
+.dcd-summary table td {
+padding: 0 0 20px 0;
+}
+.dcd-result-url p.url .copy_btn {
+margin-left: 0;
+}
+.dcd-bunpu .tab_content {
+padding: 20px 0 0;
+}
+.summary_graph_wrap * {
+font-size: 12px;
+}
+.summary_graph {
+padding-left: 85px;
+}
+#comp_age_content .summary_graph .text,
+#comp_age_content .summary_graph .x-coordinate {
+font-size: 8px;
+line-height: 1.2;
+}
+}.modal .checkbox{
+display: none;
+} .modal .modal-overlay{
+opacity: 0;
+transition: all 0.3s ease;
+width: 50%;
+position: absolute;
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -100;
+transform: scale(1);
+display: none;
+background-color: rgba(0,0,0,0.7);
+} .modal .modal-wrap{
+background-color: #ddd;
+box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+padding: 40px 50px;
+width: 60%;
+margin: 20px auto;
+align-self: flex-start;
+border-radius: 2px;
+transition: all 0.5s ease;
+}
+.modal .modal-wrap.small{
+width: 30%;
+}
+.modal .modal-wrap.full{
+width: 100%;
+height: 100%;
+}
+.modal .modal-wrap.a-center {
+align-self: center;
+}
+.modal .modal-wrap.from-left {
+transform: translateX(-100%);
+}
+.modal .modal-wrap.from-right {
+transform: translateX(100%);
+}
+.modal .modal-wrap.from-top {
+transform: translateY(-100%);
+}
+.modal .modal-wrap.from-bottom {
+transform: translateY(100%);
+} .modal .modal-overlay .close{
+position: absolute;
+right: 10px;
+top: 10px;
+font-size: 40px;
+width: 30px;
+height: 30px;
+color: #282c34;
+}
+.modal .modal-overlay .close:hover{
+cursor: pointer;
+color: #4b5361;
+}
+.modal .o-close {
+width: 100%;
+height: 100%;
+position: fixed;
+left: 0;
+top: 0;
+z-index: -100;
+}
+.modal input:checked ~ .o-close {
+z-index: 9998;
+}
+.modal input:checked ~ .modal-overlay{
+transform: scale(1);
+opacity:1;
+z-index: 9997;
+overflow: auto;
+display: flex;
+animation-duration: 0.5s;
+animation-name: fade-in;
+-moz-animation-duration: 0.5s;
+-moz-animation-name: fade-in;
+-webkit-animation-duration: 0.5s;
+-webkit-animation-name: fade-in;
+}
+.modal input:checked ~ .modal-overlay .modal-wrap {
+transform: translateY(0);
+z-index: 9999;
+}  @media (max-width: 800px){
+.modal .modal-wrap {
+width: 80%;
+padding: 20px;
+}
+} @media (max-width: 500px){
+.modal .modal-wrap {
+width: 90%;
+}
+} @keyframes fade-in {
+0% {
+display: none;
+opacity: 0;
+}
+1% {
+display: flex;
+opacity: 0;
+}
+100% {
+display: flex;
+opacity: 1;
+}
+}
+@-moz-keyframes fade-in {
+0% {
+display: none;
+opacity: 0;
+}
+1% {
+display: flex;
+opacity: 0;
+}
+100% {
+display: flex;
+opacity: 1;
+}
+}
+@-webkit-keyframes fade-in {
+0% {
+display: none;
+opacity: 0;
+}
+1% {
+display: flex;
+opacity: 0;
+}
+100% {
+display: flex;
+opacity: 1;
+}
+}

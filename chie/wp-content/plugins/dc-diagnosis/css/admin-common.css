@@ -1,0 +1,4 @@
+@charset "utf-8";
+.post-type-dc-diagnosis .tablenav.top {
+	display: none !important;
+}
