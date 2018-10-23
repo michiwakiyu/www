@@ -760,9 +760,9 @@ p.caption {
 /* -------------------------------------------------- */
 
 .section_nav {
-background:url(../sharedimg/chie/nav/pencil.png) no-repeat right bottom,url(../sharedimg/chie/nav/bg.png) repeat-y left top/100% auto;
+background:url(../sharedimg/chie/nav/pencil.png) no-repeat right bottom,url(../sharedimg/chie/nav/bg_t.png) no-repeat left top/100% auto,url(../sharedimg/chie/nav/bg_b.png) no-repeat left bottom/100% auto,url(../sharedimg/chie/nav/bg.png) repeat-y left top/100% auto;
 margin:0px auto 30px;
-padding: 10px 80px 20px 30px;
+padding: 8px 80px 16px 50px;
 display: flex;
     display:-webkit-box;
     display:-moz-box;
@@ -780,28 +780,20 @@ justify-content: space-between;
 }
 
 .section_nav li{
-background:url(../sharedimg/chie/nav/icon_arrow.png) no-repeat left top;
-width:28%;
-margin-top:10px;
-padding-left:20px;
-}
-
-.section_nav .pcnone{
-display:none;
+background:url(../sharedimg/chie/nav/icon.png) no-repeat left 4px;
+width:40%;
+margin-top:8px;
+padding-left:24px;
 }
 
 @media screen and (max-width: 569px) {
 .section_nav {
-background:url(../sharedimg/chie/nav/pencil.png) no-repeat right bottom/20% auto,url(../sharedimg/chie/nav/bg.png) repeat-y left top/100% auto;
-padding: 3% 6%;
+padding: 6%;
+display:block;
 }
 .section_nav li{
 margin-top:2%;
-width:40%;
-}
-
-.section_nav .pcnone{
-display:block;
+width:auto;
 }
 
 }
