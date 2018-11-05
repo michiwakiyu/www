@@ -1,20 +1,32 @@
+﻿<?php
+$adcodes = '';
+$expire = 30 * 24 * 60 * 60; // 30日間
+
+// 広告コードを格納
+if ( isset($_GET['adcode']) ) {
+  // クッキーへ書き込み
+  setcookie('adcode', htmlspecialchars($_GET['adcode']), time() + $expire, '/');
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8" />
-<meta name="description" content="コミュニケーション能力がぐんぐんUPする話し方教室です。お手軽な料金で受けられる講座,セミナーです。すぐに役立つレッスン！教室や研修情報もここにアリ！ダイレクトコミュニケーションは、本物の「コミュニケーション能力」の獲得を目指します。">
-<meta name="keywords" content="話し方教室,コミュニケーション能力,講座,セミナー,研修">
+<meta name="description" content="コミュニケーション講座で話し方のスキルがぐんぐんUP！お手軽な料金で受けられるセミナーです。すぐに役立つレッスン！教室や研修情報もここにアリ！ダイレクトコミュニケーションは、本物の「コミュニケーション能力」の獲得を目指します。">
+<meta name="keywords" content="コミュニケーション講座">
 
-<title>コミュニケーション能力がぐんぐんUPする講座,楽しいセミナー型教室</title>
-<link href="../sp_common/css/base.css" rel="stylesheet" type="text/css" media="all" />
+<title>コミュニケーション講座で話し方がぐんぐん上達！すぐに役立つ楽しいセミナー型教室</title>
+<link href="../sp_common/css/base.css?ver=2017082101" rel="stylesheet" type="text/css" media="all" />
 <link href="../sp_common/css/layout.css" rel="stylesheet" type="text/css" media="all" />
 
-<link rel="shortcut icon" href="http://www.direct-commu.com/favicon.ico" />
+<link rel="shortcut icon" href="/favicon.ico" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 <script type="text/javascript" src="../sp_common/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="../sp_common/js/jquery.validate.js"></script>
+<script type="text/javascript" src="../sp_common/js/accordion-course.js"></script>
 
 </head>
 
@@ -23,7 +35,7 @@
 
 <header class="after_clear">
 <div class="header_l"><div class="img_l"><img src="../sp_common/images/illust_header_l.png" width="50" height="70"></div></div><!-- end header_l -->
-<div class="header_c"><a href="http://www.direct-commu.com"><h1><img src="../sp_common/images/logo_sp_directcomm.png" width="233" height="41" alt="ダイレクトコミュニケーション" /></h1></a></div><!-- end header_c -->
+<div class="header_c"><a href="/"><h1><img src="../sp_common/images/logo_sp_directcomm.png" width="233" height="41" alt="ダイレクトコミュニケーション" /></h1></a></div><!-- end header_c -->
 <div class="header_r"><div class="img_r"><img src="../sp_common/images/illust_header_r.png" width="95" height="61"></div></div><!-- end header_r -->
 </header>
 
@@ -32,19 +44,10 @@
 </div><!-- end keyvisual -->
 
 
-<ul id="menu" class="after_clear">
-<li id="intro"><a href="http://www.direct-commu.com/course/1_intro.html" class="btn_topleft">はじめての方へ</a></li>
-<li id="training"><a href="http://www.direct-commu.com/training/" class="btn_right"><span>コミュニケーション</span>トレーニング</a></li>
-<li id="course"><a href="http://www.direct-commu.com/course/" class="selected"><span>コミュニケーション</span>講座</a></li>
-<li id="colums"><a href="http://www.direct-commu.com/colums/" class="btn_right"><span>コミュニケーション</span>知恵袋</a></li>
-<li id="text"><a href="http://www.direct-commu.com/text/"><span>ダイコミュ</span>通信講座</a></li>
-<li id="teacher"><a href="http://www.direct-commu.com/profile/" class="btn_right"><span>ダイコミュ</span>講師紹介</a></li>
-<li id="event"><a href="http://www.direct-commu.com/event/" class="btn_bottom">イベント</a></li>
-<li id="contact"><a href="http://www.direct-commu.com/company/contact.html" class="btn_right btn_bottom">お問い合わせ</a></li>
-</ul>
+<?php require_once(dirname(__FILE__).'/../../templates/header_sp.html'); ?>
 
 <br class="brclear" />
-<div id="topicpath"><a href="http://www.direct-commu.com/">トップ</a> > <span>コミュニケーション講座</span></div>
+<div id="topicpath"><a href="/">トップ</a> > <span>コミュニケーション講座</span></div>
 
 <section>
 <h2 class="arrow01"><div>コミュニケーション講座</div></h2>
@@ -52,98 +55,139 @@
     <section>
    	<h3 class="underline01"><div class="num_01">はじめての方へ</div></h3>
         <div class="text">
-        	<p>コミュニケーション講座をご受講される方は必ずお読みください&gt;&gt;</p>
-        	<p><a href="http://www.direct-commu.com/course/1_intro.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
+        	<p>はじめての方はこちらへ♪コミュニケーション講座の内容をわかりやすくお伝えします。&gt;&gt;</p>
+        	<p><a href="/course/1_intro.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
         </div>
     </section>
     
     <section>
    	<h3 class="underline01"><div class="num_02">コミュニケーション講座</div></h3>
-        <div class="text">
-        	<p>コミュニケーション講座をご受講される方は必ずお読みください&gt;&gt;</p>
-            
-        <a href="http://www.direct-commu.com/course/mental.html" class="btnlink01 frame01">
+        <div class="text">           
+        <a href="/course/mental.html" class="btnlink01 frame01">
             <div class="imgcenter"><img src="../sp_common/images/course/img_title_mental.gif" alt="心理学コース" width="218" /></div><div class="col_2">
-              <div class="col_l"><p>もう悩まない！<br />
-                会話の展開上手になろう♪</p>
+              <div class="col_l"><p>コミュ力がUPする！<br />
+                初めての心理療法</p>
                 <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
               </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_01.gif" alt="心理学コースいらすと" width="110" /></div></div>
         </a>
             
-            <a href="http://www.direct-commu.com/course/ningenkankei.html" class="btnlink01 frame01">
-            <div class="imgcenter"><img src="../sp_common/images/course/img_title_ningenkankei.gif" alt="人間関係コース" width="251" /></div><div class="col_2">
-              <div class="col_l"><p>もう悩まない！<br />
-                会話の展開上手になろう♪</p>
-                <p><img src="../sp_common/images/img_btn_kuwashiku.gif" 　alt="詳しく見る" width="106" /></p>
-            </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_02.gif" alt="人間関係コースイラスト" class="width_100" /></div></div>
-            </a>  
-            
-            <a href="http://www.direct-commu.com/course/business.html" class="btnlink01 frame01">
-            <div class="imgcenter"><img src="../sp_common/images/course/img_title_business.gif" alt="社会人基礎コース" width="261" /></div><div class="col_2"><div class="col_l"><p>自分の意見に自信を持つ！<br />
-              一生使えるスキルを学ぶ♪</p>
-              <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
-            </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_05.gif" width="110" height="119" alt="社会人基礎コースのイラスト" /></div></div>
-            </a>            
-            </div><!-- end text -->
+        <a href="/course/ningenkankei.html" class="btnlink01 frame01">
+        <div class="imgcenter"><img src="../sp_common/images/course/img_title_ningenkankei.gif" alt="人間関係コース" width="251" /></div><div class="col_2">
+          <div class="col_l"><p>会話の展開上手になろう♪<br />
+           傾聴力と発話力で会話がうまくなる</p>
+            <p><img src="../sp_common/images/img_btn_kuwashiku.gif" 　alt="詳しく見る" width="106" /></p>
+        </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_02.gif" alt="人間関係コースイラスト" class="width_100" /></div></div>
+        </a>  
+
+        <a href="/course/business.html" class="btnlink01 frame01">
+        <div class="imgcenter"><img src="../sp_common/images/course/img_title_business.gif" alt="社会人基礎コース" width="261" /></div><div class="col_2"><div class="col_l"><p>説得力をつけて自信を持つ！人前で楽しく話す♪あがり症の改善</p>
+          <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
+        </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_05.gif" width="110" height="119" alt="社会人基礎コースのイラスト" /></div></div>
+        </a>
+
+        <a href="/text/" class="btnlink01 frame01">
+        <div class="imgcenter"><img src="../sp_common/images/course/img_title_text.gif" alt="ダイレクトコミュニケーション通信講座" width="294" /></div><div class="col_2"><div class="col_l"><p>地方の方でも安心♪<br />通信講座もあります</p>
+          <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
+        </div><div class="col_r"><img src="../sp_common/images/course/img_text.png" width="110" alt="ダイレクトコミュニケーション通信講座のイメージ" /></div></div>
+        </a>            
+
+        <a href="/young/" class="btnlink01 frame01">
+        <div class="imgcenter"><img src="../sp_common/images/course/img_title_young.gif" alt="学生向け講座" /></div><div class="col_2"><div class="col_l"><p>２１歳以下の方はこちらへ♪中学，高校，大学生，専門学校生の方をお待ちしています</p>
+          <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
+        </div><div class="col_r"></div></div>
+        </a>            
+        </div><!-- end text -->
     </section>
     
     <section>
-    <h3 class="underline01"><div class="num_03">スケジュール・会場</div></h3>
+    <h3 class="underline01" id="schedule"><div class="num_03">スケジュール・会場</div></h3>
         <div class="text">
-        <p>コミュニケーション講座をご受講される方は必ずお読みください&gt;&gt;</p>
+        <p>コミュニケーション講座は全国に8クラス、地方の方は通信講座があります。是非お待ちしています。</p>
         <img src="../sp_common/images/course/title_list_mental_ningenkankei.gif" alt="心理学・人間関係コース" class="width_100" style="margin: 0" />
-        <ul class="list01">
-        <li><a href="http://www.direct-commu.com/course/class/class_shinjuku.php">新宿第1教室</a></li>
-        <li><a href="http://www.direct-commu.com/course/class/class_yokohama.php">横浜教室</a></li>
-        <li><a href="http://www.direct-commu.com/course/class/class_ginza.php">銀座教室</a></li>
-        <li><a href="http://www.direct-commu.com/course/class/class_saitama.php">埼玉教室</a></li>
-        <li class="bottom"><a href="http://www.direct-commu.com/course/class/class_kansai.php">関西教室</a></li>
+            
+        <ul class="list04">
+            <li>
+                <a><img src="../sp_common/images/arrow03.png" class="list_arrow"> 関東の方</a>
+                <ul class="list01 mb0" style="display:none;">
+                    <li><a href="/course/class/class_shinjuku.php">新宿教室</a></li>
+                    <li><a href="/course/class/class_shinjuku2.php">新宿第２教室（平日）</a></li>
+                    <li><a href="/course/class/class_ginza.php">御茶ノ水第１教室</a></li>
+                    <li><a href="/course/class/class_akihabara.php">御茶ノ水第２教室</a></li>
+                    <li><a href="/course/class/class_shinjuku_02.php">銀座教室</a></li>
+                    <li><a href="/course/class/class_yokohama.php">横浜教室</a></li>
+                    <li><a href="/course/class/class_saitama.php">埼玉教室</a></li>
+                    <li><a href="/course/class/class_chiba.php">千葉教室</a></li>
+                </ul>
+            </li>
+            <li>
+                <a><img src="../sp_common/images/arrow03.png" class="list_arrow"> 関西の方</a>
+                <ul class="list01 mb0" style="display: none;">
+                    <li><a href="/course/class/class_kansai.php">関西第１教室</a></li>
+                    <li><a href="/course/class/class_kansai2.php">関西第２教室</a></li>
+                </ul>
+            </li>
+            <li>
+                <a><img src="../sp_common/images/arrow03.png" class="list_arrow"> 地方の方</a>
+                <ul class="list01 mb0" style="display:none;">
+                    <li><a href="/text/mental.html">心理学通信講座</a></li>
+                    <li><a href="/text/ningenkankei.html">人間関係通信講座</a></li>
+                    <li><a href="/text/katsuzetsu.html">滑舌通信講座</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/young"><img src="../sp_common/images/arrow03.png" class="list_arrow">21歳以下の方</a>
+            </li>
         </ul>
         
-               <img src="../sp_common/images/course/img_list_title_business.gif" alt="社会人基礎コース" class="width_100" style="margin: 0" />
-        <ul class="list01">
-        <li class="bold"><a href="http://www.direct-commu.com/course/class/class_shinjuku_02.php">新宿第２教室</a></li>
+        <img src="../sp_common/images/course/img_list_title_business.gif" alt="社会人基礎コース" class="width_100" style="margin: 0" />
+        <ul class="list01 mb0">
+            <li class="bold"><a href="/course/class/class_shinjuku_02.php">銀座第２教室</a></li>
+        </ul>
+
+        <img src="../sp_common/images/course/title_list_tsushinkoza.gif" alt="通信講座" class="width_100" style="margin: 0" />
+        <ul class="list01 mb0">
+            <li class="bold"><a href="/text/">通信講座</a></li>
         </ul>
  
         </div>
+<p>全体スケジュールを把握したい方は→<a href="/course/schedule.html">こちら</a>です</p>
         
         
     </section>
     
     <section>
     <h3 class="underline01"><div class="num_04">受講料金</div></h3>
-    <div class="text"><p>入会料、更新料などを一切排除し、極めてお手頃な 料金を達成致しました。</p>
-      <p><a href="http://www.direct-commu.com/course/4_price.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
+    <div class="text"><p>体験割引が2,000円、月9，000円前後の講座代金です。入会料、更新料などはありません。お手頃な料金でご受講下さい。</p>
+      <p><a href="/course/4_price.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
     </div>
     </section>
     
     <section>
     <h3 class="underline01"><div class="num_05">注意事項</div></h3>
-    <div class="text"><p>ご受講の上での注意事項をご確認ください&gt;&gt;</p>
-      <p><a href="http://www.direct-commu.com/course/5_confirmation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
+    <div class="text"><p>コミュニケーション講座の長所と短所をまとめました。ご受講の上での注意事項をご確認ください&gt;&gt;</p>
+      <p><a href="/course/5_confirmation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
     </div>
 </section>
     
     <section>
     <h3 class="underline01"><div class="num_06">仮予約</div></h3>
-    <div class="text"><p>仮予約フォームから送信、返信メールをお受け取り→<br />
-      受講料をお振込み頂き、準備完了！</p>
-      <p><a href="http://www.direct-commu.com/course/6_reservation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
+    <div class="text"><p>仮予約フォームから送信、返信メールをお受け取り→受講料をお振込み頂き、準備完了！</p>
+      <p><a href="/course/6_reservation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
     </div>
     </section>
 
 </section>
 
 <section>
-<h2 class="arrow01">
+<h2 class="arrow01" id="eriko">
 <div>エリコの講座体験記</div></h2>
 <div class="text">
   <ul class="list01">
-    <li class="to_page_top"><a href="http://www.direct-commu.com/course/student/01_20110710.html">第１回　心理学コース　エゴグラムで性格を知る</a></li>
-    <li><a href="http://www.direct-commu.com/course/student/02_20110727.html">第２回　心理学コース　考え方の歪みを知る</a></li>
-    <li><a href="http://www.direct-commu.com/course/student/03_20110808.html">第３回　心理学コース　正しい練習法を学ぼう</a></li>
-    <li><a href="http://www.direct-commu.com/course/student/04_20110824.html">第４回　心理学コース　 ゆったりとした心で話そう～</a></li>
-    <li class="bottom"><a href="http://www.direct-commu.com/course/student/05_20110906.html">第５回　人間関係コース　傾聴、質問のワーク</a></li>
+    <li class="to_page_top"><a href="/course/student/01_20110710.html">第１回　心理学コース　エゴグラムで性格を知る</a></li>
+    <li><a href="/course/student/02_20110727.html">第２回　心理学コース　考え方の歪みを知る</a></li>
+    <li><a href="/course/student/03_20110808.html">第３回　心理学コース　正しい練習法を学ぼう</a></li>
+    <li><a href="/course/student/04_20110824.html">第４回　心理学コース　 ゆったりとした心で話そう～</a></li>
+    <li class="bottom"><a href="/course/student/05_20110906.html">第５回　人間関係コース　傾聴、質問のワーク</a></li>
   </ul></div>
 </section>
 
@@ -153,28 +197,28 @@
 
 <div class="text">
   <ul class="list01">
-    <li class="to_page_top"><a href="http://www.direct-commu.com/course/counseling/group.html">グループカウンセリング</a></li>
-    <li><a href="http://www.direct-commu.com/course/counseling/psychology.html">心理カウンセリング</a></li>
-    <li class="bottom"><a href="http://www.direct-commu.com/course/counseling/shinri.html">心理検査</a></li>
+    <li class="to_page_top"><a href="/course/counseling/group.html">グループカウンセリング</a></li>
+    <li><a href="/course/counseling/psychology.html">心理カウンセリング</a></li>
+    <li class="bottom"><a href="/course/counseling/shinri.html">心理検査</a></li>
   </ul>
   </div>
 </section>
 
 <section>
-<h2 class="arrow01">
+<h2 class="arrow01" id="attention">
   <div>その他・注意事項</div></h2>
     <div class="text">
     <ul class="list01">
-    <li class="to_page_top"><a href="http://www.direct-commu.com/course/keizoku.html">継続について</a></li>
-    <li><a href="http://www.direct-commu.com/course/furikae.html">振替について</a></li>
-    <li><a href="http://www.direct-commu.com/course/seitosannokoe.html">生徒さんの声</a></li>
-    <li class="bottom"><a href="http://www.direct-commu.com/course/yokuarushitumon.html">よくある質問</a></li>
+    <li class="to_page_top"><a href="/course/keizoku.html">継続について</a></li>
+    <li><a href="/course/furikae.html">おやすみについて</a></li>
+    <li><a href="/course/seitosannokoe.html">生徒さんの声</a></li>
+    <li class="bottom"><a href="/course/yokuarushitumon.html">よくある質問</a></li>
     </ul>
     </div>
 </section>
 
 
-<section>
+<!--<section>
 <h2 class="arrow01">
 <div>アンガーマネジメント講座</div></h2>
 <div class="text">
@@ -182,7 +226,7 @@
 <p>「イライラ、怒りのコントロール方法を学ぶ」です。人と関わる上で心を落ち着けて<br>
 コミュニケーションする方法を学びましょう。 <a href="01_kanto/index.html">詳しくはこちら</a></p>
 <a href="01_kanto/index.html"><img src="../sp_common/images/course/img_keyvisual_tanki_20130915.jpg" style="width: 100%; max-width: 620px"></a></div>
-</section>
+</section>-->
 
 
 <div class="to_page_top"><a href="">このページのTOPへ</a></div>
