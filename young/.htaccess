@@ -1,0 +1,24 @@
+# AuthUserFile /home/users/2/lolipop.jp-dp58180317/web/www/young/.htpasswd
+# AuthGroupFile /dev/null
+# AuthName "Please enter account ID and password."
+# AuthType Basic
+# require valid-user
+
+# Force SSL
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /young/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /young/index.php [L]
+</IfModule>
+
+# END WordPress

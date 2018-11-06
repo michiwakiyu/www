@@ -1,0 +1,409 @@
+@charset "utf-8";
+
+/*=========================================================
+ *
+ *	css file for "direct-comm.com"
+ *	file name : sp.css
+ *
+=========================================================*/
+
+/*-----------------pc style-----------------------*/
+div#header,
+div#footer {
+	min-width: 1064px;
+}
+div#container {
+	padding: 0 20px;
+}
+.bt_curri {
+	display: none;
+}
+
+/*-----------------sp style-----------------------*/
+@media screen and (max-width: 569px) {
+	body {
+		max-width: 0;
+		min-width: 100%;
+		width: auto;
+	}
+	div#header,
+	div#footer {
+		min-width: 0;
+	}
+	div#container {
+		padding: 0;
+	}
+
+/*-------------header-------------------*/
+	div#header {
+		height: auto;
+		background: none;
+		border-top: #3aa537 solid 3px;
+	}
+	div#headercontainer {
+		position: relative;
+		width: auto;
+		padding: 10px 0 15px;
+		background: url(../../sharedimg/sp/bg-hdr.gif) repeat-x right top;
+		background-size: auto 100%;
+	}
+	div#headercontainer:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		height: 50px;
+		width: 70px;
+		background: url(../../sharedimg/sp/bg-hdr01.gif) no-repeat left top;
+		background-size: auto 100%;
+	}
+	div#headercontainer:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		content: '';
+		height: 50px;
+		width: 70px;
+		background: url(../../sharedimg/sp/bg-hdr02.gif) no-repeat right top;
+		background-size: auto 100%;
+		visibility: visible;
+	}
+	div#headerright {
+		display: none;
+	}
+	div#logowrap {
+		position: relative;
+		float: none;
+		padding: 0;
+		text-align: center;
+		z-index: 5;
+	}
+
+	div#topicpath {
+		width: auto;
+		padding: 15px 10px 10px;
+	}
+	div#topicleft {
+		width: auto;
+	}
+	div#topicright {
+		display: none;
+	}
+	#cloud_nav,
+	#gnav {
+		display: none;
+	}
+
+    h1.headline-01 {
+		position: relative;
+		width: auto;
+		height: auto;
+		margin-bottom: 15px;
+		padding: 12px 10px 8px 40px;
+		color: #fef8ed;
+		font-size: 16px;
+		line-height: 1.4;
+		font-weight: bold;
+		background-image: url(../../sharedimg/sp/bg-title.gif);
+		background-repeat: repeat-x;
+		background-position: left top;
+		background-color: #64b386;
+    }
+    h1.headline-01:after {
+		position: absolute;
+		top: 15px;
+		left: 13px;
+		content: '';
+		height: 17px;
+		width: 20px;
+		background: url(../../sharedimg/sp/arw.gif) no-repeat right top;
+		background-size: 100% auto;
+    }
+
+
+/*-------------keyvisual-------------------*/
+	#keyvisual {
+		display: none;
+	}
+/*-------------spvisual-------------------*/
+	#spvisual {
+		display: block;
+	}
+	#spvisual img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+/*-------------spnav-------------------*/
+	#spnav {
+		display: block;
+	}
+	#spnav ul {
+		padding-left: 1px;
+		padding-right: 0;
+		zoom: 1;
+		border-bottom: #e4e1c6 solid 1px;
+	}
+	#spnav ul:after {
+		display: block;
+		clear: both;
+		height: 0;
+		content: '';
+	}
+	#spnav li {
+		display: table;
+		float: left;
+		width: 50%;
+		height: 45px;
+		border-top: #e4e1c6 solid 1px;
+		background: url(../../sharedimg/sp/bg-nav.gif) repeat-x left top;
+		background-size: auto 100%;
+	}
+	#spnav li:first-child,
+	#spnav li:nth-child(2n+1) {
+		margin-left: -1px;
+	}
+	#spnav li:nth-child(2n) {
+		border-left: #e4e1c6 solid 1px;
+	}
+	#spnav li a {
+		position: relative;
+		display: table-cell;
+		color: #8f8974;
+		font-size: 14px;
+		text-decoration: none;
+		vertical-align: middle;
+		background: url(../../sharedimg/sp/bg-nav.gif) repeat-x left top;
+		background-size: auto 100%;
+	}
+	#spnav li a:after {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		display: block;
+		content: '';
+		width: 15px;
+		height: 15px;
+		margin-top: -8px;
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+	#spnav li.n01 a:after {background-image: url(../../sharedimg/sp/icon_home.png);}
+	#spnav li.n02 a:after {background-image: url(../../sharedimg/sp/icon_course.png);}
+	#spnav li.n03 a:after {background-image: url(../../sharedimg/sp/icon_price.png);}
+	#spnav li.n04 a:after {background-image: url(../../sharedimg/sp/icon_schedule.png);}
+	#spnav li.n05 a:after {background-image: url(../../sharedimg/sp/icon_profile.png);}
+	#spnav li.n06 a:after {background-image: url(../../sharedimg/sp/icon_apply.png);}
+	#spnav li.n07 a:after {background-image: url(../../sharedimg/sp/icon_parents.png);}
+	#spnav li.n08 a:after {background-image: url(../../sharedimg/sp/icon_absent.png);}
+	#spnav li.n09 a:after {background-image: url(../../sharedimg/sp/icon_continue.png);}
+	#spnav li.n10 a:after {background-image: url(../../sharedimg/sp/icon_futaba.png);}
+	#spnav li a:hover,
+	#spnav li.on a {
+		color: #fff;
+		background: #64b386;
+	}
+	#spnav li.n01 a:hover:after,
+	#spnav li.n01.on a:after {background-image: url(../../sharedimg/sp/icon_home_hover.png);}
+	#spnav li.n02 a:hover:after,
+	#spnav li.n02.on a:after {background-image: url(../../sharedimg/sp/icon_course_hover.png);}
+	#spnav li.n03 a:hover:after,
+	#spnav li.n03.on a:after {background-image: url(../../sharedimg/sp/icon_price_hover.png);}
+	#spnav li.n04 a:hover:after,
+	#spnav li.n04.on a:after {background-image: url(../../sharedimg/sp/icon_schedule_hover.png);}
+	#spnav li.n05 a:hover:after,
+	#spnav li.n05.on a:after {background-image: url(../../sharedimg/sp/icon_profile_hover.png);}
+	#spnav li.n06 a:hover:after,
+	#spnav li.n06.on a:after {background-image: url(../../sharedimg/sp/icon_apply_hover.png);}
+	#spnav li.n07 a:hover:after,
+	#spnav li.n07.on a:after {background-image: url(../../sharedimg/sp/icon_apply_hover.png);}
+	#spnav li.n08 a:hover:after,
+	#spnav li.n08.on a:after {background-image: url(../../sharedimg/sp/icon_absent_hover.png);}
+	#spnav li.n09 a:hover:after,
+	#spnav li.n09.on a:after {background-image: url(../../sharedimg/sp/icon_continue_hover.png);}
+	#spnav li a span {
+		display: block;
+		font-size: 11px;
+	}
+
+
+/*-------------container-------------------*/
+	div#container {
+		width: auto;
+	}
+
+/*-------------sidebar-------------------*/
+	div#sidebar {
+		display: none;
+	}
+
+
+/*-------------content-------------------*/
+/*	div#content {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+	div#contenttop,
+	div#bg_contentbottom {
+		display: none;
+	}
+*/
+
+	div.prof_box {
+		width: 100%;
+	}
+	div.prof_box div.prof_text {
+		width: 100%;
+	}
+	div.prof_box div.prof_img {
+		margin: 0 auto 20px;
+		float: none;
+	}
+
+/*-------------sp_subnav-------------------*/
+table.table012 tr td h1, 
+table.table012 tr td h2, 
+table.table012 tr td h3 {
+        font-size: 18px;
+}
+
+/*-------------sp_subnav-------------------*/
+	.sp_subnav {
+		display: block;
+		margin: 0 7px;
+		font-size: 14px;
+	}
+	.sp_subnav .sp_sbtitle {
+		padding: 15px 0 15px 15px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		background-color: #64b386;
+		background-image: url(../../sharedimg/sp/bg-nav02.gif);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 100% auto;
+	}
+    .sp_subnav .sp_sbtitle a {
+        color: #fff !important;
+    } 
+	.sp_subnav li {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		display: table;
+		width: 100%;
+		height: 45px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		background: #fefedf;
+		border-top: #fff solid 1px;
+		// border-bottom: #e7e7d0 solid 1px;
+	}
+	.sp_subnav li a {
+		position: relative;
+		display: block; // table-cell;
+		width: 100%;
+		padding-left: 25px;
+		color: #696657;
+		vertical-align: middle;
+		background: url(../../sharedimg/sp/icon_futaba.png) no-repeat left center /18px auto;
+		text-decoration: none;
+        box-sizing: border-box; // added
+	}
+	.sp_subnav li.n01 a {background-image: url(../../sharedimg/sp/icon_home.png);}
+	.sp_subnav li.n02 a {background-image: url(../../sharedimg/sp/icon_course.png);}
+	.sp_subnav li.n03 a {background-image: url(../../sharedimg/sp/icon_price.png);}
+	.sp_subnav li.n04 a {background-image: url(../../sharedimg/sp/icon_schedule.png);}
+	.sp_subnav li.n05 a {background-image: url(../../sharedimg/sp/icon_profile.png);}
+	.sp_subnav li.n06 a {background-image: url(../../sharedimg/sp/icon_apply.png);}
+	.sp_subnav li.n07 a {background-image: url(../../sharedimg/sp/icon_parents.png);}
+	.sp_subnav li.n08 a {background-image: url(../../sharedimg/sp/icon_absent.png);}
+	.sp_subnav li.n09 a {background-image: url(../../sharedimg/sp/icon_continue.png);}
+    .sp_subnav .list-style-none li a {
+        padding-left: 0;
+        padding-left: auto;
+		background: none;
+    }
+
+/*-------------main-------------------*/
+
+    div.point {
+        padding: 10px 20px 0;
+        width: 252px;
+        background-color: #fff;
+    }
+    div.point:before {
+        width: 300px;
+        height: 45px;
+        background: url('../../sharedimg/sp/shinri/post/frame_point_top.png') no-repeat top left;
+        top: -45px;
+    }
+    div.point:after {
+        width: 300px;
+        height: 25px;
+        background: url('../../sharedimg/sp/shinri/post/frame_point_bottom.png') no-repeat top left;
+        bottom: -25px;
+    }
+    .point ul li {
+        padding-left: 45px;
+        background: url('../../sharedimg/sp/icon_futaba.png') no-repeat 10px 50%;
+        margin-bottom: 10px;
+    }
+
+/*-------------footer-------------------*/
+	div#footer div#pagetop {
+		position: relative;
+		height: auto;
+		margin-left: -30%;
+		padding-top: 150px;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: 800px auto;
+	}
+	div#pagetop div#btn_pagetop {
+		position: absolute;
+		right: 5px;
+		bottom: 5px;
+		padding: 0;
+	}
+	div#footercontainer div#nav {
+		display: none;
+		width: auto;
+	}
+	div#footercontainer br.brclear {
+		display: none;
+	}
+	div#footercontainer div#small {
+		background: #99ad9f;
+		text-align: center;
+	}
+	div#footercontainer div#small span {
+		width: auto;
+		text-align: center;
+	}
+	div#footercontainer div#small .pc {
+		display: none;
+	}
+	div#footercontainer div#small .sp {
+		display: inline-block;
+	}
+
+	/* icon_list */
+	.icon_list {
+		background-image: none;
+		margin-left: 0 !important;
+	}
+
+	.icon_list li {
+		display: inline-block;
+		min-height: 30px;
+		padding-left: 80px !important;
+		background-size: auto auto !important;
+	}
+
+}
