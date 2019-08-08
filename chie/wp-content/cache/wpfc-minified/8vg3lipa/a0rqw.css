@@ -1,0 +1,2656 @@
+@charset "utf-8";
+@charset "utf-8";
+@charset "utf-8";
+@charset "utf-8";
+@charset "utf-8";
+@charset "utf-8";
+@charset "utf-8";
+@charset "utf-8";
+
+   * {
+margin: 0px;
+padding: 0px;
+// line-height: 1.4;
+}
+body {
+position: relative;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_body.gif); background-color: #ffffff; background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_texture_grad.gif);
+background-position: center top;
+background-repeat: repeat-y; min-width:1024px;
+_display: inline;
+_zoom:1; font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+display: none;
+}
+#wrapper { }
+img {
+border: none;
+vertical-align: bottom;
+}
+li {
+list-style-position: outside;
+list-style-type: none;
+}
+p {
+line-height: 160%; }
+a {
+outline: none;
+}
+a:link { color: #005BDF;
+text-decoration: none;
+}
+a:visited {
+color: #006; text-decoration: none;
+}
+a:active,
+a:hover {
+color: #F60;
+text-decoration: underline;
+color: #005BDF;
+}
+hr.clear {
+display: none;
+clear: both;
+}
+hr.line {
+border: none;
+height: 30px;
+margin: 5px 0;
+background : url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/line_001.gif) no-repeat 0 50%;
+}
+hr.line02 {
+border: none;
+height: 30px;
+margin: 5px 0;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/img_line02.gif) no-repeat 0 50%;
+}
+br.brclear {
+clear: both;
+}
+h1,h2,h3 {
+font-weight: normal;
+font-size: 10px;
+color: #958E7F;
+display: inline;
+}
+h3 {
+display: block;
+font-size: 12px;
+color: #666;
+width: 100%;
+text-align: center;
+}
+strong {
+color: #1E90FF;
+font-weight: bold;
+}
+em {
+color: #009999;
+font-style: normal;
+font-weight: bold;
+}
+.fixed{
+position:fixed; top: 0px;
+z-index: -1;
+}  div#container {
+width: 1024px;
+margin: auto;
+}  span.red {
+color: #ff8040;
+font-weight: bold;
+}
+span.blue {
+color: #1E90FF;
+}
+span.green {
+color: #009999;
+}
+span.greenbold {
+color: #009999; FONT-WEIGHT: bold
+}
+SPAN.lightgreenbold {
+COLOR: #4dc14d; FONT-WEIGHT: bold
+}
+span.darkred {
+color: #ff0000;
+}
+span.orange {
+color: #ff8040;
+}
+span.pink {
+color: #ff80c0;
+}
+span.darkblue {
+color: #0000ff;
+}
+SPAN.darkbluebold {
+COLOR: #0000ff; FONT-WEIGHT: bold
+}
+span.lightgreen {
+color: #009900;
+}
+SPAN.lightbluebold {
+COLOR: #00cccc; FONT-WEIGHT: bold
+}
+span.normal {
+font-weight: normal;
+}
+span.marker {
+background: #FDFF96;
+font-weight: bold;
+}
+span.bold {
+font-weight: bold;
+font-size: 120%;
+}
+span.l_red {
+font-weight: bold;
+color: #ff8040;
+font-size: 24px;
+}
+ul.list01 {
+padding: 20px 10px;
+}
+ul.list01 li {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_list.gif) no-repeat 0 50%;
+padding-left: 20px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+ul.normal_list {
+margin-bottom: 20px;
+}
+ul.normal_list li {
+padding-left: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_list.gif) no-repeat 0 4px;
+}
+div#contents strong {
+color: #1E90FF;
+font-weight: bold;
+}
+div#contents em {
+color: #009999;
+font-style: normal;
+font-weight: bold;
+}  div#sp {
+width: 100%;
+border: 1px solid #ccc;
+font-size: 150%;
+}
+div#sp a {
+display: block;
+padding: 30px 0;
+background: #a2ca99;
+text-align: center;
+}
+   div#header {
+width: 100%;
+height: 170px; background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/img/bg_header_illust.gif);
+background-position: center top;
+background-repeat: repeat-x; padding-top: 15px;
+font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+text-align: center;
+}
+div#header.pt00 {
+padding-top: 0;
+}
+div#onoffbox {
+background: #F1FFED;
+width: 100%;
+}
+div#onoffbox_contents {
+width: 1024px;
+margin: auto;
+height: 270px;
+padding: 0px 0;
+}
+div#onoffbtn {
+width: 1054px;
+margin: auto;
+text-align: right;
+position: relative;
+display:none;
+}
+div#onoffbtn a {
+display: block;
+width: 200px;
+height: 65px; position: absolute;
+top: 0;
+right: 0;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/header/btn_mailmag.png) no-repeat left bottom;
+}
+div#headercontainer {
+width: 1024px;
+padding: 0 20px;
+margin: auto;
+}
+div#headerright {
+font-size: 10px;
+text-align: left;
+padding-left: 100px;
+padding-bottom: 2px;
+height: 20px;
+color: #807F6E;
+}
+div#logowrap {
+float: left;
+height: 40px;
+padding-bottom: 12px;
+padding-left: 20px;
+}
+div#headercontainer ul {
+float: right;
+padding-top: 0px;
+}
+div#headercontainer ul li {
+width: 150px;
+float: left;
+font-size: 12px;
+padding-left: 22px; text-align: left;
+}
+div#headercontainer ul li a {
+color: #807F6E;
+}
+div#headercontainer ul li a:hover {
+text-decoration: underline;
+}
+div#headercontainer:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}  ul#gnav {
+width: 1024px;
+padding: 0 20px;
+margin: auto;
+}
+ul#gnav li {
+width: 128px;
+height: 106px;
+float: left;
+}
+ul#gnav li a {
+display: block;
+width: 128px;
+height: 106px;
+text-indent: -9999px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/gnav/btn_gnav.gif) no-repeat top left;
+}
+ul#gnav li#home a { background-position: 0 0; }
+ul#gnav li#home a:hover { background-position: 0 -106px; }
+ul#gnav li#home a.selected { background-position: 0 -106px; }
+ul#gnav li#course a { background-position: -128px 0; }
+ul#gnav li#course a:hover { background-position: -128px -106px; }
+ul#gnav li#course a.selected { background-position: -128px -106px; }
+ul#gnav li#text a { background-position: -256px 0; }
+ul#gnav li#text a:hover { background-position: -256px -106px; }
+ul#gnav li#text a.selected { background-position: -256px -106px; }
+ul#gnav li#training a { background-position: -384px 0; }
+ul#gnav li#training a:hover { background-position: -384px -106px; }
+ul#gnav li#training a.selected { background-position: -384px -106px; }
+ul#gnav li#ability a { background-position: -512px 0; }
+ul#gnav li#ability a:hover { background-position: -512px -106px; }
+ul#gnav li#ability a.selected { background-position: -512px -106px; }
+ul#gnav li#colums a { background-position: -640px 0; }
+ul#gnav li#colums a:hover { background-position: -640px -106px; }
+ul#gnav li#colums a.selected { background-position: -640px -106px; }
+ul#gnav li#event a { background-position: -768px 0; }
+ul#gnav li#event a:hover { background-position: -768px -106px; }
+ul#gnav li#event a.selected { background-position: -768px -106px; }
+ul#gnav li#teacher a { background-position: -896px 0; }
+ul#gnav li#teacher a:hover { background-position: -896px -106px; }
+ul#gnav li#teacher a.selected { background-position: -896px -106px; } ul#gnav:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}  div#topicpath {
+width: 1024px;
+padding: 15px 20px;
+margin: auto; color: #C9C2BC;
+font-size: 10px;
+font-family:"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic","Osaka",Verdana,Arial, Helvetica, sans-serif;
+padding-top: 30px;
+}
+div#topicleft {
+width: 768px;
+float: left;
+text-align: left;
+}
+div#topicright {
+width: 256px;
+float: right;
+text-align: right;
+}
+div#topicpath:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}
+div#topicpath a {
+font-size: 10px;
+}  div#headercontainer ul#cloud_nav{
+padding-bottom: 10px;
+padding-right:5px;
+}
+div#headercontainer ul#cloud_nav li{
+float:right;
+margin-left:10px;
+text-align: right;
+}
+div#headercontainer ul#cloud_nav li:nth-child(2) {
+margin-top:-10px;
+width:140px;
+}
+div#headercontainer ul#cloud_nav li:nth-child(3) {
+margin-top:-3px;
+}
+    div#sidebar {
+width: 290px;
+float: left;
+color: #5e5d51;
+}  div#sidebar  div.navtop {
+width: 290px;
+height: 5px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_lnavtop.gif) no-repeat top left;
+}
+div#sidebar  div.nav {
+width: 260px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_lnav.gif) repeat-y;
+padding: 15px;
+}
+div#sidebar  div.nav span {
+font-size: 12px;
+}
+div#sidebar div.nav p {
+font-size: 13px;
+text-align: left;
+line-height: 1.8;
+}
+div#sidebar div.navbottom {
+width: 290px;
+height: 15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_lnav_bottom.gif) no-repeat top left;
+padding-bottom: 15px;
+}  div#sidebar div.nav ul {
+margin: 15px 0;
+}
+div#sidebar div.nav ul li {
+margin-bottom: 5px;
+}
+div#sidebar div.nav ul li a {
+display: block;
+width: 240px;
+padding: 8px 10px;
+color: #5e5d51;
+}
+div#sidebar div.nav ul li a:hover,
+div#sidebar div.nav ul li.on a {
+background: #ffe9d1;
+text-decoration: none;
+}
+div#sidebar div.nav ul li .parent_category_title a:hover {
+background: none;
+}
+div#sidebar div.nav ul li a.selected {
+background: #ffe9d1;
+text-decoration: none;
+}
+div#sidebar div.nav ul.children li {
+padding-left: 12px;
+}
+div#sidebar div.nav ul.children li a {
+display: inline;
+}
+div#sidebar div.nav ul.children li:before {
+content: '-';
+}  dl.dl_02 {
+}
+dl.dl_02 dt {
+width: 250px;
+color: 807f6e;
+padding: 4px 0px 3px 8px;
+margin-bottom: 5px;
+background: #ece6dd url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/training/bg_dl_dt.gif) no-repeat left bottom;
+}
+dl.dl_02 dd {
+margin-bottom: 5px;
+}
+dl.dl_02 dd a {
+display: block;
+width: 240px;
+padding: 8px 10px;
+color: #5e5d51;
+}
+dl.dl_02 dd a:hover {
+background: #ffe9d1;
+text-decoration: none;
+}  div#sidebar.fixed {
+position: fixed;
+top: 10px;
+left: auto;
+float: none;
+z-index: 10;
+}
+div#sidebar.fixed.fixedEnd {
+position: absolute;
+top: auto;
+bottom: 0;
+margin-bottom: 425px;
+}
+   div#footer {
+width: 100%;
+}
+div#footer div#pagetop {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/footer/bg_footer_top.gif);
+background-position: top center; height: 345px;
+text-align: right;
+padding-top: 0px;
+}
+div#pagetop div#btn_pagetop {
+display: block;
+width: 84px;
+height: 100px;
+margin: auto;
+padding-left: 924px;
+padding-top: 201px;
+}
+div#pagetop div#btn_pagetop a {
+display: block;
+width: 85px;
+height: 84px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/footer/btn_pagetop.gif) no-repeat 0px 0px;
+}
+div#pagetop div#btn_pagetop a:hover {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/footer/btn_pagetop.gif) no-repeat -85px 0px;
+}
+div#footercontainer {
+background: #d8ebda;
+padding-top: 0px;
+}
+div#footercontainer div#nav {
+width: 1024px;
+margin: auto; background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/footer/bg_footer_nav.gif) repeat-y;
+margin-bottom: 20px;
+}
+div#footercontainer div.section {
+width: 236px;
+color: #807F6E;
+padding: 0 0 15px 20px;
+float: left;
+}
+div#footercontainer div.section a {
+color: #807F6E;
+}
+div#footercontainer div#nav:after {
+display: block;
+clear: both;
+height: 0;
+content: ".";
+visibility: hidden;
+}
+div#footercontainer div.section p {
+font-size: 12px; padding-left: 10px;
+}
+div#footercontainer div.section ul {
+font-size: 11px;
+padding-left: 0px;
+padding-top: 20px;
+}
+div#footercontainer div.section ul li {
+margin-bottom: 8px;
+}
+div#footercontainer div#small {
+width: 100%;
+background:#82b06a;
+padding: 5px 0;
+}
+div#footercontainer div#small span {
+display: block;
+width: 1024px;
+margin: auto;
+color: #fff;
+text-align: left;
+font-size: 9px;
+}
+div#small a {
+color: #fff;
+}
+    #content {
+width: 712px;
+float: right;
+padding-left: 22px;
+}
+div#contenttop {
+width: 712px;
+height: 5px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_contenttop.gif) no-repeat top right;
+}
+div#bg_contentbottom {
+width: 712px;
+height: 5px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_content_bottom.gif) no-repeat top left;
+}    .imgbox {
+width: 270px;
+float: right;
+text-align: left;
+padding-left: 20px;
+margin-bottom: 20px;
+}
+.imgbox span {
+display: block;
+text-align: center;
+font-size: 10px;
+}
+.imgcenter {
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+}
+.imgboxleft {
+width: 270px;
+float: left;
+padding-right: 10px;
+margin-bottom: 20px;
+}
+.imgboxleft span {
+display: block;
+text-align: center;
+font-size: 11px;
+}   #spvisual,
+.sp_subnav,
+#spnav,
+div#footercontainer div#small .sp {
+display: none;
+}  div.main {
+padding: 15px;
+padding-top: 10px;
+border-right: 1px solid #C9C9C8;
+border-left: 1px solid #C9C9C8;
+background: #fff;
+font-size: 16px;
+color: #5e5d51;
+}
+div.main p {
+margin-bottom: 30px;
+line-height: 1.8;
+}
+div.main a {
+text-decoration: underline;
+}
+div.main div#keyvisual {
+margin-bottom: 15px;
+}
+div.main div.wrap { padding-left: 15px;
+padding-right: 15px;
+}   .title_01 {
+width: 620px;
+height: 28px;
+padding: 12px 0 10px 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/title_main_01.gif) no-repeat top left;
+font-size: 18px;
+}
+div.main p.title_01_02 {
+width: 620px;
+height: 54px;
+padding: 12px 0 10px 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/title_main_01_02.gif) no-repeat top left;
+font-size: 18px;
+line-height: 1.5;
+} div.main p.title_02 {
+width: 680px;
+height: 75px;
+padding: 12px 0 10px 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/title_main_02.gif) no-repeat top left;
+font-size: 17px;
+line-height: 1.6;
+} div.main p.subtitle_01 {
+font-weight: bold;
+font-size: 18px;
+color: #0080ff;
+}   div.main p.title {
+margin: 15px 0;
+}
+div.main div.detail {
+text-align: right;
+}  div#info {
+width:680px;
+height: 370px;
+position: relative;
+}
+.class_shinjuku01 {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_shinjuku_bg.jpg) no-repeat left top;
+}
+.class_shinjuku02 {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_shinjuku02_bg.jpg) no-repeat left top;
+}
+.class_yokohama {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_yokohama_bg.jpg) no-repeat left top;
+}
+.class_ginza {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_ginza_bg.jpg) no-repeat left top;
+}
+.class_saitama {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_saitama_bg.jpg) no-repeat left top;
+}
+.class_kansai {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_kansai_bg.jpg) no-repeat left top;
+}
+.class_kansai2 {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/images/course/schedule/img_info_kansai2_bg.jpg) no-repeat left top;
+}
+div#info span#date {
+position: absolute;
+top: 120px;
+left: 40px;
+font-size: 20px;
+letter-spacing: 0.1em;
+}
+div#info span#beginner {
+position: absolute;
+width: 116px;
+height: 28px;
+top: 120px;
+left: 230px;
+}
+div#info span#title {
+position: absolute;
+top: 150px;
+left: 40px;
+width: 580px;
+text-align: center;
+font-size: 20px;
+}
+div#info p,
+div#info p#exp {
+position: absolute;
+top: 230px;
+left: 60px;
+color: #008266;
+font-size: 16px;
+}
+div#illustbox {
+width: 180px;
+height: 150px;
+position: absolute;
+top: 180px;
+right: 60px;
+text-align: right;
+}  div#curriculum {
+width: 590px;
+margin: auto;
+padding: 0 40px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_curriculum.gif) repeat-y;
+}
+div#curriculum p {
+margin: 0;
+line-height: 1.4;
+padding-bottom: 20px;
+}
+div#curriculum p.theme {
+font-size: 18px;
+font-weight: bold;
+color: #099;
+padding: 10px 0;
+}
+div#curriculum hr.line2 {
+border: none;
+width: 590px;
+height:3px;
+margin: 8px 0;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/line_curriculum.gif) no-repeat top left;
+}
+div#curriculum ul {
+padding: 10px 0 20px 20px;;
+}
+div#curriculum ul li {
+padding-left: 30px;
+padding-bottom: 10px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_futaba.gif) no-repeat 0px 3px;
+}
+div#curriculum ul li ul {
+padding-left: 40px;
+}
+div#curriculum ul li ul li {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_list.gif) no-repeat 0px 5px;
+}
+div#curriculum span.subtitle {
+display: block;
+padding: 2px 0;
+font-weight: bold;
+font-size: 16px;
+}
+div#curriculumtop {
+width: 670px;
+height: 30px;
+margin: auto;
+margin-top: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_curriculumtop.gif) no-repeat top left;
+}
+div#curriculumbottom {
+width: 670px;
+height: 30px;
+margin: auto;
+margin-bottom: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_curriculumbottom.gif) no-repeat top left;
+}  ul#course {
+}
+ul#course li {
+display: inline;
+}
+ul#course li a {
+display: block;
+width: 230px;
+height: 210px;
+float: left;
+text-indent: -9999px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_course.jpg) no-repeat top left;
+}
+ul#course li a.side {
+width: 220px;
+}
+ul#course li#mental a { background-position: 0 0; }
+ul#course li#mental a:hover { background-position: 0 -210px; }
+ul#course li#ningenkankei a { background-position: -230px 0; }
+ul#course li#ningenkankei a:hover { background-position: -230px -210px; }
+ul#course li#business a { background-position: -460px 0; }
+ul#course li#business a:hover { background-position: -460px -210px; }  ul#course_sub {
+}
+ul#course_sub li {
+display: inline;
+}
+ul#course_sub li a {
+display: block;
+width: 230px;
+height: 70px;
+float: left;
+text-indent: -9999px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/course/bg_course_sub.gif) no-repeat top left;
+}
+ul#course_sub li a.side {
+width: 220px;
+}
+ul#course_sub li#guide a { background-position: 0 0; }
+ul#course_sub li#guide a:hover { background-position: 0 -70px; }
+ul#course_sub li#eriko a { background-position: -230px 0; }
+ul#course_sub li#eriko a:hover { background-position: -230px -70px; }
+ul#course_sub li#photo a { background-position: -460px 0; }
+ul#course_sub li#photo a:hover { background-position: -460px -70px; }  div.photogallery {
+width: 620px;
+height:460px;
+padding: 60px 30px 10px 30px;
+}
+div.photogallery p.title {
+font-size: 18px;
+font-weight: bold;
+}  div#form {
+width: 500px;
+margin: auto;
+}
+div#form p {
+font-size: 14px;
+margin-bottom: 10px;
+}
+div#form input.form_text {
+width: 500px;
+height: 20px;
+border: none;
+border: 1px solid #888;
+padding: 2px 4px;
+background: #FFFDEB;
+font-size: 16px;
+}
+div#form input.form_text2 {
+width: 100px;
+height: 20px;
+border: none;
+border: 1px solid #888;
+padding: 2px 4px;
+background: #FFFDEB;
+font-size: 16px;
+}
+div#form textarea {
+width: 500px;
+height: 100px;
+background: #FFFDEB;
+border: 1px solid #888;
+}  table.table001 {
+margin-top: 0.2em;
+margin-bottom: 1em;
+border-collapse: separate;
+border-spacing: 0px; border-bottom: 1px solid #ccc;
+font-size: 80%;
+color: #555;
+text-align: center;
+width: 550px;
+}
+table.table001 td {
+text-align: left;
+border: 1px solid #ccc;
+border-bottom: none;
+padding: 10px 20px;
+}  table.table010 {
+margin-top: 0.2em;
+margin-bottom: 1em;
+border-collapse: separate;
+border-spacing: 0px;
+border-bottom: 1px solid #ccc;
+border-right: 1px solid #ccc;
+color: #555;
+text-align: center;
+width: 660px;
+margin: auto;
+margin-bottom: 20px;
+}
+table.table010 td {
+text-align: left;
+border: 1px solid #ccc;
+border-bottom: none;
+border-right: none;
+padding: 10px 20px;
+text-align: left;
+}  table.table011 {
+margin-top: 0.2em;
+margin-bottom: 1em;
+width: 660px;
+border-collapse: collapse;
+border: solid 1px #999;
+font-size: 70%;
+}
+table.table011 caption {
+margin-top: 1em;
+text-align: left;
+}
+table.table011 th,
+table.table011 td {
+border: solid 1px #999;
+padding: 4px;
+}
+table.table011 td {
+width: 133px;
+color: #666;
+}
+table.table011 th { text-align: center;
+white-space: nowrap;
+color: #666;
+}
+table.table011 td.course {
+text-align: center;  }  table.table012 {
+margin: auto;
+margin-top: 0.2em;
+margin-bottom: 1em;
+border-collapse: separate;
+border-spacing: 0px;
+border-bottom: 1px solid #ccc;
+border-right: 1px solid #ccc;
+color: #555;
+text-align: center;
+width: 100%;
+margin-bottom: 40px;
+}
+table.table012 tr {
+}
+table.table012 tr td {
+text-align: left;
+border: 1px solid #ccc;
+border-bottom: none;
+border-right: none;
+text-align: left;
+padding: 12px 8px;
+color: #0080ff;
+color: #999;
+line-height: 1.8;
+}
+table.table012 tr td img {
+}
+table.table012 tr td strong {
+color: #888;
+}  table#schedule {
+width: 100%;
+border-spacing: 0px;
+border-collapse: separate;
+text-align: left;
+font-size: 12px;
+}
+table#schedule tr {
+}
+table#schedule tr td {
+padding: 2px 4px;
+border: 1px solid #ccc;
+}
+table#schedule tr td.class {
+width: 65px;
+text-align: center;
+}
+table#schedule tr td.title { text-align: left;
+padding: 0; background: #E5DCD0;
+}
+table#schedule tr td.theme {
+font-size: 12px;
+padding: 0;
+padding-left: 4px;
+text-align: left;
+}  div.prof_box {
+width: 680px;
+margin: auto;
+padding-bottom: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/img/line2.png) repeat-x bottom !important
+}
+div.prof_box:after {
+display: block;
+content: "";
+clear:both;
+}
+div.prof_box div.prof_img {
+width: 180px;
+padding: 4px 20px 0 20px;
+float: left;
+}
+div.prof_box div.prof_text {
+width: 460px;
+float: right;
+}
+div.prof_box div.prof_text p.prof_title {
+background: #b1d0b4;
+color: #fff;
+padding: 2px 0 2px 20px;
+font-weight: bold;
+}
+div.prof_box div.prof_text ul {
+padding: 4px 0;
+}
+div.prof_box div.prof_text ul li {
+padding-left: 30px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_list.gif) no-repeat 15px 4px;
+line-height: 1.8;
+}
+div.prof_box div.prof_text p {
+margin: 4px 0 0 0;
+padding-left: 30px;
+line-height: 1.8;
+} div.prof_box a.prof_btn_sp,
+div.prof_box a.prof_btn {
+display: block;
+background: #FBEFD2;
+padding: 10px;
+width: 80%;
+text-align: center;
+text-decoration: none;
+color: #333;
+box-shadow: 2px 2px 2px #ccc;
+}
+div.prof_box a.prof_btn:hover {
+opacity: 0.7;
+}
+div.prof_detail p {
+padding-left: 2em;
+}
+div.prof_box a.prof_btn_sp {
+display: none;
+margin: 0 auto;
+}
+@media screen and (max-width: 569px) {
+div.prof_box {
+width: 100%;
+}
+div.prof_box .prof_img,
+div.prof_box .prof_text {
+float: none !important;
+}
+div.prof_box .prof_img {
+margin: 0 auto;
+padding: 0;
+}
+div.prof_box .prof_text {
+width: 100% !important;
+}
+div.prof_box a.prof_btn_sp {
+display: block;
+}
+div.prof_box a.prof_btn {
+display: none;
+}
+}
+div.frame_mental {
+width: 630px;
+height: 185px;
+padding-top: 50px;
+padding-left: 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/text/bg_frame_text_mental.gif) no-repeat left top;
+}
+div.frame_mental ul { font-size: 16px; }
+div.frame_mental ul li { margin-bottom: 4px; }
+div.frame_ningenkankei {
+width: 630px;
+height: 185px;
+padding-top: 50px;
+padding-left: 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/text/bg_frame_text_ningenkankei.gif) no-repeat left top;
+}
+div.frame_ningenkankei ul { font-size: 16px; }
+div.frame_ningenkankei ul li { margin-bottom: 4px; }
+div.frame_katsuzetsu {
+width: 630px;
+height: 185px;
+padding-top: 50px;
+padding-left: 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/text/bg_frame_text_katsuzetsu.gif) no-repeat left top;
+}
+div.frame_katsuzetsu ul { font-size: 16px; }
+div.frame_katsuzetsu ul li { margin-bottom: 4px; }
+p.caption {
+font-weight: bold;
+font-size: 18px;
+margin: 10px 0;
+}  .section_nav {
+background:url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/nav/pencil.png) no-repeat right bottom,url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/nav/bg_t.png) no-repeat left top/100% auto,url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/nav/bg_b.png) no-repeat left bottom/100% auto,url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/nav/bg.png) repeat-y left top/100% auto;
+margin:0px auto 30px;
+padding: 8px 80px 16px 50px;
+display: flex;
+display:-webkit-box;
+display:-moz-box;
+display:-ms-flexbox;
+display:-webkit-flex;
+display:-moz-flex;
+display:flex;
+-webkit-box-lines:multiple;
+-moz-box-lines:multiple;
+-webkit-flex-wrap:wrap;
+-moz-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+.section_nav li{
+background:url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/nav/icon.png) no-repeat left 4px;
+width:40%;
+margin-top:8px;
+padding-left:24px;
+}
+@media screen and (max-width: 569px) {
+.section_nav {
+padding: 6%;
+display:block;
+}
+.section_nav li{
+margin-top:2%;
+width:auto;
+}
+}
+
+#tinymce.mceContentBody {
+font-family: "メイリオ", "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Osaka, sans-serif;
+}
+h1.headline-01 {
+margin-bottom: 20px;
+padding: 15px 0 10px 50px;
+width: 100%;
+height: 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/title_main_01.gif) no-repeat top left;
+font-size: 18px;
+display: block;
+box-sizing: border-box;
+}
+h2.headline-02 {
+margin-bottom: 20px;
+padding: 15px 20px 10px;
+color: #ff8040;
+font-size: 18px;
+font-weight: bold;
+display: block;
+box-sizing: border-box;
+}
+h3.headline-03 {
+margin-bottom: 20px;
+padding: 15px 20px 10px;
+color: #1e90ff;
+font-weight: bold;
+display: block;
+box-sizing: border-box;
+}
+h3.entry-title {
+font-size: 120% !important;
+font-family: honokamarugo;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/img/line2.png) repeat-x bottom !important;
+max-width: 95%;
+height: auto !important;
+margin: 0 auto 20px !important;
+padding-left: 0px !important;
+color: #09C;
+}
+p {
+padding: 0 20px;
+}
+p img.alignleft {
+margin: 0 24px 24px 24px;
+float: left;
+}
+p img.aligncenter {
+margin: 0 auto 24px;
+display: block;
+}
+p img.alignright {
+margin: 0 24px 24px 24px;
+float: right;
+}
+p img.alignnone {
+margin: 0 24px 24px 24px;
+display: block;
+}
+div.point {
+margin: 85px auto 45px;
+padding: 10px 20px;
+width: 602px;
+border-right: 4px solid #FFD1AB;
+border-left: 4px solid #FFD1AB;
+display: block;
+position: relative;
+}
+div.point:before {
+content: '';
+width: 650px;
+height: 65px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/post/frame_point_top.gif) no-repeat top left;
+display: block;
+position: absolute;
+top: -65px;
+left: -4px;
+}
+div.point:after {
+content: '';
+width: 650px;
+height: 12px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/post/frame_point_bottom.gif) no-repeat top left;
+display: block;
+position: absolute;
+bottom: -10px;
+left: -4px;
+}
+div.point ul li {
+padding-left: 40px;
+margin-bottom: 10px;
+font-size: 16px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/icon/icon_directcomm_list.gif) no-repeat 0 50%;
+}
+.green {
+color: #009999;
+}
+.blue {
+color: #1e90ff;
+}
+.orange {
+color: #ff8040;
+}
+b.green {
+color: #009999;
+font-weight: bold;
+}
+b.blue {
+color: #1e90ff;
+font-weight: bold;
+}
+b.orange {
+color: #ff8040;
+font-weight: bold;
+} .design_h2 {
+position: relative;
+display: block;
+width: 100%;
+height: 73px;
+margin: 20px 0;
+padding: 0 0 5px 80px;
+line-height: 73px;
+font-size: 24px;
+color: #333;
+box-sizing: border-box;
+}
+.design_h2:after {
+content: '';
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 6px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/line.png);
+background-repeat: repeat-x;
+background-position: left bottom
+}
+.design_h2.gogen { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_gogen.png) no-repeat left center; }
+.design_h2.imitoteigi { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_imitoteigi.png) no-repeat left center; }
+.design_h2.teisyosya { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_teisyosya.png) no-repeat left center; }
+.design_h2.rekishi { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_rekishi.png) no-repeat left center; }
+.design_h2.tokei { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_tokei.png) no-repeat left center; }
+.design_h2.riron { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_riron.png) no-repeat left center; }
+.design_h2.tetsugaku { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_tetsugaku.png) no-repeat left center; }
+.design_h2.syojo { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_syojo.png) no-repeat left center; }
+.design_h2.syurui { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_syurui.png) no-repeat left center; }
+.design_h2.koka { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_koka.png) no-repeat left center; }
+.design_h2.genin { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_genin.png) no-repeat left center; }
+.design_h2.kenkyu { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_kenkyu.png) no-repeat left center; }
+.design_h2.kaizensaku { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_kaizensaku.png) no-repeat left center; }
+.design_h2.matome { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_matome.png) no-repeat left center; }
+@media screen and (max-width: 569px) {
+.design_h2 {
+font-size: 20px;
+}
+} h3.design_h3_color {
+margin: 20px 0;
+padding: 0 0 0 15px !important;
+background-image: none !important;
+position: relative;
+min-height: 50px;
+line-height: 50px;
+border-left: 10px solid #949894;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+h3.design_h3_color.bg_yellow { background-color: #fbffda; } 
+h3.design_h3_color.bg_orange { background-color: #ffe9da; } 
+h3.design_h3_color.bg_green { background-color: #dfffda; } 
+h3.design_h3_color.bg_white { background-color: #fff; } 
+h3.design_h3_pn {
+padding: 0 !important;
+background-image: none !important;
+}
+h3.design_h3_shikou {
+width: auto !important;
+padding-left: 20px !important;
+line-height: 20px !important;
+font-weight: normal !important;
+color: #5e5d51 !important;
+}
+.design_h3_shikou.dot    { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_dot.png) no-repeat left center; }
+.design_h3_shikou.circle { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_circle.png) no-repeat left center; }
+.design_h3_shikou.check  { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_check.png) no-repeat left center; padding-left: 25px !important;}
+.design_h3_shikou.line   { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_line.png) repeat-x left bottom; padding-left:5px !important; padding-right:5px !important;} ul.design_list {
+padding: 25px 25px 25px 40px;
+box-sizing: border-box;
+background-position: left top,
+left bottom,
+left top;
+background-repeat: no-repeat,
+no-repeat,
+repeat-y;
+background-size: 100% auto,
+100% auto,
+100% auto;
+}
+ul.design_list li {
+list-style-type: disc;
+}
+ul.design_list.line01{
+width: 642px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line01_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line01_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line01_body.png);
+}
+ul.design_list.line02{
+width: 643px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line02_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line02_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line02_body.png);
+}
+ul.design_list.dot01{
+width: 649px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot01_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot01_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot01_body.png);
+}
+ul.design_list.dot02{
+width: 650px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot02_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot02_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot02_body.png);
+}
+ul.design_list.orange{
+background-color: #ffe9d1;
+border-radius: 5px;
+color: #5e5d51 !important;
+}
+ul.design_list.pin{
+width: 650px;
+padding: 25px 40px 25px 60px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/pin_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/pin_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/pin_body.png);
+}
+ul.design_list.board{
+width: 658px;
+padding-top: 86px !important;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/board_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/board_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/board_body.png);
+}
+ul.design_list.tape{
+width: 646px;
+padding-top: 50px !important;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/tape_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/tape_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/tape_body.png);
+}
+@media screen and (max-width: 569px) {
+ul.design_list {
+width: 95% !important;
+margin: 0 auto;
+}
+}
+  div#header,
+div#footer {
+min-width: 1064px;
+}
+div#container {
+padding: 0 20px;
+}
+.bt_curri {
+display: none;
+} @media screen and (max-width: 569px) {
+body {
+max-width: 0;
+min-width: 100%;
+width: auto;
+}
+div#header,
+div#footer {
+min-width: 0;
+}
+div#container {
+padding: 0;
+} div#header {
+height: auto;
+background: none;
+border-top: #3aa537 solid 3px;
+}
+div#headercontainer {
+position: relative;
+width: auto;
+padding: 10px 0 15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/bg-hdr.gif) repeat-x right top;
+background-size: auto 100%;
+}
+div#headercontainer:before {
+position: absolute;
+top: 0;
+left: 0;
+content: '';
+height: 50px;
+width: 70px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/bg-hdr01.gif) no-repeat left top;
+background-size: auto 100%;
+}
+div#headercontainer:after {
+position: absolute;
+top: 0;
+right: 0;
+content: '';
+height: 50px;
+width: 70px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/bg-hdr02.gif) no-repeat right top;
+background-size: auto 100%;
+visibility: visible;
+}
+div#headerright {
+display: none;
+}
+div#logowrap {
+position: relative;
+float: none;
+padding: 0;
+text-align: center;
+z-index: 5;
+}
+div#topicpath {
+width: auto;
+padding: 15px 10px 10px;
+}
+div#topicleft {
+width: auto;
+}
+div#topicright {
+display: none;
+}
+#cloud_nav,
+#gnav {
+display: none;
+}
+h1.headline-01 {
+position: relative;
+width: auto;
+height: auto;
+margin-bottom: 15px;
+padding: 12px 10px 8px 40px;
+color: #fef8ed;
+font-size: 16px;
+line-height: 1.4;
+font-weight: bold;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/bg-title.gif);
+background-repeat: repeat-x;
+background-position: left top;
+background-color: #64b386;
+}
+h1.headline-01:after {
+position: absolute;
+top: 15px;
+left: 13px;
+content: '';
+height: 17px;
+width: 20px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/arw.gif) no-repeat right top;
+background-size: 100% auto;
+} #spvisual {
+display: block;
+}
+#spvisual img {
+display: block;
+width: 100%;
+height: auto;
+} #spnav {
+display: block;
+}
+#spnav ul {
+padding-left: 1px;
+zoom: 1;
+border-bottom: #e4e1c6 solid 1px;
+}
+#spnav ul:after {
+display: block;
+clear: both;
+height: 0;
+content: '';
+}
+#spnav li {
+display: table;
+float: left;
+width: 50%;
+height: 45px;
+border-top: #e4e1c6 solid 1px;
+}
+#spnav li:first-child,
+#spnav li:nth-child(2n+1) {
+margin-left: -1px;
+}
+#spnav li:nth-child(2n) {
+border-left: #e4e1c6 solid 1px;
+}
+#spnav li a {
+position: relative;
+display: table-cell;
+color: #8f8974;
+font-size: 14px;
+text-decoration: none;
+vertical-align: middle;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/bg-nav.gif) repeat-x left top;
+background-size: auto 100%;
+}
+#spnav li a:after {
+position: absolute;
+top: 50%;
+left: 10px;
+display: block;
+content: '';
+width: 15px;
+height: 15px;
+margin-top: -8px;
+background-position: left top;
+background-repeat: no-repeat;
+background-size: 100% auto;
+}
+#spnav li.n01 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_intro.png);}
+#spnav li.n02 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_training.png);}
+#spnav li.n03 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_course.png);}
+#spnav li.n04 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_colums.png);}
+#spnav li.n05 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_text.png);}
+#spnav li.n06 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_teacher.png);}
+#spnav li.n07 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_event.png);}
+#spnav li.n08 a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_contact.png);}
+#spnav li a:hover,
+#spnav li.on a {
+color: #fff;
+background: #64b386;
+}
+#spnav li.n01 a:hover:after,
+#spnav li.n01.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_intro_hover.png);}
+#spnav li.n02 a:hover:after,
+#spnav li.n02.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_training_hover.png);}
+#spnav li.n03 a:hover:after,
+#spnav li.n03.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_course_hover.png);}
+#spnav li.n04 a:hover:after,
+#spnav li.n04.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_colums_hover.png);}
+#spnav li.n05 a:hover:after,
+#spnav li.n05.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_text_hover.png);}
+#spnav li.n06 a:hover:after,
+#spnav li.n06.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_teacher_hover.png);}
+#spnav li.n07 a:hover:after,
+#spnav li.n07.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_event_hover.png);}
+#spnav li.n08 a:hover:after,
+#spnav li.n08.on a:after {background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_contact_hover.png);}
+#spnav li a span {
+display: block;
+font-size: 11px;
+} div#container {
+width: auto;
+} div#sidebar {
+display: none;
+}   .sp_subnav {
+display: block;
+margin: 0 7px;
+font-size: 14px;
+}
+.sp_subnav .sp_sbtitle {
+padding: 15px 0 15px 15px;
+color: #fff;
+font-size: 16px;
+font-weight: bold;
+background-color: #64b386;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/bg-nav02.gif);
+background-repeat: no-repeat;
+background-position: left top;
+background-size: 100% auto;
+}
+.sp_subnav .sp_sbtitle a {
+color: #fff !important;
+} 
+.sp_subnav li {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+display: table;
+width: 100%;
+height: 45px;
+padding-top: 5px;
+padding-bottom: 10px;
+padding-left: 10px;
+background: #fefedf;
+border-top: #fff solid 1px; }
+.sp_subnav li a {
+position: relative;
+display: block;
+width: 100%;
+padding-left: 25px;
+color: #696657;
+vertical-align: middle;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_futaba.png) no-repeat left center;
+text-decoration: none;
+box-sizing: border-box; 
+} .sp_subnav .list-style-none li a {
+padding-left: 0;
+padding-left: auto;
+background: none;
+}  div.point {
+padding: 10px 20px 0;
+width: 252px;
+background-color: #fff;
+}
+div.point:before {
+width: 300px;
+height: 45px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/chie/post/frame_point_top.png) no-repeat top left;
+top: -45px;
+}
+div.point:after {
+width: 300px;
+height: 25px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/chie/post/frame_point_bottom.png) no-repeat top left;
+bottom: -25px;
+}
+div.point ul li {
+padding-left: 45px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_futaba.png) no-repeat 10px 50%;
+margin-bottom: 10px;
+} div#footer div#pagetop {
+position: relative;
+height: auto;
+margin-left: -30%;
+padding-top: 150px;
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: 800px auto;
+}
+div#pagetop div#btn_pagetop {
+position: absolute;
+right: 5px;
+bottom: 5px;
+padding: 0;
+}
+div#footercontainer div#nav {
+display: none;
+width: auto;
+}
+div#footercontainer br.brclear {
+display: none;
+}
+div#footercontainer div#small {
+background: #99ad9f;
+text-align: center;
+}
+div#footercontainer div#small span {
+width: auto;
+text-align: center;
+}
+div#footercontainer div#small .pc {
+display: none;
+}
+div#footercontainer div#small .sp {
+display: inline-block;
+}
+}
+ @font-face {
+font-family: 'apjapanesefontregular';
+src: url(//www.direct-commu.com/chie/wp-content/themes/chie/fonts/APJapanesefont.eot);
+src: url(//www.direct-commu.com/chie/wp-content/themes/chie/fonts/APJapanesefont.eot?#iefix) format('embedded-opentype'),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/fonts/APJapanesefont.woff) format('woff'),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/fonts/APJapanesefont.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'honokamarugo';
+src: url(//www.direct-commu.com/chie/wp-content/themes/chie/fonts/honokamarugo.woff) format('woff'),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/fonts/honokamarugo.ttf) format('truetype');
+}
+div.col-side-intro div.nav ul li a{
+width:93% !important;
+padding:8px 10px !important;
+}
+div#topicpath div {
+display: inline;
+}
+div#topicpath div a,
+div#topicpath div span {
+color: #958E7F;
+}
+div#topicleft.auto,
+div#topicright.auto {
+width: auto;
+}
+.chie {
+color: #575e68;
+zoom: 1;
+}
+.chie:after {
+display: block;
+clear: both;
+height: 0;
+content: '';
+}
+.chie #onecontent {
+width: 1024px;
+box-sizing: border-box;
+}
+.chie .onemain {
+padding: 30px;
+border: 1px solid #d7d7d6;
+border-radius: 6px;
+background-color: #fff;
+box-sizing: border-box;
+font-size: 16px;
+}
+.chie #content {
+}
+.chie .main {
+padding: 20px 10px;
+width: 712px;
+border: 1px solid #d7d7d6;
+border-radius: 6px;
+background-color: #fff;
+box-sizing: border-box;
+}
+.chie .text-wrap {
+margin: 12px 0;
+padding: 30px;
+}
+.chie .radius-4px {
+border: 1px solid #d7d7d6;
+border-radius: 4px;
+}
+.chie #nyumon {
+width: 970px;
+height: 230px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/bg_nyumon.gif) no-repeat top center;
+position: relative;
+}
+.chie #inner-nyumon {
+position: absolute;
+top: 140px;
+left: 100px;
+}
+.chie #nyumon:after {
+clear: both;
+}
+.chie #nyumon ul {
+margin-left: 10px;
+margin-right: 10px;
+width: 380px;
+overflow: hidden;
+float: left;
+}
+.chie #nyumon ul li a {
+color: #004edf;
+text-decoration: underline;
+}
+.chie .cate-list-wrap {
+padding: 30px 0; 
+width: 100%;
+box-sizing: border-box;
+overflow: hidden;
+}
+.chie .cate-list-wrap.single {
+padding: 0;
+}
+.chie .cate-list-wrap:after {
+clear: both;
+}
+.chie .cate-list {
+margin: 8px;
+padding: 10px;
+width: 23%;
+height:600px;
+border: 1px solid #d7d7d6;
+box-sizing: border-box;
+float:left;
+position: relative;
+}
+.chie .cate-list.archive {
+border: none;
+height: 90px;
+}
+.chie .cate-list.single {
+width: 20%;
+margin: 0;
+border: none;
+height: 60px;
+}
+.chie .cate-list.single h2 a,
+.chie .cate-list.single div > a {
+font-size: 18px !important;
+}
+.chie .cate-list ul {
+margin-bottom: 20px;
+padding: 5px;
+height: 310px;
+overflow: auto;
+}
+.chie .cate-list li {
+padding: 5px 0;
+}
+.chie .cate-list .new-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/icon_new.gif);
+margin: 2px 5px 2px 0;
+position: relative;
+top: 2px;
+}
+.chie .cate-list ul li a {
+color: #575e68;
+font-size: 16px;
+text-decoration: underline;
+}
+.chie .cate-list #top-chie,
+.chie .cate-list #mental-chie,
+.chie .cate-list #ningenkankei-chie,
+.chie .cate-list #business-chie,
+.chie .cate-list #general-chie {
+padding: 5px;
+font-family: 'apjapanesefontregular';
+}
+.chie .cate-list #top-chie a,
+.chie .cate-list #mental-chie a,
+.chie .cate-list #ningenkankei-chie a,
+.chie .cate-list #business-chie a,
+.chie .cate-list #general-chie a {
+color: #577a6c;
+font-size: 28px;
+letter-spacing: -0.2em;
+}
+.chie .cate-list #mental-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums01.gif);
+margin: 5px;
+position: relative;
+top: 12px;
+}
+.chie .cate-list.single #mental-chie:before {
+content:" ";
+display:inline-block;
+width:15px;
+height:15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums01.gif);
+background-size:contain;
+vertical-align:middle;
+margin: 0 3px 0 0;
+top: -5px;
+}
+.chie .cate-list #ningenkankei-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums02.gif);
+margin: 5px;
+position: relative;
+top: 12px;
+}
+.chie .cate-list.single #ningenkankei-chie:before {
+content:" ";
+display:inline-block;
+width:15px;
+height:15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums02.gif);
+background-size:contain;
+vertical-align:middle;
+margin: 0 3px 0 0;
+top: -5px;
+}
+.chie .cate-list #business-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums03.gif);
+margin: 5px;
+position: relative;
+top: 12px;
+}
+.chie .cate-list.single #business-chie:before {
+content:" ";
+display:inline-block;
+width:15px;
+height:15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums03.gif);
+background-size:contain;
+vertical-align:middle;
+margin: 0 3px 0 0;
+top: -5px;
+}
+.chie .cate-list #general-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums04.gif);
+margin: 5px;
+position: relative;
+top: 12px;
+}
+.chie .cate-list.single #general-chie:before {
+content:" ";
+display:inline-block;
+width:15px;
+height:15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums04.gif);
+background-size:contain;
+vertical-align:middle;
+margin: 0 3px 0 0;
+top: -5px;
+}
+.chie .cate-list.single #top-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums00.gif);
+margin: 5px;
+position: relative;
+top: 12px;
+}
+.chie .cate-list.single #top-chie:before {
+content:" ";
+display:inline-block;
+width:15px;
+height:15px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums00.gif);
+background-size:contain;
+vertical-align:middle;
+margin: 0 3px 0 0;
+top: -5px;
+}
+.chie .cate-list #top-chie.active,
+.chie .cate-list #mental-chie.active,
+.chie .cate-list #ningenkankei-chie.active,
+.chie .cate-list #business-chie.active,
+.chie .cate-list #general-chie.active {
+// padding: 18px 16px 10px 0;
+background: #ffe9d1;
+border-radius: 6px;
+}
+.chie .dottedline {
+}
+.chie .cate-list .underline {
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+width: 100%;
+display: block;
+}
+.chie .cate-list .cate-link {
+width: 100%;
+height: 180px;
+box-sizing: border-box;
+position: absolute;
+bottom: 20px;
+left: 0;
+}
+.chie .cate-list .inner-cate-link {
+width: 100%;
+position: absolute;
+top: 120px;
+}
+.chie .cate-list .pic {
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+max-width: 100%;
+box-sizing: border-box;
+display: block;
+}
+.chie .cate-list .more {
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+max-width: 100%;
+box-sizing: border-box;
+display: block;
+}
+.chie .horizon {
+border: 1px solid #d7d7d6;
+}
+.chie div#sidebar .cate-name a {
+width: 290px;
+height: 44px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/bg_title_text.gif);
+background-repeat: no-repeat;
+background-size: 290px 44px;
+color: #666;
+font-family: 'apjapanesefontregular';
+font-size: 24px;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+display:table-cell;
+}
+.chie div#sidebar div.nav ul.mt00 {
+margin-top: 0;
+}
+.bottom_com {
+width: 525px;
+padding: 25px 0 0 310px;
+}
+.wid {
+margin: 50px auto;
+max-width: 1025px;
+}
+.wid-single{
+max-width: 712px;
+text-align:center;
+}
+.wid-single .bottom_com{
+padding:0px;
+margin:0 auto;
+} div#sidebar div.nav{
+padding:0px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.colum_sidenav_top{
+display:block;
+width:100%;;
+height:44px;
+position: relative;
+margin-top:5px;
+}
+.parent_category_title{
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+background:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/img_title_background.png);
+background-size:cover;
+overflow: hidden;
+text-indent: -9999px;
+white-space: nowrap;
+}
+.sidebar-arrow{
+position:absolute;
+top: 2px;
+left: 10px;
+margin: auto;
+background-image:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/colum_title_arrow.png) ;
+background-repeat:no-repeat;
+width: 30px;
+height:30px;
+transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+}
+.sidebar-description{
+}
+.side-open{
+top:10px;
+transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+}
+.general_sidenav{
+position:absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+background-image:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/general_colum_title.png);
+background-position:center;
+background-repeat:no-repeat;
+width:120px;
+height: 20px;
+}
+.mental_sidenav{
+position:absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+background-image:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/mental_colum_title.png);
+background-position:center;
+background-repeat:no-repeat;
+width:120px;
+height: 20px;
+}
+.relation_sidenav{
+position:absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+background-image:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/ningenkankei_colum_title.png);
+background-position:center;
+background-repeat:no-repeat;
+width:180px;
+height: 20px;
+}
+.business_sidenav{
+position:absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+background-image:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/business_colum_title.png);
+background-position:center;
+background-repeat:no-repeat;
+width:180px;
+height: 20px;
+}
+.child_category_title{
+background:url(//www.direct-commu.com/chie/wp-content/themes/chie/img/brown_background_title.png);
+background-size:cover;
+margin-bottom:5px;
+}
+.child_category_title p{
+position:absolute;
+top: 25px;
+left: 15px;
+right: 0;
+bottom: 0;
+margin: auto;
+width:80%;
+height: 100%; overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.child_post{
+display:none;
+}
+.child_category{
+}
+.accordion_ul{
+display:none;
+}
+.chie .sidebar-active a{
+background:#ffe9d1;
+}
+li.sidebar-description span{
+padding-left:10px;
+}
+.chie div#sidebar div.nav ul li a{
+font-size:16px !important; 
+width:93%;
+padding:8px 10px;
+}
+.chie div#sidebar div.nav ul li a:active{
+}               
+.chie  div#sidebar div.nav ul{
+margin:0px 0px 0px 0px;
+} .pagenation{
+padding-top:50px;
+text-align:center;
+}
+.pagenation-container{
+padding-bottom:20px;
+}
+.chie div#sidebar div.nav ul li{
+margin-bottom:0px;
+}
+.chie div#sidebar div.navbottom{
+width:260px;
+} .effect_show a {
+opacity: 0;
+transition: 1.2s;
+}
+.effect_show a.delay {
+transition-delay: .8s;
+}
+@media screen and (max-width: 569px) {
+img{
+max-width:100%;
+height:auto;
+width:100%; 
+}
+.sp_dis_none{
+display:none !important;
+}
+div#topicright {
+display: none !important;
+}
+.chie #onecontent {
+width: 100%;
+box-sizing: border-box;
+}
+.chie .onemain {
+padding: 10px 0;
+width: 100%;
+border: none;
+background: transparent;
+font-size: 18px;
+box-sizing: border-box;
+}
+.chie #content {
+width: 100%;
+}
+.chie .main {
+padding: 10px 0;
+width: 100%;
+border: none;
+background: transparent;
+background-color: #fff;
+font-size: 18px;
+box-sizing: border-box;
+}
+.chie #keyvisual {
+display: none;
+}
+.chie .text-wrap {
+padding: 10px;
+width: 100%;
+border: none;
+box-sizing: border-box;
+}
+.chie #nyumon {
+margin: 0 0 0 10px;
+width: 350px;
+height: 140px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/sp_bg_nyumon.gif) no-repeat top center;
+background-size: 350px 140px;
+box-sizing: border-box;
+}
+.chie #inner-nyumon {
+width: 320px;
+font-size: 10px;
+box-sizing: border-box;
+top: 60px;
+left: 28px;
+}
+.chie #nyumon ul {
+width: 320px;
+box-sizing: border-box;
+float: none;
+}
+.chie #nyumon ul li {
+letter-spacing: -0.1em;
+}
+.chie .dottedline {
+display: none;
+}
+.chie .cate-list {
+margin: 4px;
+padding-top: 0;
+width: 46.5%;
+height: 440px;
+background-color: #fff;
+font-size: 12px;
+}
+.chie .cate-list.archive {
+height: 70px;
+}
+.chie .cate-list-wrap.single {
+display: none;
+margin-bottom: 10px;
+}
+.chie .cate-list.single {
+height: 50px;
+width: 49%;
+margin: 0.5%;
+}
+.chie .cate-list ul {
+margin-bottom: 15px;
+height: 240px;
+overflow: auto;
+}
+.chie .cate-list ul li a {
+font-size: 18px;
+}
+.chie .cate-list #mental-chie,
+.chie .cate-list #ningenkankei-chie,
+.chie .cate-list #business-chie,
+.chie .cate-list #general-chie {
+padding: 0;
+}
+.chie .cate-list #mental-chie a,
+.chie .cate-list #ningenkankei-chie a,
+.chie .cate-list #business-chie a,
+.chie .cate-list #general-chie a {
+font-size: 20px;
+letter-spacing: -0.2em;
+}
+.chie .cate-list #mental-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums01.gif);
+margin: 5px 3px 5px 0;
+position: relative;
+top: 12px;
+}
+.chie .cate-list #ningenkankei-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums02.gif);
+margin: 5px 3px 5px 0;
+position: relative;
+top: 12px;
+}
+.chie .cate-list #business-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums03.gif);
+margin: 5px 3px 5px 0;
+position: relative;
+top: 12px;
+}
+.chie .cate-list #general-chie:before {
+content: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums04.gif);
+margin: 5px 3px 5px 0;
+position: relative;
+top: 12px;
+}
+.chie .cate-list .cate-link {
+height: 120px;
+bottom: 10px;
+}
+.chie .cate-list .inner-cate-link {
+width: 100%;
+position: absolute;
+top: 65px;
+}
+.chie .pic {
+width: 0;
+width: auto;
+height: 80px;
+}
+.chie .horizon {
+display: none;
+}
+.wid {
+display: none;
+}
+.accordion_ul{
+padding:0 10px !important;
+}
+.sp_subnav li{
+padding-left:0;
+}
+}
+@media screen and (max-width: 569px) {
+#commutest-img {
+display: none;
+}
+} @media screen and (max-width: 569px) { .title_01 {
+position: relative;
+width: auto;
+height: auto;
+margin-bottom: 15px;
+padding: 12px 10px 8px 40px;
+color: #fef8ed;
+font-size: 16px;
+line-height: 1.4;
+font-weight: bold;
+background-image: url(//www.direct-commu.com/chie/common/sharedimg/sp/bg-title.gif);
+background-repeat: repeat-x;
+background-position: left top;
+background-color: #64b386;
+}
+.title_01:after {
+position: absolute;
+top: 15px;
+left: 13px;
+content: '';
+height: 17px;
+width: 20px;
+background: url(//www.direct-commu.com/chie/common/sharedimg/sp/arw.gif) no-repeat right top;
+background-size: 100% auto;
+} ul{
+padding:0 20px;
+} .sp_subnav ul{
+padding:0 ;
+} ul.accordion_ul{
+padding:0 20px; 
+}
+.imgbox{ 
+float:none !important;
+margin:0 auto;
+}
+.sidebar-description span>a{
+background:none !important;
+}
+.pagenation-container{
+height:60px; 
+width:100%;
+}
+.pagenation-container img{
+height:60px; 
+width:auto;
+max-width:auto;
+}
+}
+.max-width--80{
+max-width:80%;
+}
+ul.social {
+padding-left: 40px;
+margin: 20px auto 30px;
+}
+ul.social li {
+margin-right: 0.5rem;
+vertical-align: top;
+display: inline-block;
+line-height: 1;
+} .chie .parent-cate {
+font-family: 'apjapanesefontregular';
+color: #577a6c;
+font-size: 40px;
+letter-spacing: -0.2em;
+padding-left: 40px;
+}
+.chie .parent-cate.mental {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums01.gif) no-repeat left center;
+}
+.chie .parent-cate.relation {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums02.gif) no-repeat left center;
+}
+.chie .parent-cate.business {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums03.gif) no-repeat left center;
+}
+.chie .parent-cate.general {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/chie/title_colums04.gif) no-repeat left center;
+}
+.chie h3 {
+margin-bottom: 20px;
+padding: 15px 0 10px 50px;
+width: 100%;
+height: 50px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/title_main_01_onecontent.png) no-repeat top left;
+font-size: 18px;
+display: block;
+box-sizing: border-box;
+text-align: left;
+}
+.chie .child-cate-list {
+margin: 1em 0 2em 1em;
+}
+.chie .child-cate-list li {
+margin-bottom: 0.5em;
+padding-left: 25px;
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_futaba.png) no-repeat left top;
+}
+.chie .child-cate-list li:hover  {
+background: #ffe9d1 url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_futaba.png) no-repeat left top;
+}
+.chie .child-cate-list li .date {
+display: block;
+font-size: 0.8em;
+}
+.chie .child-cate-list li a {
+display: inline-block;
+width: 100%;
+color: #5E5D57;
+}
+.chie .child-cate-list li a:hover {
+text-decoration: none;
+}
+@media screen and (max-width: 569px) {
+.chie .child-cate-list li a {
+text-decoration: underline;
+}
+.chie .child-cate-list li:hover  {
+background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/sp/icon_futaba.png) no-repeat left top;
+}
+} .comments-area p {
+padding: 0 !important;
+}
+#reply-title {
+display: none;
+}
+.comments-list > li {
+margin-bottom: 30px;
+padding-top: 10px;
+border-top: 1px solid #ddd;
+}
+.comments-list p {
+margin-bottom: 0 !important;
+}
+.comments-meta-list {
+margin-bottom: 1em;
+padding: 0 !important;
+}
+.comments-meta-list li {
+display: inline;
+}
+.comments-meta-list li.comments-date {
+font-size: 0.8em;
+color: #aaa;
+padding-left: 1em;
+}
+.comments-content p {
+margin-bottom: 0 !important;
+padding: 0 !important;
+}
+.comments-all-button {
+display: block;
+width: 100%;
+margin-bottom: 20px;
+padding: 10px;
+text-align: center;
+background-color: #aaa;
+border-radius: 5px;
+text-decoration: none !important;
+color: #fff !important;
+box-sizing: border-box;
+}
+.comments-header {
+margin-bottom: 30px;
+}
+.comments-header li {
+display: inline-block;
+padding: 0 1em;
+border-right: 1px solid #aaa;
+}
+.comments-header li a {
+color: #aaa;
+text-decoration: none;
+}
+.comments-header li.active a {
+color: #577a6c;
+font-weight: bold;
+}
+.comments-header li:last-child {
+border: none;
+}
+.comments-header li.comments-count {
+padding-left: 0;
+border: none
+}
+.comment-form p {
+margin-bottom: 15px !important;
+}
+.recaptcha {
+margin-bottom: 15px !important;
+padding: 0 !important;
+}
+.comment-form input,
+.comment-form textarea {
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+box-sizing: border-box;
+border: 1px solid #aaa;
+}
+.comment-form input[type="submit"],
+.comment-form textarea {
+width: 100%;
+}
+.comment-form input[type="submit"] {
+background-color: #F0AC78;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+.comment-form input[type="submit"][disabled] {
+background-color: #ffe9d1;
+cursor: auto;
+}
+@media screen and (max-width: 569px) {
+.comment-form {
+padding: 10px;
+}
+.comments-area p.comments-count{
+padding: 10px !important;
+}
+.comments-meta-list li {
+display: block;
+}
+} .design_h2 {
+position: relative;
+display: block;
+width: 100%;
+height: 73px;
+margin: 20px 0;
+padding: 0 0 5px 80px;
+line-height: 73px;
+font-size: 24px;
+color: #333;
+box-sizing: border-box;
+}
+.design_h2:after {
+content: '';
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+height: 6px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/line.png);
+background-repeat: repeat-x;
+background-position: left bottom
+}
+.design_h2.gogen { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_gogen.png) no-repeat left center; }
+.design_h2.imitoteigi { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_imitoteigi.png) no-repeat left center; }
+.design_h2.teisyosya { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_teisyosya.png) no-repeat left center; }
+.design_h2.rekishi { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_rekishi.png) no-repeat left center; }
+.design_h2.tokei { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_tokei.png) no-repeat left center; }
+.design_h2.riron { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_riron.png) no-repeat left center; }
+.design_h2.tetsugaku { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_tetsugaku.png) no-repeat left center; }
+.design_h2.syojo { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_syojo.png) no-repeat left center; }
+.design_h2.syurui { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_syurui.png) no-repeat left center; }
+.design_h2.koka { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_koka.png) no-repeat left center; }
+.design_h2.genin { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_genin.png) no-repeat left center; }
+.design_h2.kenkyu { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_kenkyu.png) no-repeat left center; }
+.design_h2.kaizensaku { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_kaizensaku.png) no-repeat left center; }
+.design_h2.matome { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h2_design_assets/h2_matome.png) no-repeat left center; }
+@media screen and (max-width: 569px) {
+.design_h2 {
+font-size: 20px;
+}
+} h3.design_h3_color {
+margin: 20px 0;
+padding: 0 0 0 15px !important;
+background-image: none !important;
+position: relative;
+min-height: 50px;
+line-height: 50px;
+border-left: 10px solid #949894;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+h3.design_h3_color.bg_yellow { background-color: #fbffda; } 
+h3.design_h3_color.bg_orange { background-color: #ffe9da; } 
+h3.design_h3_color.bg_green { background-color: #dfffda; } 
+h3.design_h3_color.bg_white { background-color: #fff; } 
+h3.design_h3_pn {
+padding: 0 !important;
+background-image: none !important;
+}
+h3.design_h3_shikou {
+width: auto !important;
+padding-left: 20px !important;
+line-height: 20px !important;
+font-weight: normal !important;
+color: #5e5d51 !important;
+}
+.design_h3_shikou.dot    { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_dot.png) no-repeat left center; }
+.design_h3_shikou.circle { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_circle.png) no-repeat left center; }
+.design_h3_shikou.check  { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_check.png) no-repeat left center; padding-left: 25px !important;}
+.design_h3_shikou.line   { background: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/h3_design_assets/h3_line.png) repeat-x left bottom; padding-left:5px !important; padding-right:5px !important;} ul.design_list {
+padding: 25px 25px 25px 40px;
+box-sizing: border-box;
+background-position: left top,
+left bottom,
+left top;
+background-repeat: no-repeat,
+no-repeat,
+repeat-y;
+background-size: 100% auto,
+100% auto,
+100% auto;
+}
+ul.design_list li {
+list-style-type: disc;
+}
+ul.design_list.line01{
+width: 642px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line01_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line01_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line01_body.png);
+}
+ul.design_list.line02{
+width: 643px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line02_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line02_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/line02_body.png);
+}
+ul.design_list.dot01{
+width: 649px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot01_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot01_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot01_body.png);
+}
+ul.design_list.dot02{
+width: 650px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot02_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot02_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/dot02_body.png);
+}
+ul.design_list.orange{
+background-color: #ffe9d1;
+border-radius: 5px;
+color: #5e5d51 !important;
+}
+ul.design_list.pin{
+width: 650px;
+padding: 25px 40px 25px 60px;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/pin_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/pin_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/pin_body.png);
+}
+ul.design_list.board{
+width: 658px;
+padding-top: 86px !important;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/board_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/board_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/board_body.png);
+}
+ul.design_list.tape{
+width: 646px;
+padding-top: 50px !important;
+background-image: url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/tape_top.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/tape_bottom.png),
+url(//www.direct-commu.com/chie/wp-content/themes/chie/common/sharedimg/list_design_assets/tape_body.png);
+}
+@media screen and (max-width: 569px) {
+ul.design_list {
+width: 95% !important;
+margin: 0 auto;
+}
+}

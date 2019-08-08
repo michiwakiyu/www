@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+.dcd-wrap.anzu .dcd-question ul,
+.dcd-wrap.wakatake .dcd-question ul,
+.dcd-wrap.kutinashi .dcd-question ul,
+.dcd-wrap.sora .dcd-question ul,
+.dcd-wrap.utubushi .dcd-question ul {
+padding-bottom: 50px;
+background-position: left 11px bottom 10px;
+}
+@media screen and (max-width: 569px) {
+.dcd-question ul {
+padding-bottom: 40px !important;
+background-position: left 11px bottom 10px !important;
+background-size: 95% auto !important;
+}
+} .dcd-wrap.anzu { background-color: #fffefd;
+}
+.dcd-wrap.anzu .dcd-title-area { border-color: #fae6d6;
+}
+.dcd-wrap.anzu .dcd-title {
+color: #F0AC78;
+}
+.dcd-wrap.anzu .dcd-btn-description span:before {
+background-color: #F0AC78;
+}
+.dcd-wrap.anzu .dcd-question label { background-color: #fae6d6;
+}
+.dcd-wrap.anzu .dcd-question input[type="radio"]:checked + label {
+background-color: #F0AC78;
+}
+.dcd-wrap.anzu .dcd-question {
+border-bottom: 2px dashed #A37351;
+}
+.dcd-wrap.anzu .dcd-question ul {
+background-image: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question_anzu.png);
+} .dcd-wrap.wakatake { background-color: #fdfefe;
+}
+.dcd-wrap.wakatake .dcd-title-area { border-color: #ceeadc;
+}
+.dcd-wrap.wakatake .dcd-title {
+color: #5DB98B;
+}
+.dcd-wrap.wakatake .dcd-btn-description span:before {
+background-color: #5DB98B;
+}
+.dcd-wrap.wakatake .dcd-question label { background-color: #ceeadc;
+}
+.dcd-wrap.wakatake .dcd-question input[type="radio"]:checked + label {
+background-color: #5DB98B;
+}
+.dcd-wrap.wakatake .dcd-question {
+border-bottom: 2px dashed #509E77;
+}
+.dcd-wrap.wakatake .dcd-question ul {
+background-image: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question_wakatake.png);
+} .dcd-wrap.kutinashi { background-color: #fffefd;
+}
+.dcd-wrap.kutinashi .dcd-title-area { border-color: #fdf1d2;
+}
+.dcd-wrap.kutinashi .dcd-title {
+color: #FAD26A;
+}
+.dcd-wrap.kutinashi .dcd-btn-description span:before {
+background-color: #FAD26A;
+}
+.dcd-wrap.kutinashi .dcd-question label { background-color: #fdf1d2;
+}
+.dcd-wrap.kutinashi .dcd-question input[type="radio"]:checked + label {
+background-color: #FAD26A;
+}
+.dcd-wrap.kutinashi .dcd-question {
+border-bottom: 2px dashed #A08645;
+}
+.dcd-wrap.kutinashi .dcd-question ul {
+background-image: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question_kutinashi.png);
+} .dcd-wrap.sora { background-color: #fefeff;
+}
+.dcd-wrap.sora .dcd-title-area { border-color: #ddf1f6;
+}
+.dcd-wrap.sora .dcd-title {
+color: #8ED1E0;
+}
+.dcd-wrap.sora .dcd-btn-description span:before {
+background-color: #8ED1E0;
+}
+.dcd-wrap.sora .dcd-question label { background-color: #ddf1f6;
+}
+.dcd-wrap.sora .dcd-question input[type="radio"]:checked + label {
+background-color: #8ED1E0;
+}
+.dcd-wrap.sora .dcd-question {
+border-bottom: 2px dashed #65949E;
+}
+.dcd-wrap.sora .dcd-question ul {
+background-image: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question_sora.png);
+} .dcd-wrap.utubushi { background-color: #fdfdfd;
+}
+.dcd-wrap.utubushi .dcd-title-area { border-color: #cfcbc7;
+}
+.dcd-wrap.utubushi .dcd-title {
+color: #615346;
+}
+.dcd-wrap.utubushi .dcd-btn-description span:before {
+background-color: #615346;
+}
+.dcd-wrap.utubushi .dcd-question label { background-color: #cfcbc7;
+}
+.dcd-wrap.utubushi .dcd-question input[type="radio"]:checked + label {
+background-color: #615346;
+}
+.dcd-wrap.utubushi .dcd-question {
+border-bottom: 2px dashed #211C18;
+}
+.dcd-wrap.utubushi .dcd-question ul {
+background-image: url(//www.direct-commu.com/chie/wp-content/plugins/dc-diagnosis/images/bg-question_utubushi.png);
+}
