@@ -50,6 +50,7 @@ font-size:22px;
 
 .midashi b {
 	padding-left: 35px;
+	display:block;
 }
 
 #course #container p{
@@ -103,6 +104,7 @@ text-align:center;
 #course #container .midashi2 b {
 	background: url(/assets/images/course/intro/midashi2_icon.gif) no-repeat left top/30px auto;
 	padding-left: 38px;
+	display:block;
 }
 
 #course #container section .bnr img{
@@ -125,9 +127,31 @@ margin:36px 0px;
 max-width:200px;
 }
 
+#course #container .guide {
+	max-width:680px;
+	margin:0px auto;
+	display: flex;
+}
+#course #container .guide li {
+	width:226px;
+}
+#course #container .guide li:first-child {
+	width:227px;
+}
+
 @media only screen and (max-width: 640px) { 
 #course #container section .bnr img{
 max-width:100%;
+}
+#course #container div.guide{
+	display: block;
+	width:99%;
+}
+#course #container .guide li {
+	width:33%;
+}
+#course #container .guide li:first-child {
+	width:33%;
 }
 .pcnone {
 display:block;

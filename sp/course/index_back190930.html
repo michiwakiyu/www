@@ -43,16 +43,8 @@ if ( isset($_GET['adcode']) ) {
 <h1><img src="../sp_common/images/course/img_keyvisual_course.gif" alt="ダイレクトコミュニケーションバナー" /></h1>
 </div><!-- end keyvisual -->
 
-<ul id="menu" class="after_clear">
-    <li id="intro"><a href="/course/1_intro.html" class="btn_topleft">はじめての方へ</a></li>
-    <li id="course"><a href="/course/" class="btn_right"><span>コミュニケーション</span>講座</a></li>
-    <li id="text"><a href="/text/"><span>ダイコミュ</span>通信講座</a></li>
-    <li id="training"><a href="/training/" class="btn_topleft"><span>コミュニケーション<br>トレーニング</span></a></li>
-    <li id="training"><a href="https://commutest.com/"><span>コミュニケーション</span>能力診断</a></li>
-    <li id="colums"><a href="/chie/" class="btn_right"><span>コミュニケーション</span>知恵袋</a></li>
-    <li id="event"><a href="/event/" class="btn_bottom">イベント</a></li>
-    <li id="teacher"><a href="/profile/" class="btn_right btn_bottom">講師紹介</a></li>
-</ul>
+
+<?php require_once(dirname(__FILE__).'/../../templates/header_sp.html'); ?>
 
 <br class="brclear" />
 <div id="topicpath"><a href="/">トップ</a> > <span>コミュニケーション講座</span></div>
@@ -63,7 +55,7 @@ if ( isset($_GET['adcode']) ) {
     <section>
    	<h3 class="underline01"><div class="num_01">はじめての方へ</div></h3>
         <div class="text">
-        	<p>はじめての方はこちらへ♪コミュニケーション講座の内容をわかりやすくお伝えします。</p>
+        	<p>はじめての方はこちらへ♪コミュニケーション講座の内容をわかりやすくお伝えします。&gt;&gt;</p>
         	<p><a href="/course/1_intro.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
         </div>
     </section>
@@ -81,7 +73,8 @@ if ( isset($_GET['adcode']) ) {
             
         <a href="/course/ningenkankei.html" class="btnlink01 frame01">
         <div class="imgcenter"><img src="../sp_common/images/course/img_title_ningenkankei.gif" alt="人間関係コース" width="251" /></div><div class="col_2">
-          <div class="col_l"><p>会話上手になろう♪<br />傾聴と発話トレーニング</p>
+          <div class="col_l"><p>会話の展開上手になろう♪<br />
+           傾聴力と発話力で会話がうまくなる</p>
             <p><img src="../sp_common/images/img_btn_kuwashiku.gif" 　alt="詳しく見る" width="106" /></p>
         </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_02.gif" alt="人間関係コースイラスト" class="width_100" /></div></div>
         </a>  
@@ -89,7 +82,7 @@ if ( isset($_GET['adcode']) ) {
         <a href="/course/business.html" class="btnlink01 frame01">
         <div class="imgcenter"><img src="../sp_common/images/course/img_title_business.gif" alt="社会人基礎コース" width="261" /></div><div class="col_2"><div class="col_l"><p>説得力をつけて自信を持つ！人前で楽しく話す♪あがり症の改善</p>
           <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
-        </div><div class="col_r"><img src="../sp/common/illust/michi/illust_034_250.gif" width="110" alt="社会人基礎コースのイラスト" /></div></div>
+        </div><div class="col_r"><img src="../sp_common/images/illust/michi/img_illust_05.gif" width="110" height="119" alt="社会人基礎コースのイラスト" /></div></div>
         </a>
 
         <a href="/text/" class="btnlink01 frame01">
@@ -101,7 +94,7 @@ if ( isset($_GET['adcode']) ) {
         <a href="/young/" class="btnlink01 frame01">
         <div class="imgcenter"><img src="../sp_common/images/course/img_title_young.gif" alt="学生向け講座" /></div><div class="col_2"><div class="col_l"><p>学生の方はこちらへ♪<br>中学，高校，大学生，専門学校生の方をお待ちしています</p>
           <p><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></p>
-        </div><div class="col_r"><img src="../sp_common/images/course/photo_young.jpg" width="110" alt="学生向け講座のイメージ" /></div></div>
+        </div><div class="col_r"></div></div>
         </a>            
         </div><!-- end text -->
     </section>
@@ -120,6 +113,7 @@ if ( isset($_GET['adcode']) ) {
                     <li><a href="/course/class/class_shinjuku2.php">新宿第２教室（平日）</a></li>
                     <li><a href="/course/class/class_ginza.php">御茶ノ水第１教室</a></li>
                     <li><a href="/course/class/class_akihabara.php">御茶ノ水第２教室</a></li>
+                    <li><a href="/course/class/class_shinjuku_02.php">銀座教室</a></li>
                     <li><a href="/course/class/class_yokohama.php">横浜教室</a></li>
                     <li><a href="/course/class/class_saitama.php">埼玉教室</a></li>
                     <li><a href="/course/class/class_chiba.php">千葉教室</a></li>
@@ -170,23 +164,31 @@ if ( isset($_GET['adcode']) ) {
     
     <section>
     <h3 class="underline01"><div class="num_05">注意事項</div></h3>
-    <div class="text"><p>コミュニケーション講座の長所と短所をまとめました。ご受講の上での注意事項をご確認下さい。</p>
+    <div class="text"><p>コミュニケーション講座の長所と短所をまとめました。ご受講の上での注意事項をご確認ください&gt;&gt;</p>
       <p><a href="/course/5_confirmation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
     </div>
 </section>
     
     <section>
     <h3 class="underline01"><div class="num_06">仮予約</div></h3>
-    <div class="text">
-      <div class="col_2">
-      <div class="col_l"><p>仮予約フォームから送信、返信メールをお受け取り→受講料をお振込み頂き、準備完了！</p>
-        <p><a href="/course/6_reservation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
-      </div>
-      <div class="col_r"><img src="../sp_common/images/course/photo_mental_001.jpg" alt="講座の様子写真" width="110" /></div>
-      </div>
+    <div class="text"><p>仮予約フォームから送信、返信メールをお受け取り→受講料をお振込み頂き、準備完了！</p>
+      <p><a href="/course/6_reservation.html"><img src="../sp_common/images/img_btn_kuwashiku.gif" alt="詳しく見る" width="106" /></a></p>
     </div>
     </section>
 
+</section>
+
+<section>
+<h2 class="arrow01" id="eriko">
+<div>エリコの講座体験記</div></h2>
+<div class="text">
+  <ul class="list01">
+    <li class="to_page_top"><a href="/course/student/01_20110710.html">第１回　心理学コース　エゴグラムで性格を知る</a></li>
+    <li><a href="/course/student/02_20110727.html">第２回　心理学コース　考え方の歪みを知る</a></li>
+    <li><a href="/course/student/03_20110808.html">第３回　心理学コース　正しい練習法を学ぼう</a></li>
+    <li><a href="/course/student/04_20110824.html">第４回　心理学コース　 ゆったりとした心で話そう～</a></li>
+    <li class="bottom"><a href="/course/student/05_20110906.html">第５回　人間関係コース　傾聴、質問のワーク</a></li>
+  </ul></div>
 </section>
 
 <section>
@@ -210,8 +212,7 @@ if ( isset($_GET['adcode']) ) {
     <li class="to_page_top"><a href="/course/keizoku.html">継続について</a></li>
     <li><a href="/course/furikae.html">おやすみについて</a></li>
     <li><a href="/course/seitosannokoe.html">生徒さんの声</a></li>
-    <li><a href="/course/yokuarushitumon.html">よくある質問</a></li>
-    <li class="bottom"><a href="/course/student/01_20110710.html">エリコの講座体験記</a></li>
+    <li class="bottom"><a href="/course/yokuarushitumon.html">よくある質問</a></li>
     </ul>
     </div>
 </section>

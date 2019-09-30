@@ -56,7 +56,6 @@ RewriteCond %{REQUEST_URI} !/colums/
 RewriteCond %{REQUEST_URI} !/event/
 RewriteCond %{REQUEST_URI} !/course/01_kanto/
 RewriteCond %{REQUEST_URI} !/course/1_intro.html
-RewriteCond %{REQUEST_URI} !/course/guide.html
 RewriteCond %{REQUEST_URI} !/templates/
 RewriteCond %{REQUEST_URI} !/text/
 RewriteCond %{REQUEST_URI} !/reqruit/teacher/
